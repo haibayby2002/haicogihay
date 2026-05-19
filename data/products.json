@@ -1,0 +1,107 @@
+[
+  {
+    "id": 4,
+    "name": "Sạc không dây tích hợp bàn diện tử",
+    "category": "Văn phòng",
+    "price": 49.99,
+    "sale_price": 39.99,
+    "description": "A premium desk pad with built-in wireless charging for phones and accessories.",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
+    "more_images": [
+      "https://i.pinimg.com/webp/736x/de/81/33/de8133f3ab33e71aa4904f79c74ffb5f.webp",
+      "https://i.pinimg.com/1200x/61/81/64/618164cfaff1943a26d542cc171b078e.jpg",
+      "https://i.pinimg.com/webp/1200x/7c/68/a7/7c68a727568cd933ebcbe5d12cb0c37b.webp"
+    ],
+    "tags": ["Văn phòng", "wireless", "accessory"]
+  },
+  {
+    "id": 5,
+    "name": "Minimalist Leather Card Holder",
+    "category": "Văn phòng",
+    "price": 24.99,
+    "sale_price": 19.99,
+    "description": "Slim leather card holder with RFID protection and modern styling.",
+    "image": "https://images.unsplash.com/photo-1522337587270-3d6cc6f1f8dd?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Văn phòng", "leather", "travel"]
+  },
+  {
+    "id": 6,
+    "name": "Smart Aroma Diffuser",
+    "category": "Nhà cửa",
+    "price": 34.99,
+    "sale_price": 27.99,
+    "description": "Ultrasonic diffuser with mood lighting and app-controlled scent delivery.",
+    "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Nhà cửa", "wellness", "smart"]
+  },
+  {
+    "id": 7,
+    "name": "Foldable Bluetooth Keyboard",
+    "category": "Điện tử",
+    "price": 59.99,
+    "sale_price": 44.99,
+    "description": "Portable foldable keyboard for tablets and smartphones with long battery life.",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Điện tử", "portable", "keyboard"]
+  },
+  {
+    "id": 8,
+    "name": "Soft Knit Throw Pillow",
+    "category": "Nhà cửa",
+    "price": 29.99,
+    "sale_price": 22.99,
+    "description": "Cozy throw pillow in a soft knit cover, perfect for living room decor.",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Nhà cửa", "decor", "cozy"]
+  },
+  {
+    "id": 9,
+    "name": "Noise-Cancelling Travel Headphones",
+    "category": "Điện tử",
+    "price": 149.99,
+    "sale_price": 119.99,
+    "description": "Comfortable over-ear headphones with active noise cancellation for travel.",
+    "image": "https://images.unsplash.com/photo-1512499617640-c2f9993893bf?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Điện tử", "audio", "travel"]
+  },
+  {
+    "id": 10,
+    "name": "Eco Bamboo Cutting Board Set",
+    "category": "Nhà cửa",
+    "price": 39.99,
+    "sale_price": 31.99,
+    "description": "Durable bamboo cutting board set with juice groove and non-slip feet.",
+    "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Nhà cửa", "kitchen", "eco"]
+  },
+  {
+    "id": 11,
+    "name": "Smart Fitness Tracker Band",
+    "category": "Điện tử",
+    "price": 69.99,
+    "sale_price": 54.99,
+    "description": "Waterproof fitness tracker with heart rate monitoring and sleep tracking.",
+    "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Điện tử", "fitness", "wearable"]
+  },
+  {
+    "id": 12,
+    "name": "Canvas Weekend Tote Bag",
+    "category": "Văn phòng",
+    "price": 42.99,
+    "sale_price": 34.99,
+    "description": "Stylish canvas tote bag with roomy interior and reinforced handles.",
+    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Văn phòng", "bag", "travel"]
+  },
+  {
+    "id": 13,
+    "name": "Adjustable LED Desk Lamp",
+    "category": "Văn phòng",
+    "price": 54.99,
+    "sale_price": 45.99,
+    "description": "Modern LED desk lamp with touch controls, adjustable brightness, and USB charging.",
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
+    "tags": ["Văn phòng", "lighting", "smart"]
+  }
+]

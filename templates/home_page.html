@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hải có gì hay?</title>
+  <link rel="icon" href="assets/store_image/logo_hai_co_gi_hay_removed_background.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#home">Trang chủ</a></li>
+      <li><a href="#products">Sản phẩm</a></li>
+      <!-- <li><a href="#about">Về chúng tôi</a></li> -->
+      <li><a href="#faqs">Câu hỏi thường gặp</a></li>
+      <li><a href="#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+  <header id="home" class="hero-header">
+    <div class="container header-inner">
+      <div class="header-brand">
+        <a id="page_address" >
+        <img id="logo"></a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section id="products" class="products-section">
+      <div class="section-title">Sản phẩm nổi bật</div>
+      <div class="toolbar">
+        <div class="search">
+          <label for="searchInput">🔎 Tìm kiếm</label>
+          <input id="searchInput" type="search" placeholder="Tìm kiếm sản phẩm..." />
+        </div>
+        <div class="filter">
+          <label for="categoryFilter">📦 Danh mục</label>
+          <select id="categoryFilter">
+            <option value="all">Tất cả danh mục</option>
+            <option value="electronics">Điện tử</option>
+            <option value="home">Nhà cửa</option>
+            <option value="fashion">Thời trang</option>
+            <option value="office">Văn phòng</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="sortCriteria">📊 Sắp xếp theo</label>
+          <div class="sort-control">
+            <select id="sortCriteria">
+              <option value="name">Tên sản phẩm</option>
+              <option value="price">Giá sản phẩm</option>
+              <option value="category" selected>Danh mục sản phẩm</option>
+            </select>
+            <button id="sortToggle" class="sort-toggle" type="button" aria-label="Sort descending">
+              <span class="sort-icon">▲</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+    <section id="about" class="about-section">
+      <!-- <div class="section-title">Về chúng tôi</div> -->
+      <div class="about-card" id="aboutCard"></div>
+    </section>
+    <section id="faqs" class="faqs-section">
+      <div class="section-title">Câu hỏi thường gặp</div>
+      <div class="faqs-container" id="faqsContainer"></div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên hệ</h2>
+        <p>Email: <a href="mailto:nguyenquyhai2002@gmail.com">nguyenquyhai2002@gmail.com</a></p>
+        <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
+        <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">https://zalo.me/0703017645</a></p>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/" class="social-icon fab fa-tiktok" target="_blank" rel="noreferrer noopener" aria-label="TikTok"></a>
+          <a href="https://www.youtube.com/" class="social-icon fab fa-youtube" target="_blank" rel="noreferrer noopener" aria-label="YouTube"></a>
+          <a href="https://www.facebook.com/nguyenquyhai2404" class="social-icon fab fa-facebook-f" target="_blank" rel="noreferrer noopener" aria-label="Facebook"></a>
+        </div>
+      </div>
+      <div class="footer-cta">
+        <h2>Nhận thông báo khi Hải có gì hay?</h2>
+        <p>Nếu anh em quan tâm tới cửa hàng Hải có gì hay, anh em vui lòng đăng ký để lại thông tin email để Hải liên hệ khi cửa hàng có gì đó mới.</p>
+        <p>Ngoài ra, nếu anh em có sản phẩm gì hay muốn giới thiệu cho Hải để niêm yết, vui lòng liên hệ 0703.017.645 (Zalo) hoặc để lại </p>
+        <a class="cta-button" href="https://forms.gle/your-google-form-link" target="_blank" rel="noreferrer noopener">Leave Your Contact</a>
+      </div>
+    </div>
+
+  </footer>
+  <a class="zalo-button" href="https://zalo.me/0703016645" target="_blank" rel="noreferrer noopener" aria-label="Contact on Zalo">
+    <img src="assets/store_image/Logo-Zalo-Arc.webp" alt="" width="64" height="64">
+  </a>
+  <div class="zalo-bubble">Ready to buy? Contact us on Zalo!</div>
+  <script>
+    const storeData = {storeData};
+    // {
+    //   name: "Hải có gì hay?",
+    //   description: "Chào mừng bạn đến với cửa hàng của chúng tôi! Chúng tôi cung cấp một loạt các sản phẩm chất lượng cao để đáp ứng nhu cầu của bạn. Hãy khám phá và tìm thấy những món đồ tuyệt vời ngay hôm nay!",
+    //   contact: {
+    //     email: "nguyenquyhai2002@gmail.com",
+    //     phone: "+84 703 016 645",
+    //     zalo: "https://zalo.me/0703016645",
+    //     facebook: "https://www.facebook.com/nguyenquyhai2404"
+    //   }
+    // };
+    const products = {products};
+    // [
+    //   { id: 1, name: 'Compact Wireless Earbuds', category: 'electronics', price: '$99', sale_price: '$79', description: 'Noise-isolating, lightweight earbuds for daily use.', tags: ['Wireless', 'Audio'], image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 2, name: 'Minimal Desk Lamp', category: 'office', price: '$45', sale_price: '$35', description: 'Modern desk lamp with adjustable brightness and USB charging.', tags: ['Lighting', 'Workspace'], image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 3, name: 'Soft Cotton Throw', category: 'home', price: '$38', sale_price: '$28', description: 'Comfortable cotton throw blanket for relaxing evenings.', tags: ['Cozy', 'Home'], image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 4, name: 'Leather Travel Wallet', category: 'fashion', price: '$65', sale_price: '$55', description: 'Slim wallet for cards and passport, designed for secure travel.', tags: ['Travel', 'Leather'], image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 5, name: 'Smart Tea Kettle', category: 'home', price: '$78', sale_price: '$68', description: 'Fast boiling kettle with temperature control and safety features.', tags: ['Kitchen', 'Smart'], image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 6, name: 'Classic Watch Strap', category: 'fashion', price: '$22', sale_price: '$18', description: 'Premium leather strap that fits most watch models.', tags: ['Watch', 'Leather'], image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 7, name: 'Ergonomic Office Chair', category: 'office', price: '$199', sale_price: '$179', description: 'Comfortable office chair with lumbar support and adjustable height.', tags: ['Office', 'Ergonomic'], image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 8, name: 'Bluetooth Speaker', category: 'electronics', price: '$120', sale_price: '$100', description: 'Portable speaker with rich sound and long battery life.', tags: ['Audio', 'Portable'], image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80' }
+    // ];
+
+    const productsGrid = document.getElementById('productsGrid');
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const sortCriteria = document.getElementById('sortCriteria');
+    const sortToggle = document.getElementById('sortToggle');
+    let sortOrder = 'asc';
+
+    function render_header() {
+      const pageAddress = document.getElementById('page_address');
+      if (pageAddress) {
+        pageAddress.href = storeData.homepage || '#';
+      }
+      const logo = document.getElementById('logo');
+      if (logo) {
+        logo.src = storeData.brand.logo || 'assets/store_image/logo_hai_co_gi_hay_removed_background.png';
+        logo.alt = `${storeData.brand.name} logo`;
+      }
+    }
+
+    function renderStoreInfo() {
+      const aboutCard = document.getElementById('aboutCard');
+      if (!aboutCard) return;
+
+      aboutCard.innerHTML = `
+        <div class="about-card-inner" style="background-image: url('${storeData.brand.background}');">
+          <div class="about-card-overlay"></div>
+          <div class="about-card-content">
+            <img src="${storeData.brand.logo}" alt="${storeData.brand.name} logo" class="about-logo" />
+            <div>
+              <h2>${storeData.brand.name}</h2>
+              <p>${storeData.description}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderCategoryOptions() {
+      const categories = [...new Set(products.map(p => p.category))];
+      categoryFilter.innerHTML = `<option value="all">Tất cả danh mục</option>` + 
+        categories.map(cat => `<option value="${cat}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</option>`).join('');
+    }
+
+    function renderProducts(items) {
+      productsGrid.innerHTML = items.map(product => `
+        <article class="product-card">
+          <a href="${product.link || '#'}" class="product-link">
+            <img src="${product.image}" alt="${product.name}" />
+          </a>
+          <div class="product-info">
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            <span class="price" style="text-decoration: line-through; color: #999; font-weight: normal;">${product.price}</span>
+            <span class="sale-price">${product.sale_price}</span>
+            <div class="tags">${product.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+
+    function updateSortToggle() {
+      sortToggle.classList.toggle('desc', sortOrder === 'desc');
+      sortToggle.querySelector('.sort-icon').textContent = sortOrder === 'asc' ? '▲' : '▼';
+      sortToggle.setAttribute('aria-label', sortOrder === 'asc' ? 'Sort descending' : 'Sort ascending');
+    }
+
+    function sortProducts(items) {
+      const criterion = sortCriteria.value;
+      const order = sortOrder;
+
+      const sorted = [...items].sort((a, b) => {
+        let aValue = a[criterion];
+        let bValue = b[criterion];
+
+        if (criterion === 'price') {
+          aValue = parseFloat(String(aValue).replace(/[^0-9.-]+/g, '')) || 0;
+          bValue = parseFloat(String(bValue).replace(/[^0-9.-]+/g, '')) || 0;
+        } else {
+          aValue = String(aValue).toLowerCase();
+          bValue = String(bValue).toLowerCase();
+        }
+
+        if (aValue < bValue) return -1;
+        if (aValue > bValue) return 1;
+        return 0;
+      });
+
+      return order === 'desc' ? sorted.reverse() : sorted;
+    }
+
+    function filterProducts() {
+      const query = searchInput.value.trim().toLowerCase();
+      const category = categoryFilter.value;
+
+      const filtered = products.filter(product => {
+        const matchesCategory = category === 'all' || product.category === category;
+        const matchesSearch = product.name.toLowerCase().includes(query) || product.description.toLowerCase().includes(query);
+        return matchesCategory && matchesSearch;
+      });
+
+      renderProducts(sortProducts(filtered));
+    }
+
+    function renderFAQs() {
+      const faqsContainer = document.getElementById('faqsContainer');
+      if (!faqsContainer) return;
+
+      const faqs = storeData.faqs || [];
+
+      faqsContainer.innerHTML = faqs.map(faq => `
+        <details class="faq-item">
+          <summary class="faq-question">${faq.question}</summary>
+          <p class="faq-answer">${faq.answer}</p>
+        </details>
+      `).join('');
+    }
+
+    function renderZaloBuy() {
+      buy_call = storeData.cta.buy.call;
+      buy_link = storeData.cta.buy.link;
+      const zaloButton = document.querySelector('.zalo-button');
+      if (zaloButton) {
+        zaloButton.href = buy_link;
+      
+        const zaloBubble = document.querySelector('.zalo-bubble');
+        if (zaloBubble) {
+          zaloBubble.innerHTML = buy_call;
+        }
+      
+      }
+    }
+
+    function renderSocialLinks() {
+      const socialLinksContainer = document.querySelector('.footer-socials');
+      if (!socialLinksContainer) return;
+
+      const socialLinks = storeData.social_links || {};
+      const icons = {
+        facebook: 'fab fa-facebook-f',
+        tiktok: 'fab fa-tiktok',
+        youtube: 'fab fa-youtube',
+        instagram: 'fab fa-instagram',
+        twitter: 'fab fa-twitter'
+      };
+
+      socialLinksContainer.innerHTML = Object.entries(socialLinks).map(([platform, url]) => `
+        <a href="${url}" class="social-icon ${icons[platform] || ''}" target="_blank" rel="noreferrer noopener" aria-label="${platform.charAt(0).toUpperCase() + platform.slice(1)}"></a>
+      `).join('');
+    }
+
+    function renderFooterCTA() {
+      
+      const footerCTA = document.querySelector('.footer-cta');
+      if (footerCTA) {
+        const subscribe = storeData.cta.subscribe;
+        const collaborate = storeData.cta.collaborate;
+        footerCTA.innerHTML = `
+        <h2>Quan tâm cửa hàng</h2>
+        <p>${subscribe.call}</p>
+        <p style="margin-top: 20px;">${collaborate.call}</p>
+        <ul class="footer-cta-list" style="margin-top: 20px; list-style: none; padding: 0;">
+          <li><a class="cta-button" href="${subscribe.link}" target="_blank" rel="noreferrer noopener">${subscribe.action}</a></li>
+          <li><a class="cta-button" href="${collaborate.link}" target="_blank" rel="noreferrer noopener">${collaborate.action}</a></li>
+        </ul>
+        
+        
+        `;
+      }
+    }
+
+    searchInput.addEventListener('input', filterProducts);
+    categoryFilter.addEventListener('change', filterProducts);
+    sortCriteria.addEventListener('change', filterProducts);
+    sortToggle.addEventListener('click', () => {
+      sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+      updateSortToggle();
+      filterProducts();
+    });
+    render_header(); 
+    updateSortToggle();
+    filterProducts();
+    renderStoreInfo();
+    renderCategoryOptions();
+    renderZaloBuy();
+    renderFAQs();
+    renderSocialLinks();
+    renderFooterCTA();
+  </script>
+</body>
+</html>

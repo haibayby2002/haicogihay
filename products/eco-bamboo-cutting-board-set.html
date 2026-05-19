@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi tiết sản phẩm — Hải có gì hay?</title>
+  <link rel="icon" href="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .product-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: start;
+      padding: 24px 0 48px;
+    }
+    @media (max-width: 900px) {
+      .product-detail {
+        grid-template-columns: 1fr;
+      }
+    }
+    .product-detail-breadcrumb {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+    .product-detail-breadcrumb a {
+      color: #1b6f9d;
+      text-decoration: none;
+    }
+    .product-detail-breadcrumb a:hover {
+      text-decoration: underline;
+    }
+    .product-detail-gallery {
+      position: sticky;
+      top: 16px;
+    }
+    .product-detail-main-img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+      display: block;
+      background: #f5f5f5;
+    }
+    .product-detail-thumbs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .product-detail-thumbs button {
+      padding: 0;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      background: none;
+      opacity: 0.85;
+      transition: border-color 0.2s, opacity 0.2s;
+    }
+    .product-detail-thumbs button:hover,
+    .product-detail-thumbs button.is-active {
+      opacity: 1;
+      border-color: #1b6f9d;
+    }
+    .product-detail-thumbs img {
+      width: 72px;
+      height: 72px;
+      object-fit: cover;
+      display: block;
+    }
+    .product-detail-info h1 {
+      margin: 0 0 8px;
+      font-size: 1.75rem;
+      line-height: 1.25;
+    }
+    .product-detail-category {
+      display: inline-block;
+      font-size: 13px;
+      color: #1b6f9d;
+      background: #eef4fb;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .product-detail-prices {
+      margin: 16px 0;
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .product-detail-prices .price-was {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 16px;
+    }
+    .product-detail-prices .sale-price {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1b6f9d;
+    }
+    .product-detail-description {
+      color: #444;
+      line-height: 1.65;
+      font-size: 15px;
+      margin: 0 0 20px;
+    }
+    .product-detail-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .product-detail-tags .tag {
+      background: #eef4fb;
+      color: #1b6f9d;
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    .product-detail-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .product-detail-actions .cta-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="D:/haicogihay//index.html">Trang chủ</a></li>
+      <li><a href="D:/haicogihay//index.html#products">Sản phẩm</a></li>
+      <li><a href="D:/haicogihay//index.html#faqs">Câu hỏi thường gặp</a></li>
+      <li><a href="#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+  <main class="container">
+    <div id="productDetailRoot"></div>
+  </main>
+  <footer id="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên hệ</h2>
+        <p>Email: <a href="mailto:nguyenquyhai2002@gmail.com">nguyenquyhai2002@gmail.com</a></p>
+        <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
+        <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">https://zalo.me/0703017645</a></p>
+        <div class="footer-socials"></div>
+      </div>
+      <div class="footer-cta"></div>
+    </div>
+  </footer>
+  <a class="zalo-button" href="https://zalo.me/0703016645" target="_blank" rel="noreferrer noopener" aria-label="Contact on Zalo">
+    <img src="../assets/store_image/Logo-Zalo-Arc.webp" alt="" width="64" height="64">
+  </a>
+  <div class="zalo-bubble">Ready to buy? Contact us on Zalo!</div>
+  <script>
+    const storeData = {"name": "Hải có gì hay?", "homepage": "D:/haicogihay/", "description": "Cửa hàng trực tuyến chuyên lọc các sản phẩm thú vị, tiện ích và đáng mua từ nhiều lĩnh vực khác nhau như: Văn phòng, Nhà cửa, Điện tử. Mỗi thời điểm cửa hàng chỉ niêm yết tối đa 20 sản phẩm để dễ chọn lựa và tập trung vào các món đáng chú ý nhất.", "brand": {"name": "Hải có gì hay?", "logo": "assets/store_image/logo_hai_co_gi_hay_removed_background.png", "background": "assets/store_image/hai_co_gi_hay_removed_bg.png"}, "contact": {"email": "nguyenquyhai2002@gmail.com", "phone": "+84 703 016 645", "zalo": "https://zalo.me/0703017645", "facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay"}, "social_links": {"facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay", "youtube": "https://www.youtube.com/@haicogihay"}, "cta": {"subscribe": {"call": "Nếu anh em muốn nhanh chóng cập nhật sản phẩm mới từ cửa hàng Hải có gì hay, hãy đăng ký nhận tin để không bỏ lỡ những món đồ thú vị và tiện ích trong tương lai!", "action": "Đăng ký nhận tin", "link": "https://forms.gle/c8bUfvF6evuVDU2L8"}, "collaborate": {"call": "Anh em cũng có thể hợp tác với Hải để niêm yết sản phẩm nếu anh em có sản phẩm hay muốn bán. Nếu anh em có sản phẩm hay hoặc mới, cứ liên hệ với Hải qua gmail để trao đổi kỹ hơn.", "action": "Liên hệ hợp tác", "link": "https://zalo.me/0703017645"}, "buy": {"call": "Anh em muốn đặt hàng? Liên hệ với Hải qua Zalo! 0703.017.645", "action": "Liên hệ đặt hàng", "link": "https://zalo.me/0703017645"}}, "faqs": [{"id": 1, "question": "Hải có gì hay?", "answer": "Cửa hàng Hải có gì hay là cửa hàng trực tuyến chuyên lọc các sản phẩm thú vị, tiện ích và đáng mua từ nhiều lĩnh vực khác nhau như: <br> - 🏢 Văn phòng: Các sản phẩm giúp nâng cao hiệu suất làm việc và tạo không gian làm việc thoải mái. <br> -🪴 Nhà cửa: Các sản phẩm trang trí và tiện ích cho ngôi nhà của bạn. <br>-💡 Điện tử: Các thiết bị công nghệ mới nhất và hữu ích cho cuộc sống hàng ngày. <hr>✅ Mỗi thời điểm cửa hàng chỉ niêm yết tối đa khoảng 20 sản phẩm để dễ chọn lựa và tập trung vào các món đáng chú ý nhất."}, {"id": 2, "question": "Làm thế nào để đặt hàng?", "answer": "Anh em có thể đặt hàng bằng cách liên hệ điện thoại, Zalo (0703.017.645). Hải sẽ hỗ trợ anh em đặt hàng nhanh chóng và tiện lợi."}, {"id": 3, "question": "Tại sao cửa hàng chỉ niêm yết tối đa 20 sản phẩm?", "answer": "Cửa hàng Hải có gì hay chỉ niêm yết tối đa 20 sản phẩm để đảm bảo rằng mỗi sản phẩm được chọn lọc kỹ lưỡng và đáng chú ý nhất. Điều này giúp anh em dễ dàng lựa chọn và tập trung vào những món đồ thú vị và tiện ích nhất mà cửa hàng cung cấp, thay vì bị choáng ngợp bởi quá nhiều lựa chọn."}, {"id": 4, "question": "Chi phí vận chuyển là bao nhiêu? Bao lâu thì hàng được giao?", "answer": "Tùy vào địa điểm giao hàng, chi phí vận chuyển sẽ khác nhau. Hải sẽ cung cấp thông tin về chi phí vận chuyển và thời gian giao hàng khi anh em đặt hàng. Vui lòng liên hệ với Hải qua điện thoại hoặc Zalo để biết thêm chi tiết về chi phí và thời gian giao hàng cụ thể cho đơn hàng của anh em."}, {"id": 5, "question": "Làm thế nào để nhanh chóng cập nhật sản phẩm mới từ cửa hàng Hải có gì hay?", "answer": "Để nhanh chóng cập nhật sản phẩm mới từ cửa hàng Hải có gì hay, anh em có thể đăng ký nhận tin qua đường link sau: https://forms.gle/c8bUfvF6evuVDU2L8. Bằng cách này, anh em sẽ nhận được thông báo về những sản phẩm mới nhất và hấp dẫn từ cửa hàng ngay khi chúng được niêm yết."}, {"id": 6, "question": "Cửa hàng có nhận tìm sản phẩm theo yêu cầu không?", "answer": "Hải rất vui được hỗ trợ anh em tìm kiếm sản phẩm theo yêu cầu, thông qua đó, Hải có thể biết được nhu cầu của anh em nói riêng và mức độ quan tâm tới sản phẩm của thị trường. Anh em có thể liên hệ với Hải qua số điện thoại hoặc Zalo (0703.017.645) để chia sẻ thông tin về sản phẩm mà anh em đang tìm kiếm, và Hải sẽ cố gắng giúp đỡ trong việc tìm kiếm và cung cấp thông tin về sản phẩm đó."}, {"id": 7, "question": "Tôi có sản phẩm hay, tôi có thể giới thiệu tới Hải để niêm yết trên cửa hàng và hợp tác bán không?", "answer": "Hải rất hoan hỉ nhận được sự giới thiệu sản phẩm hay từ anh em. Nếu anh em có sản phẩm mà anh em nghĩ là phù hợp với tiêu chí của cửa hàng Hải có gì hay, anh em có thể liên hệ với Hải qua điện thoại hoặc Zalo (0703.017.645) để chia sẻ thông tin về sản phẩm đó. Hải sẽ xem xét và nếu sản phẩm phù hợp, chúng ta có thể thảo luận về việc niêm yết sản phẩm trên cửa hàng và hợp tác bán hàng."}]};
+    const product = {"id": 10, "name": "Eco Bamboo Cutting Board Set", "category": "Nhà cửa", "price": 39.99, "sale_price": 31.99, "description": "Durable bamboo cutting board set with juice groove and non-slip feet.", "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80", "tags": ["Nhà cửa", "kitchen", "eco"], "link": "eco-bamboo-cutting-board-set.html"};
+
+
+
+    function formatMoney(value) {
+      const num = typeof value === 'number' ? value : parseFloat(String(value).replace(/[^0-9.-]+/g, ''));
+      if (Number.isNaN(num)) return String(value);
+      return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(num);
+    }
+
+    function uniqueGalleryImages(p) {
+      const list = [p.image, ...(Array.isArray(p.more_images) ? p.more_images : [])].filter(Boolean);
+      return [...new Set(list)];
+    }
+
+    function renderProductDetail() {
+      const root = document.getElementById('productDetailRoot');
+      if (!root || !product || typeof product.id === 'undefined') {
+        if (root) {
+          root.innerHTML = '<p class="product-detail-description">Không tìm thấy sản phẩm.</p>';
+        }
+        return;
+      }
+
+      document.title = `${product.name} — ${storeData.brand?.name || 'Hải có gì hay?'}`;
+
+      const images = uniqueGalleryImages(product);
+      const thumbsHtml = images.length > 1
+        ? `<div class="product-detail-thumbs" role="tablist" aria-label="Ảnh sản phẩm">
+            ${images.map((src, i) => `
+              <button type="button" class="${i === 0 ? 'is-active' : ''}" data-src="${src}" aria-label="Xem ảnh ${i + 1}" aria-selected="${i === 0}">
+                <img src="${src}" alt="" width="72" height="72" loading="lazy" />
+              </button>
+            `).join('')}
+           </div>`
+        : '';
+
+      root.innerHTML = `
+        <nav class="product-detail-breadcrumb" aria-label="Breadcrumb">
+          <a href="D:/haicogihay//index.html#products">Sản phẩm</a>
+          <span aria-hidden="true"> / </span>
+          <span>${product.name}</span>
+        </nav>
+        <article class="product-detail">
+          <div class="product-detail-gallery">
+            <img id="productMainImage" class="product-detail-main-img" src="${images[0]}" alt="${product.name}" />
+            ${thumbsHtml}
+          </div>
+          <div class="product-detail-info">
+            <span class="product-detail-category">${product.category}</span>
+            <h1>${product.name}</h1>
+            <div class="product-detail-prices">
+              <span class="price-was">${formatMoney(product.price)}</span>
+              <span class="sale-price">${formatMoney(product.sale_price)}</span>
+            </div>
+            <p class="product-detail-description">${product.description}</p>
+            <div class="product-detail-tags">
+              ${(product.tags || []).map(tag => `<span class="tag">${tag}</span>`).join('')}
+            </div>
+            <div class="product-detail-actions">
+              <a id="productZaloCta" class="cta-button" href="#" target="_blank" rel="noreferrer noopener">
+                <i class="fas fa-comments" aria-hidden="true"></i> Liên hệ đặt hàng qua Zalo
+              </a>
+            </div>
+          </div>
+        </article>
+      `;
+
+      const mainImg = document.getElementById('productMainImage');
+      document.querySelectorAll('.product-detail-thumbs button').forEach(btn => {
+        btn.addEventListener('click', () => {
+          if (mainImg) mainImg.src = btn.getAttribute('data-src');
+          document.querySelectorAll('.product-detail-thumbs button').forEach(b => {
+            b.classList.toggle('is-active', b === btn);
+            b.setAttribute('aria-selected', b === btn ? 'true' : 'false');
+          });
+        });
+      });
+
+      const buy = storeData.cta?.buy;
+      const zaloBtn = document.getElementById('productZaloCta');
+      if (zaloBtn && buy?.link) zaloBtn.href = buy.link;
+    }
+
+    function renderZaloBuy() {
+      const buy = storeData.cta?.buy;
+      const zaloButton = document.querySelector('.zalo-button');
+      if (zaloButton && buy?.link) zaloButton.href = buy.link;
+      const zaloBubble = document.querySelector('.zalo-bubble');
+      if (zaloBubble && buy?.call) zaloBubble.textContent = buy.call;
+    }
+
+    function renderSocialLinks() {
+      const socialLinksContainer = document.querySelector('.footer-socials');
+      if (!socialLinksContainer) return;
+      const socialLinks = storeData.social_links || {};
+      const icons = {
+        facebook: 'fab fa-facebook-f',
+        tiktok: 'fab fa-tiktok',
+        youtube: 'fab fa-youtube',
+        instagram: 'fab fa-instagram',
+        twitter: 'fab fa-twitter'
+      };
+      socialLinksContainer.innerHTML = Object.entries(socialLinks).map(([platform, url]) => `
+        <a href="${url}" class="social-icon ${icons[platform] || ''}" target="_blank" rel="noreferrer noopener" aria-label="${platform.charAt(0).toUpperCase() + platform.slice(1)}"></a>
+      `).join('');
+    }
+
+    function renderFooterCTA() {
+      const footerCTA = document.querySelector('.footer-cta');
+      if (!footerCTA || !storeData.cta) return;
+      const subscribe = storeData.cta.subscribe;
+      const collaborate = storeData.cta.collaborate;
+      footerCTA.innerHTML = `
+        <h2>Quan tâm cửa hàng</h2>
+        <p>${subscribe.call}</p>
+        <p style="margin-top: 20px;">${collaborate.call}</p>
+        <ul class="footer-cta-list" style="margin-top: 20px; list-style: none; padding: 0;">
+          <li><a class="cta-button" href="${subscribe.link}" target="_blank" rel="noreferrer noopener">${subscribe.action}</a></li>
+          <li><a class="cta-button" href="${collaborate.link}" target="_blank" rel="noreferrer noopener">${collaborate.action}</a></li>
+        </ul>
+      `;
+    }
+    
+    function renderSiteNav() {
+      const navLinks = document.querySelectorAll('.site-nav a');
+      const currentHash = window.location.hash;
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentHash) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+
+    renderSiteNav();
+    renderProductDetail();
+    renderZaloBuy();
+    renderSocialLinks();
+    renderFooterCTA();
+  </script>
+</body>
+</html>

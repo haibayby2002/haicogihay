@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hải có gì hay?</title>
+  <link rel="icon" href="assets/store_image/logo_hai_co_gi_hay_removed_background.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <ul>
+      <li><a href="#home">Trang chủ</a></li>
+      <li><a href="#products">Sản phẩm</a></li>
+      <!-- <li><a href="#about">Về chúng tôi</a></li> -->
+      <li><a href="#faqs">Câu hỏi thường gặp</a></li>
+      <li><a href="#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+  <header id="home" class="hero-header">
+    <div class="container header-inner">
+      <div class="header-brand">
+        <a id="page_address" >
+        <img id="logo"></a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section id="products" class="products-section">
+      <div class="section-title">Sản phẩm nổi bật</div>
+      <div class="toolbar">
+        <div class="search">
+          <label for="searchInput">🔎 Tìm kiếm</label>
+          <input id="searchInput" type="search" placeholder="Tìm kiếm sản phẩm..." />
+        </div>
+        <div class="filter">
+          <label for="categoryFilter">📦 Danh mục</label>
+          <select id="categoryFilter">
+            <option value="all">Tất cả danh mục</option>
+            <option value="electronics">Điện tử</option>
+            <option value="home">Nhà cửa</option>
+            <option value="fashion">Thời trang</option>
+            <option value="office">Văn phòng</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="sortCriteria">📊 Sắp xếp theo</label>
+          <div class="sort-control">
+            <select id="sortCriteria">
+              <option value="name">Tên sản phẩm</option>
+              <option value="price">Giá sản phẩm</option>
+              <option value="category" selected>Danh mục sản phẩm</option>
+            </select>
+            <button id="sortToggle" class="sort-toggle" type="button" aria-label="Sort descending">
+              <span class="sort-icon">▲</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+    <section id="about" class="about-section">
+      <!-- <div class="section-title">Về chúng tôi</div> -->
+      <div class="about-card" id="aboutCard"></div>
+    </section>
+    <section id="faqs" class="faqs-section">
+      <div class="section-title">Câu hỏi thường gặp</div>
+      <div class="faqs-container" id="faqsContainer"></div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên hệ</h2>
+        <p>Email: <a href="mailto:nguyenquyhai2002@gmail.com">nguyenquyhai2002@gmail.com</a></p>
+        <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
+        <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">https://zalo.me/0703017645</a></p>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/" class="social-icon fab fa-tiktok" target="_blank" rel="noreferrer noopener" aria-label="TikTok"></a>
+          <a href="https://www.youtube.com/" class="social-icon fab fa-youtube" target="_blank" rel="noreferrer noopener" aria-label="YouTube"></a>
+          <a href="https://www.facebook.com/nguyenquyhai2404" class="social-icon fab fa-facebook-f" target="_blank" rel="noreferrer noopener" aria-label="Facebook"></a>
+        </div>
+      </div>
+      <div class="footer-cta">
+        <h2>Nhận thông báo khi Hải có gì hay?</h2>
+        <p>Nếu anh em quan tâm tới cửa hàng Hải có gì hay, anh em vui lòng đăng ký để lại thông tin email để Hải liên hệ khi cửa hàng có gì đó mới.</p>
+        <p>Ngoài ra, nếu anh em có sản phẩm gì hay muốn giới thiệu cho Hải để niêm yết, vui lòng liên hệ 0703.017.645 (Zalo) hoặc để lại </p>
+        <a class="cta-button" href="https://forms.gle/your-google-form-link" target="_blank" rel="noreferrer noopener">Leave Your Contact</a>
+      </div>
+    </div>
+
+  </footer>
+  <a class="zalo-button" href="https://zalo.me/0703016645" target="_blank" rel="noreferrer noopener" aria-label="Contact on Zalo">
+    <img src="assets/store_image/Logo-Zalo-Arc.webp" alt="" width="64" height="64">
+  </a>
+  <div class="zalo-bubble">Ready to buy? Contact us on Zalo!</div>
+  <script>
+    const storeData = {"name": "Hải có gì hay?", "homepage": "D:/haicogihay/", "description": "Cửa hàng trực tuyến chuyên lọc các sản phẩm thú vị, tiện ích và đáng mua từ nhiều lĩnh vực khác nhau như: Văn phòng, Nhà cửa, Điện tử. Mỗi thời điểm cửa hàng chỉ niêm yết tối đa 20 sản phẩm để dễ chọn lựa và tập trung vào các món đáng chú ý nhất.", "brand": {"name": "Hải có gì hay?", "logo": "assets/store_image/logo_hai_co_gi_hay_removed_background.png", "background": "assets/store_image/hai_co_gi_hay_removed_bg.png"}, "contact": {"email": "nguyenquyhai2002@gmail.com", "phone": "+84 703 016 645", "zalo": "https://zalo.me/0703017645", "facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay"}, "social_links": {"facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay", "youtube": "https://www.youtube.com/@haicogihay"}, "cta": {"subscribe": {"call": "Nếu anh em muốn nhanh chóng cập nhật sản phẩm mới từ cửa hàng Hải có gì hay, hãy đăng ký nhận tin để không bỏ lỡ những món đồ thú vị và tiện ích trong tương lai!", "action": "Đăng ký nhận tin", "link": "https://forms.gle/c8bUfvF6evuVDU2L8"}, "collaborate": {"call": "Anh em cũng có thể hợp tác với Hải để niêm yết sản phẩm nếu anh em có sản phẩm hay muốn bán. Nếu anh em có sản phẩm hay hoặc mới, cứ liên hệ với Hải qua gmail để trao đổi kỹ hơn.", "action": "Liên hệ hợp tác", "link": "https://zalo.me/0703017645"}, "buy": {"call": "Anh em muốn đặt hàng? Liên hệ với Hải qua Zalo! 0703.017.645", "action": "Liên hệ đặt hàng", "link": "https://zalo.me/0703017645"}}, "faqs": [{"id": 1, "question": "Hải có gì hay?", "answer": "Cửa hàng Hải có gì hay là cửa hàng trực tuyến chuyên lọc các sản phẩm thú vị, tiện ích và đáng mua từ nhiều lĩnh vực khác nhau như: <br> - 🏢 Văn phòng: Các sản phẩm giúp nâng cao hiệu suất làm việc và tạo không gian làm việc thoải mái. <br> -🪴 Nhà cửa: Các sản phẩm trang trí và tiện ích cho ngôi nhà của bạn. <br>-💡 Điện tử: Các thiết bị công nghệ mới nhất và hữu ích cho cuộc sống hàng ngày. <hr>✅ Mỗi thời điểm cửa hàng chỉ niêm yết tối đa khoảng 20 sản phẩm để dễ chọn lựa và tập trung vào các món đáng chú ý nhất."}, {"id": 2, "question": "Làm thế nào để đặt hàng?", "answer": "Anh em có thể đặt hàng bằng cách liên hệ điện thoại, Zalo (0703.017.645). Hải sẽ hỗ trợ anh em đặt hàng nhanh chóng và tiện lợi."}, {"id": 3, "question": "Tại sao cửa hàng chỉ niêm yết tối đa 20 sản phẩm?", "answer": "Cửa hàng Hải có gì hay chỉ niêm yết tối đa 20 sản phẩm để đảm bảo rằng mỗi sản phẩm được chọn lọc kỹ lưỡng và đáng chú ý nhất. Điều này giúp anh em dễ dàng lựa chọn và tập trung vào những món đồ thú vị và tiện ích nhất mà cửa hàng cung cấp, thay vì bị choáng ngợp bởi quá nhiều lựa chọn."}, {"id": 4, "question": "Chi phí vận chuyển là bao nhiêu? Bao lâu thì hàng được giao?", "answer": "Tùy vào địa điểm giao hàng, chi phí vận chuyển sẽ khác nhau. Hải sẽ cung cấp thông tin về chi phí vận chuyển và thời gian giao hàng khi anh em đặt hàng. Vui lòng liên hệ với Hải qua điện thoại hoặc Zalo để biết thêm chi tiết về chi phí và thời gian giao hàng cụ thể cho đơn hàng của anh em."}, {"id": 5, "question": "Làm thế nào để nhanh chóng cập nhật sản phẩm mới từ cửa hàng Hải có gì hay?", "answer": "Để nhanh chóng cập nhật sản phẩm mới từ cửa hàng Hải có gì hay, anh em có thể đăng ký nhận tin qua đường link sau: https://forms.gle/c8bUfvF6evuVDU2L8. Bằng cách này, anh em sẽ nhận được thông báo về những sản phẩm mới nhất và hấp dẫn từ cửa hàng ngay khi chúng được niêm yết."}, {"id": 6, "question": "Cửa hàng có nhận tìm sản phẩm theo yêu cầu không?", "answer": "Hải rất vui được hỗ trợ anh em tìm kiếm sản phẩm theo yêu cầu, thông qua đó, Hải có thể biết được nhu cầu của anh em nói riêng và mức độ quan tâm tới sản phẩm của thị trường. Anh em có thể liên hệ với Hải qua số điện thoại hoặc Zalo (0703.017.645) để chia sẻ thông tin về sản phẩm mà anh em đang tìm kiếm, và Hải sẽ cố gắng giúp đỡ trong việc tìm kiếm và cung cấp thông tin về sản phẩm đó."}, {"id": 7, "question": "Tôi có sản phẩm hay, tôi có thể giới thiệu tới Hải để niêm yết trên cửa hàng và hợp tác bán không?", "answer": "Hải rất hoan hỉ nhận được sự giới thiệu sản phẩm hay từ anh em. Nếu anh em có sản phẩm mà anh em nghĩ là phù hợp với tiêu chí của cửa hàng Hải có gì hay, anh em có thể liên hệ với Hải qua điện thoại hoặc Zalo (0703.017.645) để chia sẻ thông tin về sản phẩm đó. Hải sẽ xem xét và nếu sản phẩm phù hợp, chúng ta có thể thảo luận về việc niêm yết sản phẩm trên cửa hàng và hợp tác bán hàng."}]};
+    // {
+    //   name: "Hải có gì hay?",
+    //   description: "Chào mừng bạn đến với cửa hàng của chúng tôi! Chúng tôi cung cấp một loạt các sản phẩm chất lượng cao để đáp ứng nhu cầu của bạn. Hãy khám phá và tìm thấy những món đồ tuyệt vời ngay hôm nay!",
+    //   contact: {
+    //     email: "nguyenquyhai2002@gmail.com",
+    //     phone: "+84 703 016 645",
+    //     zalo: "https://zalo.me/0703016645",
+    //     facebook: "https://www.facebook.com/nguyenquyhai2404"
+    //   }
+    // };
+    const products = [{"id": 4, "name": "Sạc không dây tích hợp bàn diện tử", "category": "Văn phòng", "price": 49.99, "sale_price": 39.99, "description": "A premium desk pad with built-in wireless charging for phones and accessories.", "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80", "more_images": ["https://i.pinimg.com/webp/736x/de/81/33/de8133f3ab33e71aa4904f79c74ffb5f.webp", "https://i.pinimg.com/1200x/61/81/64/618164cfaff1943a26d542cc171b078e.jpg", "https://i.pinimg.com/webp/1200x/7c/68/a7/7c68a727568cd933ebcbe5d12cb0c37b.webp"], "tags": ["Văn phòng", "wireless", "accessory"], "link": "products/sac-khong-day-tich-hop-ban-dien-tu.html"}, {"id": 5, "name": "Minimalist Leather Card Holder", "category": "Văn phòng", "price": 24.99, "sale_price": 19.99, "description": "Slim leather card holder with RFID protection and modern styling.", "image": "https://images.unsplash.com/photo-1522337587270-3d6cc6f1f8dd?auto=format&fit=crop&w=800&q=80", "tags": ["Văn phòng", "leather", "travel"], "link": "products/minimalist-leather-card-holder.html"}, {"id": 6, "name": "Smart Aroma Diffuser", "category": "Nhà cửa", "price": 34.99, "sale_price": 27.99, "description": "Ultrasonic diffuser with mood lighting and app-controlled scent delivery.", "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80", "tags": ["Nhà cửa", "wellness", "smart"], "link": "products/smart-aroma-diffuser.html"}, {"id": 7, "name": "Foldable Bluetooth Keyboard", "category": "Điện tử", "price": 59.99, "sale_price": 44.99, "description": "Portable foldable keyboard for tablets and smartphones with long battery life.", "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80", "tags": ["Điện tử", "portable", "keyboard"], "link": "products/foldable-bluetooth-keyboard.html"}, {"id": 8, "name": "Soft Knit Throw Pillow", "category": "Nhà cửa", "price": 29.99, "sale_price": 22.99, "description": "Cozy throw pillow in a soft knit cover, perfect for living room decor.", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80", "tags": ["Nhà cửa", "decor", "cozy"], "link": "products/soft-knit-throw-pillow.html"}, {"id": 9, "name": "Noise-Cancelling Travel Headphones", "category": "Điện tử", "price": 149.99, "sale_price": 119.99, "description": "Comfortable over-ear headphones with active noise cancellation for travel.", "image": "https://images.unsplash.com/photo-1512499617640-c2f9993893bf?auto=format&fit=crop&w=800&q=80", "tags": ["Điện tử", "audio", "travel"], "link": "products/noise-cancelling-travel-headphones.html"}, {"id": 10, "name": "Eco Bamboo Cutting Board Set", "category": "Nhà cửa", "price": 39.99, "sale_price": 31.99, "description": "Durable bamboo cutting board set with juice groove and non-slip feet.", "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80", "tags": ["Nhà cửa", "kitchen", "eco"], "link": "products/eco-bamboo-cutting-board-set.html"}, {"id": 11, "name": "Smart Fitness Tracker Band", "category": "Điện tử", "price": 69.99, "sale_price": 54.99, "description": "Waterproof fitness tracker with heart rate monitoring and sleep tracking.", "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=800&q=80", "tags": ["Điện tử", "fitness", "wearable"], "link": "products/smart-fitness-tracker-band.html"}, {"id": 12, "name": "Canvas Weekend Tote Bag", "category": "Văn phòng", "price": 42.99, "sale_price": 34.99, "description": "Stylish canvas tote bag with roomy interior and reinforced handles.", "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80", "tags": ["Văn phòng", "bag", "travel"], "link": "products/canvas-weekend-tote-bag.html"}, {"id": 13, "name": "Adjustable LED Desk Lamp", "category": "Văn phòng", "price": 54.99, "sale_price": 45.99, "description": "Modern LED desk lamp with touch controls, adjustable brightness, and USB charging.", "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80", "tags": ["Văn phòng", "lighting", "smart"], "link": "products/adjustable-led-desk-lamp.html"}];
+    // [
+    //   { id: 1, name: 'Compact Wireless Earbuds', category: 'electronics', price: '$99', sale_price: '$79', description: 'Noise-isolating, lightweight earbuds for daily use.', tags: ['Wireless', 'Audio'], image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 2, name: 'Minimal Desk Lamp', category: 'office', price: '$45', sale_price: '$35', description: 'Modern desk lamp with adjustable brightness and USB charging.', tags: ['Lighting', 'Workspace'], image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 3, name: 'Soft Cotton Throw', category: 'home', price: '$38', sale_price: '$28', description: 'Comfortable cotton throw blanket for relaxing evenings.', tags: ['Cozy', 'Home'], image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 4, name: 'Leather Travel Wallet', category: 'fashion', price: '$65', sale_price: '$55', description: 'Slim wallet for cards and passport, designed for secure travel.', tags: ['Travel', 'Leather'], image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 5, name: 'Smart Tea Kettle', category: 'home', price: '$78', sale_price: '$68', description: 'Fast boiling kettle with temperature control and safety features.', tags: ['Kitchen', 'Smart'], image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 6, name: 'Classic Watch Strap', category: 'fashion', price: '$22', sale_price: '$18', description: 'Premium leather strap that fits most watch models.', tags: ['Watch', 'Leather'], image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 7, name: 'Ergonomic Office Chair', category: 'office', price: '$199', sale_price: '$179', description: 'Comfortable office chair with lumbar support and adjustable height.', tags: ['Office', 'Ergonomic'], image: 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=800&q=80' },
+    //   { id: 8, name: 'Bluetooth Speaker', category: 'electronics', price: '$120', sale_price: '$100', description: 'Portable speaker with rich sound and long battery life.', tags: ['Audio', 'Portable'], image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80' }
+    // ];
+
+    const productsGrid = document.getElementById('productsGrid');
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const sortCriteria = document.getElementById('sortCriteria');
+    const sortToggle = document.getElementById('sortToggle');
+    let sortOrder = 'asc';
+
+    function render_header() {
+      const pageAddress = document.getElementById('page_address');
+      if (pageAddress) {
+        pageAddress.href = storeData.homepage || '#';
+      }
+      const logo = document.getElementById('logo');
+      if (logo) {
+        logo.src = storeData.brand.logo || 'assets/store_image/logo_hai_co_gi_hay_removed_background.png';
+        logo.alt = `${storeData.brand.name} logo`;
+      }
+    }
+
+    function renderStoreInfo() {
+      const aboutCard = document.getElementById('aboutCard');
+      if (!aboutCard) return;
+
+      aboutCard.innerHTML = `
+        <div class="about-card-inner" style="background-image: url('${storeData.brand.background}');">
+          <div class="about-card-overlay"></div>
+          <div class="about-card-content">
+            <img src="${storeData.brand.logo}" alt="${storeData.brand.name} logo" class="about-logo" />
+            <div>
+              <h2>${storeData.brand.name}</h2>
+              <p>${storeData.description}</p>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderCategoryOptions() {
+      const categories = [...new Set(products.map(p => p.category))];
+      categoryFilter.innerHTML = `<option value="all">Tất cả danh mục</option>` + 
+        categories.map(cat => `<option value="${cat}">${cat.charAt(0).toUpperCase() + cat.slice(1)}</option>`).join('');
+    }
+
+    function renderProducts(items) {
+      productsGrid.innerHTML = items.map(product => `
+        <article class="product-card">
+          <a href="${product.link || '#'}" class="product-link">
+            <img src="${product.image}" alt="${product.name}" />
+          </a>
+          <div class="product-info">
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            <span class="price" style="text-decoration: line-through; color: #999; font-weight: normal;">${product.price}</span>
+            <span class="sale-price">${product.sale_price}</span>
+            <div class="tags">${product.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+
+    function updateSortToggle() {
+      sortToggle.classList.toggle('desc', sortOrder === 'desc');
+      sortToggle.querySelector('.sort-icon').textContent = sortOrder === 'asc' ? '▲' : '▼';
+      sortToggle.setAttribute('aria-label', sortOrder === 'asc' ? 'Sort descending' : 'Sort ascending');
+    }
+
+    function sortProducts(items) {
+      const criterion = sortCriteria.value;
+      const order = sortOrder;
+
+      const sorted = [...items].sort((a, b) => {
+        let aValue = a[criterion];
+        let bValue = b[criterion];
+
+        if (criterion === 'price') {
+          aValue = parseFloat(String(aValue).replace(/[^0-9.-]+/g, '')) || 0;
+          bValue = parseFloat(String(bValue).replace(/[^0-9.-]+/g, '')) || 0;
+        } else {
+          aValue = String(aValue).toLowerCase();
+          bValue = String(bValue).toLowerCase();
+        }
+
+        if (aValue < bValue) return -1;
+        if (aValue > bValue) return 1;
+        return 0;
+      });
+
+      return order === 'desc' ? sorted.reverse() : sorted;
+    }
+
+    function filterProducts() {
+      const query = searchInput.value.trim().toLowerCase();
+      const category = categoryFilter.value;
+
+      const filtered = products.filter(product => {
+        const matchesCategory = category === 'all' || product.category === category;
+        const matchesSearch = product.name.toLowerCase().includes(query) || product.description.toLowerCase().includes(query);
+        return matchesCategory && matchesSearch;
+      });
+
+      renderProducts(sortProducts(filtered));
+    }
+
+    function renderFAQs() {
+      const faqsContainer = document.getElementById('faqsContainer');
+      if (!faqsContainer) return;
+
+      const faqs = storeData.faqs || [];
+
+      faqsContainer.innerHTML = faqs.map(faq => `
+        <details class="faq-item">
+          <summary class="faq-question">${faq.question}</summary>
+          <p class="faq-answer">${faq.answer}</p>
+        </details>
+      `).join('');
+    }
+
+    function renderZaloBuy() {
+      buy_call = storeData.cta.buy.call;
+      buy_link = storeData.cta.buy.link;
+      const zaloButton = document.querySelector('.zalo-button');
+      if (zaloButton) {
+        zaloButton.href = buy_link;
+      
+        const zaloBubble = document.querySelector('.zalo-bubble');
+        if (zaloBubble) {
+          zaloBubble.innerHTML = buy_call;
+        }
+      
+      }
+    }
+
+    function renderSocialLinks() {
+      const socialLinksContainer = document.querySelector('.footer-socials');
+      if (!socialLinksContainer) return;
+
+      const socialLinks = storeData.social_links || {};
+      const icons = {
+        facebook: 'fab fa-facebook-f',
+        tiktok: 'fab fa-tiktok',
+        youtube: 'fab fa-youtube',
+        instagram: 'fab fa-instagram',
+        twitter: 'fab fa-twitter'
+      };
+
+      socialLinksContainer.innerHTML = Object.entries(socialLinks).map(([platform, url]) => `
+        <a href="${url}" class="social-icon ${icons[platform] || ''}" target="_blank" rel="noreferrer noopener" aria-label="${platform.charAt(0).toUpperCase() + platform.slice(1)}"></a>
+      `).join('');
+    }
+
+    function renderFooterCTA() {
+      
+      const footerCTA = document.querySelector('.footer-cta');
+      if (footerCTA) {
+        const subscribe = storeData.cta.subscribe;
+        const collaborate = storeData.cta.collaborate;
+        footerCTA.innerHTML = `
+        <h2>Quan tâm cửa hàng</h2>
+        <p>${subscribe.call}</p>
+        <p style="margin-top: 20px;">${collaborate.call}</p>
+        <ul class="footer-cta-list" style="margin-top: 20px; list-style: none; padding: 0;">
+          <li><a class="cta-button" href="${subscribe.link}" target="_blank" rel="noreferrer noopener">${subscribe.action}</a></li>
+          <li><a class="cta-button" href="${collaborate.link}" target="_blank" rel="noreferrer noopener">${collaborate.action}</a></li>
+        </ul>
+        
+        
+        `;
+      }
+    }
+
+    searchInput.addEventListener('input', filterProducts);
+    categoryFilter.addEventListener('change', filterProducts);
+    sortCriteria.addEventListener('change', filterProducts);
+    sortToggle.addEventListener('click', () => {
+      sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+      updateSortToggle();
+      filterProducts();
+    });
+    render_header(); 
+    updateSortToggle();
+    filterProducts();
+    renderStoreInfo();
+    renderCategoryOptions();
+    renderZaloBuy();
+    renderFAQs();
+    renderSocialLinks();
+    renderFooterCTA();
+  </script>
+</body>
+</html>
