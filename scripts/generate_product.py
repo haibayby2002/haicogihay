@@ -32,7 +32,7 @@ def render_product(product, store_data):
     store_json = json.dumps(store_data, ensure_ascii=False)
     product_json = json.dumps(product, ensure_ascii=False)
 
-    html = template.replace("{icon_url}", product["image"] or "../assets/store_image/logo_hai_co_gi_hay_removed_background.png").replace("{home_url}", store_data.get("homepage", "")).replace("{storeData}", store_json).replace("{product}", product_json)
+    html = template.replace("{icon_url}", product["image"] or "../assets/store_image/logo_hai_co_gi_hay_removed_background.png").replace("{home_url}", store_data.get("homepage", "../")).replace("{storeData}", store_json).replace("{product}", product_json)
 
     with OUTPUT_HTML.open("w", encoding="utf-8") as handle:
         handle.write(html)

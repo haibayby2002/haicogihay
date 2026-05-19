@@ -1,110 +1,69 @@
 [
   {
-    "id": 4,
-    "name": "Sạc không dây tích hợp bàn diện tử",
-    "category": "Văn phòng",
-    "price": 49.99,
-    "sale_price": 39.99,
-    "description": "A premium desk pad with built-in wireless charging for phones and accessories.",
-    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
-    "more_images": [
-      "https://i.pinimg.com/webp/736x/de/81/33/de8133f3ab33e71aa4904f79c74ffb5f.webp",
-      "https://i.pinimg.com/1200x/61/81/64/618164cfaff1943a26d542cc171b078e.jpg",
-      "https://i.pinimg.com/webp/1200x/7c/68/a7/7c68a727568cd933ebcbe5d12cb0c37b.webp",
-      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m10sy9w7mjh718.webp",
-      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m10sy9w7nxr33f.webp",
-      "https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m10sy9w7pcbjc3.webp"
+    "id": 1,
+    "name": "Tiểu thuyết: Chiến tranh và hòa bình - Leo Tolstoy - trọn bộ 3 tập",
+    "category": "Sách",
+    "price": 599000,
+    "sale_price": 549000,
+    "description": "📚 Có những cuốn sách đọc để giải trí.<br>🕰 Có những cuốn sách đọc để hiểu thêm về con người.<br>🌍 Và có những cuốn sách giống như cả một thế giới thu nhỏ.<strong>Chiến tranh và Hòa bình</strong> không chỉ kể về chiến tranh ⚔️ Đó là câu chuyện về con người giữa chiến tranh — về tình yêu ❤️, gia đình 🏡, lý tưởng ✨, sự cô đơn 🌧️ và những thay đổi mà thời đại mang lại.✍️ Tolstoy khiến những trận chiến trở nên hùng vĩ, nhưng đồng thời cũng khiến những khoảnh khắc rất nhỏ của đời sống trở nên đáng nhớ:<br>☕ một cuộc trò chuyện<br>👀 một ánh nhìn<br>🌙 một đêm nhiều suy nghĩ<br>📖 một lần trưởng thành sau mất mátĐọc “Chiến tranh và Hòa bình” có cảm giác như đang đứng giữa lịch sử 🏛️, nhưng lại thấy chính mình đâu đó trong từng nhân vật.📚 Một tác phẩm kinh điển không phải vì nó cũ.<br>💡 Mà vì qua nhiều thế hệ, nó vẫn khiến con người suy nghĩ và rung động.",
+    "image": "/assets/product_image/wars-and-peace-1.jpg",
+     "more_images": [
+      "/assets/product_image/wars-and-peace-2.jpg",
+      "/assets/product_image/wars-and-peace-3.jpg",
+      "/assets/product_image/wars-and-peace-4.jpg",
+      "/assets/product_image/wars-and-peace-5.jpg",
+      "/assets/product_image/wars-and-peace-6.jpg",
+      "/assets/product_image/wars-and-peace-7.jpg"
     ],
-    "tags": ["Văn phòng", "wireless", "accessory"]
+    "tags": ["sách", "tiểu thuyết", "văn học", "kinh điển"]
   },
   {
-    "id": 5,
-    "name": "Minimalist Leather Card Holder",
-    "category": "Văn phòng",
-    "price": 24.99,
-    "sale_price": 19.99,
-    "description": "Slim leather card holder with RFID protection and modern styling.",
-    "image": "https://images.unsplash.com/photo-1522337587270-3d6cc6f1f8dd?auto=format&fit=crop&w=800&q=80",
-    "tags": ["Văn phòng", "leather", "travel"]
+    "id": 2,
+    "name": "Piano Rose Method - Sách học piano cho người mới bắt đầu",
+    "category": "Sách",
+    "price": 85000,
+    "sale_price": 69000,
+    "description": "Sách học piano cho người mới bắt đầu, với phương pháp học hiệu quả và dễ hiểu tặng kèm DVD.",
+    "image": "/assets/product_image/method-rose-1.jpg",
+    "more_images": [
+      "/assets/product_image/method-rose-2.jpg",
+      "/assets/product_image/method-rose-3.jpg",
+      "/assets/product_image/method-rose-4.jpg",
+      "/assets/product_image/method-rose-5.jpg"
+    ],
+    "tags": ["sách", "piano", "học nhạc"]
   },
   {
-    "id": 6,
-    "name": "Smart Aroma Diffuser",
-    "category": "Nhà cửa",
-    "price": 34.99,
-    "sale_price": 27.99,
-    "description": "Ultrasonic diffuser with mood lighting and app-controlled scent delivery.",
-    "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
-    "tags": ["Nhà cửa", "wellness", "smart"]
+    "id": 3,
+    "name": "Competitive Programming 3 - The New Lower Bound of Programming Contests - Steven Halim và Felix Halim",
+    "category": "Sách",
+    "price": 399000,
+    "sale_price": 309000,
+    "description": "Nhiều người nghĩ rằng thời đại AI và LLM rồi thì chỉ cần hỏi AI là đủ, cần gì phải học thuật toán hay cấu trúc dữ liệu nữa. Nhưng thực tế lại ngược lại: AI giúp chúng ta viết code nhanh hơn, mô phỏng ý tưởng dễ hơn, và vì vậy khả năng tư duy thuật toán càng trở nên quan trọng để biết cách đặt vấn đề, tối ưu lời giải và đánh giá độ đúng của chương trình.<br><br>📚 “Competitive Programming 3” là một trong những cuốn sách kinh điển dành cho:<br>- Sinh viên ngành CNTT<br>- Người luyện thi ICPC, Olympic Tin học<br>- Kỹ sư phần mềm muốn củng cố nền tảng giải thuật<br>- Người học để chuẩn bị phỏng vấn Big Tech<br><br>Cuốn sách không chỉ trình bày thuật toán mà còn xây dựng tư duy giải quyết vấn đề thông qua các dạng bài lập trình thi đấu thực tế. Nội dung trải dài từ:<br>- Data Structures<br>- Graph Algorithms<br>- Dynamic Programming<br>- Greedy<br>- Mathematics<br>- String Processing<br>- Computational Geometry<br>- Problem Solving Paradigms<br><br>📖 Điểm mạnh của sách là cách tổ chức mục lục rất khoa học, giúp dễ tra cứu theo từng chủ đề và cấp độ. Người đọc có thể dùng như:<br>- giáo trình học thuật toán,<br>- handbook khi luyện contest,<br>- hoặc tài liệu tham khảo trong công việc kỹ thuật.<br><br>Dù công nghệ AI phát triển đến đâu, nền tảng thuật toán vẫn là “lower bound” quan trọng của khoa học máy tính — và đây là một trong những cuốn sách giúp xây nền tảng đó rất tốt.",
+    "image": "/assets/product_image/competitive-programming-2.jpg",
+    "more_images": [
+      "/assets/product_image/competitive-programming-1.jpg",
+      "/assets/product_image/competitive-programming-3.jpg",
+      "/assets/product_image/competitive-programming-4.jpg",
+      "/assets/product_image/competitive-programming-5.jpg"
+    ],
+    "tags": ["Sách", "programming", "contests"]
   },
   {
-    "id": 7,
-    "name": "Foldable Bluetooth Keyboard",
+    "id": 4,
+    "name": "Đèn mini gập gọn tích hợp sạc pin 5000mAh - để bàn, du lịch, học tập - 3 chế độ sáng",
     "category": "Điện tử",
-    "price": 59.99,
-    "sale_price": 44.99,
-    "description": "Portable foldable keyboard for tablets and smartphones with long battery life.",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
-    "tags": ["Điện tử", "portable", "keyboard"]
-  },
-  {
-    "id": 8,
-    "name": "Soft Knit Throw Pillow",
-    "category": "Nhà cửa",
-    "price": 29.99,
-    "sale_price": 22.99,
-    "description": "Cozy throw pillow in a soft knit cover, perfect for living room decor.",
-    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
-    "tags": ["Nhà cửa", "decor", "cozy"]
-  },
-  {
-    "id": 9,
-    "name": "Noise-Cancelling Travel Headphones",
-    "category": "Điện tử",
-    "price": 149.99,
-    "sale_price": 119.99,
-    "description": "Comfortable over-ear headphones with active noise cancellation for travel.",
-    "image": "https://images.unsplash.com/photo-1512499617640-c2f9993893bf?auto=format&fit=crop&w=800&q=80",
-    "tags": ["Điện tử", "audio", "travel"]
-  },
-  {
-    "id": 10,
-    "name": "Eco Bamboo Cutting Board Set",
-    "category": "Nhà cửa",
-    "price": 39.99,
-    "sale_price": 31.99,
-    "description": "Durable bamboo cutting board set with juice groove and non-slip feet.",
-    "image": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=800&q=80",
-    "tags": ["Nhà cửa", "kitchen", "eco"]
-  },
-  {
-    "id": 11,
-    "name": "Smart Fitness Tracker Band",
-    "category": "Điện tử",
-    "price": 69.99,
-    "sale_price": 54.99,
-    "description": "Waterproof fitness tracker with heart rate monitoring and sleep tracking.",
-    "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=800&q=80",
-    "tags": ["Điện tử", "fitness", "wearable"]
-  },
-  {
-    "id": 12,
-    "name": "Canvas Weekend Tote Bag",
-    "category": "Văn phòng",
-    "price": 42.99,
-    "sale_price": 34.99,
-    "description": "Stylish canvas tote bag with roomy interior and reinforced handles.",
-    "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
-    "tags": ["Văn phòng", "bag", "travel"]
-  },
-  {
-    "id": 13,
-    "name": "Adjustable LED Desk Lamp",
-    "category": "Văn phòng",
-    "price": 54.99,
-    "sale_price": 45.99,
-    "description": "Modern LED desk lamp with touch controls, adjustable brightness, and USB charging.",
-    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
-    "tags": ["Văn phòng", "lighting", "smart"]
+    "price": 159000,
+    "sale_price": 79000,
+    "description": "💡 Đèn mini gập gọn tích hợp sạc pin, tháo sạc sài gần nửa tiếng. Với thiết kế nhỏ gọn và khả năng gập lại, chiếc đèn này dễ dàng mang theo bên mình mọi lúc mọi nơi.<br><br>🔋 Tích hợp pin sạc 5000mAh giúp bạn có thể sử dụng đèn trong thời gian dài mà không lo hết pin. Bạn có thể sạc lại qua cổng USB, rất thuận tiện khi đi du lịch hoặc khi không có nguồn điện gần đó.<br><br>🌟 Với 3 chế độ sáng khác nhau (sáng mạnh, sáng trắng và ấm), bạn có thể điều chỉnh ánh sáng phù hợp với nhu cầu sử dụng của mình, từ việc đọc sách đến xem màn hình điện thoại, laptop.",
+    "image": "/assets/product_image/den-mini-1.jpg",
+    "more_images": [
+      "/assets/product_image/den-mini-2.jpg",
+      "/assets/product_image/den-mini-3.jpg",
+      "/assets/product_image/den-mini-4.jpg",
+      "/assets/product_image/den-mini-5.jpg",
+      "/assets/product_image/den-mini-6.jpg"
+    ],
+    "tags": ["điện tử", "đèn", "sạc pin", "gấp gọn"]
   }
 ]

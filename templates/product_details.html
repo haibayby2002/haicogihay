@@ -168,10 +168,24 @@
 
 
 
+    function getLinkImg(src) {
+      if (!src) return '';
+      if (src.startsWith('http://') || src.startsWith('https://')) {
+        return src;
+      }
+      return `{home_url}${src}`;
+    }
+
     function formatMoney(value) {
       const num = typeof value === 'number' ? value : parseFloat(String(value).replace(/[^0-9.-]+/g, ''));
       if (Number.isNaN(num)) return String(value);
       return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(num);
+    }
+
+    function formatPrice(value) {
+      const num = typeof value === 'number' ? value : parseFloat(String(value).replace(/[^0-9.-]+/g, ''));
+      if (Number.isNaN(num)) return String(value);
+      return num.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
     }
 
     function uniqueGalleryImages(p) {
@@ -194,8 +208,8 @@
       const thumbsHtml = images.length > 1
         ? `<div class="product-detail-thumbs" role="tablist" aria-label="Ảnh sản phẩm">
             ${images.map((src, i) => `
-              <button type="button" class="${i === 0 ? 'is-active' : ''}" data-src="${src}" aria-label="Xem ảnh ${i + 1}" aria-selected="${i === 0}">
-                <img src="${src}" alt="" width="72" height="72" loading="lazy" />
+              <button type="button" class="${i === 0 ? 'is-active' : ''}" data-src="${getLinkImg(src)}" aria-label="Xem ảnh ${i + 1}" aria-selected="${i === 0}">
+                <img src="${getLinkImg(src)}" alt="" width="72" height="72" loading="lazy" />
               </button>
             `).join('')}
            </div>`
@@ -209,15 +223,15 @@
         </nav>
         <article class="product-detail">
           <div class="product-detail-gallery">
-            <img id="productMainImage" class="product-detail-main-img" src="${images[0]}" alt="${product.name}" />
+            <img id="productMainImage" class="product-detail-main-img" src="${getLinkImg(images[0])}" alt="${product.name}"/>
             ${thumbsHtml}
           </div>
           <div class="product-detail-info">
             <span class="product-detail-category">${product.category}</span>
             <h1>${product.name}</h1>
             <div class="product-detail-prices">
-              <span class="price-was">${formatMoney(product.price)}</span>
-              <span class="sale-price">${formatMoney(product.sale_price)}</span>
+              <span class="price-was">${formatPrice(product.price)}</span>
+              <span class="sale-price">${formatPrice(product.sale_price)}</span>
             </div>
             <p class="product-detail-description">${product.description}</p>
             <div class="product-detail-tags">

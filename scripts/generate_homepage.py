@@ -29,7 +29,7 @@ def render_homepage():
     store_json = json.dumps(store_data, ensure_ascii=False)
     products_json = json.dumps(products, ensure_ascii=False)
 
-    html = template.replace("{storeData}", store_json).replace("{products}", products_json)
+    html = template.replace("{storeData}", store_json).replace("{home_url}", store_data.get("homepage", "/")).replace("{products}", products_json)
 
     with OUTPUT_HTML.open("w", encoding="utf-8") as handle:
         handle.write(html)

@@ -126,6 +126,27 @@
     const sortToggle = document.getElementById('sortToggle');
     let sortOrder = 'asc';
 
+    function limitDescription(description, maxLength = 200) {
+      if (typeof description !== 'string') return '';
+      if (description.length <= maxLength) return description;
+      return description.slice(0, maxLength) + '...'; 
+    }
+
+    function getLinkImg(src) {
+      if (!src) return '';
+      if (src.startsWith('http://') || src.startsWith('https://')) {
+        return src;
+      }
+      return `{home_url}${src}`;
+    }
+
+    function formatPrice(price) {
+      if (typeof price === 'number') {
+        return price.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+      }
+      return price;
+    }
+
     function render_header() {
       const pageAddress = document.getElementById('page_address');
       if (pageAddress) {
@@ -166,13 +187,13 @@
       productsGrid.innerHTML = items.map(product => `
         <article class="product-card">
           <a href="${product.link || '#'}" class="product-link">
-            <img src="${product.image}" alt="${product.name}" />
+            <img src="${getLinkImg(product.image)}" alt="${product.name}" />
           </a>
           <div class="product-info">
             <h2>${product.name}</h2>
-            <p>${product.description}</p>
-            <span class="price" style="text-decoration: line-through; color: #999; font-weight: normal;">${product.price}</span>
-            <span class="sale-price">${product.sale_price}</span>
+            <p>${limitDescription(product.description)}</p>
+            <span class="price" style="text-decoration: line-through; color: #999; font-weight: normal;">${formatPrice(product.price)}</span>
+            <span class="sale-price">${formatPrice(product.sale_price)}</span>
             <div class="tags">${product.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
           </div>
         </article>
