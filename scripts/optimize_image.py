@@ -18,6 +18,11 @@ def optimize_images(input_dir, output_dir, max_width=1200, quality=82, supported
             continue
 
         try:
+            output_path = Path(output_dir) / f"{image_path.stem}.webp"
+            if output_path.exists():
+                print(f"Already optimized: {output_path.name}")
+                continue
+            
             img = Image.open(image_path).convert("RGB")
 
             # Resize keeping aspect ratio
@@ -28,7 +33,6 @@ def optimize_images(input_dir, output_dir, max_width=1200, quality=82, supported
                 img = img.resize((max_width, new_height), Image.LANCZOS)
 
             # Output filename
-            output_path = Path(output_dir) / f"{image_path.stem}.webp"
 
             # Save as WebP
             img.save(
