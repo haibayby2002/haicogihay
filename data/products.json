@@ -65,5 +65,84 @@
       "/assets/product_image/den-mini-6.webp"
     ],
     "tags": ["điện tử", "đèn", "sạc pin", "gấp gọn"]
+  },
+  {
+    "id": 5,
+    "name": "Ổ cắm điện đa năng 3 ổ cắm 2 cổng USB - có công tắc riêng - chống giật",
+    "category": "Điện tử",
+    "price": 199000,
+    "sale_price": 159000,
+    "description": "🔌 Ổ cắm điện đa năng với thiết kế 4 ổ cắm và 2 cổng USB, giúp anh em dễ dàng kết nối nhiều thiết bị cùng lúc mà không cần dùng đến nhiều ổ cắm riêng biệt.<br><br>⚡ Mỗi ổ cắm đều có công tắc riêng, cho phép kiểm soát nguồn điện một cách tiện lợi và an toàn hơn. Anh em có thể tắt nguồn cho từng thiết bị mà không ảnh hưởng đến các thiết bị khác.<br><br>🛡️ Tính năng chống giật đảm bảo an toàn cho người sử dụng, đặc biệt khi sử dụng trong môi trường có trẻ nhỏ hoặc thú cưng. Sản phẩm dễ dàng bỏ cốp xe, ba lô. Phù hợp với nhiều không gian sử dụng. Từ dùng trong nhà tới quán cà phê. Dây dài 1.8m giúp anh em dễ dàng di chuyển và sử dụng. Với 4 ổ cắm và 2 cổng USB, sản phẩm mang lại sự tiện lợi khi học nhóm và làm việc cùng lúc trên nhiều thiết bị.",
+    "image": "/assets/product_image/o-cam-da-nang-2.webp",
+    "more_images": [
+      "/assets/product_image/o-cam-da-nang-3.webp",
+      "/assets/product_image/o-cam-da-nang-4.webp",
+      "/assets/product_image/o-cam-da-nang-5.webp",
+      "/assets/product_image/o-cam-da-nang.webp"
+    ],
+    "tags": ["điện tử", "ổ cắm", "USB", "chống giật"]
+  },
+  {
+    "id": 6,
+    "name": "Giá đỡ điện thoại silicone đa năng - có thể gập gọn - chống trượt",
+    "category": "Phụ kiện",
+    "price": 99000,
+    "sale_price": 79000,
+    "description": "📱 Giá đỡ điện thoại silicone đa năng với thiết kế đa dạng, gọn gàng, dễ dàng mang theo bên mình mọi lúc mọi nơi. ",
+    "image": "/assets/product_image/gia-do-dien-thoai-2.webp",
+    "more_images": [
+      "/assets/product_image/gia-do-dien-thoai-1.webp",
+      "/assets/product_image/gia-do-dien-thoai-3.webp",
+      "/assets/product_image/gia-do-dien-thoai-4.webp",
+      "/assets/product_image/gia-do-dien-thoai-5.webp"
+    ],
+    "tags": ["phụ kiện", "giá đỡ điện thoại", "silicone", "chống trượt"]
+  },
+  {
+    "id": 7,
+    "name": "Bình xịt tưới cây cầm tay - dung tích 2l - thiết kế tiện lợi với vòi phun điều chỉnh được",
+    "category": "Đồ gia dụng",
+    "price": 149000,
+    "sale_price": 129000,
+    "description": "🌿 <strong>BÌNH XỊT TƯỚI CÂY 2L – TIỆN LỢI, ĐA NĂNG CHO MỌI GIA ĐÌNH</strong> 🌿<br>Bình xịt tưới cây dung tích 2L với thiết kế gọn nhẹ, dễ sử dụng, phù hợp cho chăm sóc cây cảnh, vệ sinh và nhiều nhu cầu khác trong gia đình.<br><br>✨ <strong>ĐẶC ĐIỂM NỔI BẬT</strong><br>• Đầu vòi xoay linh hoạt giúp chuyển đổi chế độ xịt dễ dàng.<br>• Tay cầm có nút khóa tiện dụng, hỗ trợ phun liên tục mà không cần bóp cò liên tục.<br>• Thiết kế tạo áp suất mạnh giúp tia nước phun đều và xa hơn.<br>• Dung tích 2L nhỏ gọn, dễ mang theo và thao tác.<br><br>🌱 <strong>LỢI ÍCH SỬ DỤNG</strong><br>✔ Tưới cây cảnh, chậu hoa, rau trồng tại nhà.<br>✔ Phun thuốc bảo vệ thực vật, thuốc trừ sâu cho cây trồng.<br>✔ Dùng để xịt rửa, vệ sinh xe cộ, sân vườn và các vật dụng khác.<br><br>🧼 <strong>HƯỚNG DẪN BẢO QUẢN</strong><br>• Rửa sạch và phơi khô sau khi sử dụng.<br>• Nếu dùng để phun hóa chất, cần vệ sinh kỹ bình sau mỗi lần dùng.<br>• Bảo quản nơi bằng phẳng, tránh va đập mạnh hoặc vật nặng đè lên sản phẩm.<br><br>💧 Một trợ thủ nhỏ gọn nhưng cực kỳ hữu ích cho việc chăm sóc cây và vệ sinh hằng ngày!",
+    "image": "/assets/product_image/binh-xit-tuoi-cay-2.webp",
+    "more_images": [
+      "/assets/product_image/binh-xit-tuoi-cay-1.webp",
+      "/assets/product_image/binh-xit-tuoi-cay-3.webp",
+      "/assets/product_image/binh-xit-tuoi-cay-4.webp",
+      "/assets/product_image/binh-xit-tuoi-cay.webp"
+    ],
+    "tags": ["đồ gia dụng", "bình xịt", "tưới cây"]
+  },
+  {
+    "id": 8,
+    "name": "Bộ cờ tướng nam châm - bàn cờ gấp gọn - quân cờ có nam châm chống rơi",
+    "category": "Đồ gia dụng",
+    "price": 219000,
+    "sale_price": 189000,
+    "description": " <strong>CỜ TƯỚNG SATO CÓ NAM CHÂM – ĐỒ CHƠI TRÍ TUỆ GIÚP RÈN LUYỆN TƯ DUY</strong><br>Cờ tướng không chỉ mang đến những phút giây giải trí hấp dẫn với các nước cờ biến hóa mà còn giúp rèn luyện trí nhớ, khả năng tư duy logic, sự kiên nhẫn và phát triển trí não hiệu quả cho cả trẻ em và người lớn.<br><br>✨ Thiết kế nhỏ gọn, tiện mang theo để chơi mọi lúc mọi nơi.<br>✨ Tích hợp nam châm giúp quân cờ bám chắc trên bàn cờ, chống trơn trượt và không rơi khi lật úp.<br>✨ Phù hợp cho việc học tập, giải trí và rèn luyện tư duy chiến thuật.<br><br>📌 Thông tin sản phẩm:<br>• Kích thước bàn cờ: 25x25cm<br>• Kích thước khi gấp gọn: 25x13cm<br>• Bộ gồm 32 quân cờ đầy đủ: tướng, sĩ, tượng, xe, pháo, mã, tốt<br>• Chất liệu bền đẹp, dễ bảo quản và sử dụng lâu dài<br><br>🎯 Món quà ý nghĩa giúp trẻ phát triển tư duy và cả gia đình cùng giải trí bổ ích!.",
+    "image": "/assets/product_image/bo-co-tuong-nam-cham-2.webp",
+    "more_images": [
+      "/assets/product_image/bo-co-tuong-nam-cham-1.webp",
+      "/assets/product_image/bo-co-tuong-nam-cham-3.webp",
+      "/assets/product_image/bo-co-tuong-nam-cham-4.webp",
+      "/assets/product_image/bo-co-tuong-nam-cham.webp"
+    ],
+    "tags": ["cờ tướng", "nam châm", "gấp gọn", "trí tuệ", "giải trí", "rèn luyện tư duy", "thể thao"]
+  },
+  {
+    "id": 9,
+    "name": "Bảng lỗ pegboard treo tường - decor DIY - có móc treo phụ kiện",
+    "category": "Đồ gia dụng",
+    "price": 179000,
+    "sale_price": 149000,
+    "description": "🧩 <strong>BẢNG LỖ PEGBOARD DIY ĐA NĂNG – GỌN GÀNG, HIỆN ĐẠI, THỎA SỨC SÁNG TẠO</strong><br>Bảng lỗ PEGBOARD DIY là giải pháp lưu trữ và trang trí thông minh giúp không gian học tập, làm việc hay góc decor trở nên ngăn nắp và thẩm mỹ hơn.<br><br>✨ Thiết kế bảng lỗ đa năng dễ dàng lắp ráp và thay đổi bố cục theo nhu cầu sử dụng.<br>✨ Có thể kết hợp cùng móc treo, kệ mini, giỏ đựng hoặc phụ kiện decor cực tiện lợi.<br>✨ Phù hợp để treo phụ kiện, mỹ phẩm, dụng cụ học tập, đồ handmade và nhiều vật dụng cá nhân khác.<br>✨ Phong cách tối giản hiện đại, phù hợp nhiều không gian từ phòng ngủ đến bàn làm việc.<br><br>🏠 Ứng dụng đa dạng: decor góc học tập, setup bàn làm việc, trưng bày sản phẩm hoặc sáng tạo theo phong cách DIY riêng.<br><br>💡 Một món đồ vừa tiện lợi vừa giúp không gian của bạn trở nên đẹp mắt và chuyên nghiệp hơn!",
+    "image": "/assets/product_image/bang-lo-1.webp",
+    "more_images": [
+      "/assets/product_image/bang-lo-2.webp",
+      "/assets/product_image/bang-lo-3.webp",
+      "/assets/product_image/bang-lo-4.webp"
+    ],
+    "tags": ["đồ gia dụng", "pegboard", "treo tường", "decor"]
   }
 ]
