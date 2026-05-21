@@ -10,7 +10,10 @@
 </head>
 <body>
   <nav class="site-nav">
-    <ul>
+    <button class="burger-menu" id="burger-btn" aria-label="Toggle navigation">
+      ☰
+  </button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#home">Trang chủ</a></li>
       <li><a href="#products">Sản phẩm</a></li>
       <!-- <li><a href="#about">Về chúng tôi</a></li> -->
@@ -310,6 +313,14 @@
         `;
       }
     }
+
+    const burgerBtn = document.getElementById('burger-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    burgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
 
     searchInput.addEventListener('input', filterProducts);
     categoryFilter.addEventListener('change', filterProducts);

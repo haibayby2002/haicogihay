@@ -7,139 +7,19 @@
   <link rel="icon" href="{icon_url}" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
-  <style>
-    .product-detail {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      align-items: start;
-      padding: 24px 0 48px;
-    }
-    @media (max-width: 900px) {
-      .product-detail {
-        grid-template-columns: 1fr;
-      }
-    }
-    .product-detail-breadcrumb {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 8px;
-    }
-    .product-detail-breadcrumb a {
-      color: #1b6f9d;
-      text-decoration: none;
-    }
-    .product-detail-breadcrumb a:hover {
-      text-decoration: underline;
-    }
-    .product-detail-gallery {
-      position: sticky;
-      top: 16px;
-    }
-    .product-detail-main-img {
-      width: 100%;
-      max-height: 420px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-      display: block;
-      background: #f5f5f5;
-    }
-    .product-detail-thumbs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 12px;
-    }
-    .product-detail-thumbs button {
-      padding: 0;
-      border: 2px solid transparent;
-      border-radius: 8px;
-      overflow: hidden;
-      cursor: pointer;
-      background: none;
-      opacity: 0.85;
-      transition: border-color 0.2s, opacity 0.2s;
-    }
-    .product-detail-thumbs button:hover,
-    .product-detail-thumbs button.is-active {
-      opacity: 1;
-      border-color: #1b6f9d;
-    }
-    .product-detail-thumbs img {
-      width: 72px;
-      height: 72px;
-      object-fit: cover;
-      display: block;
-    }
-    .product-detail-info h1 {
-      margin: 0 0 8px;
-      font-size: 1.75rem;
-      line-height: 1.25;
-    }
-    .product-detail-category {
-      display: inline-block;
-      font-size: 13px;
-      color: #1b6f9d;
-      background: #eef4fb;
-      padding: 4px 12px;
-      border-radius: 999px;
-      margin-bottom: 16px;
-    }
-    .product-detail-prices {
-      margin: 16px 0;
-      display: flex;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .product-detail-prices .price-was {
-      text-decoration: line-through;
-      color: #999;
-      font-size: 16px;
-    }
-    .product-detail-prices .sale-price {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #1b6f9d;
-    }
-    .product-detail-description {
-      color: #444;
-      line-height: 1.65;
-      font-size: 15px;
-      margin: 0 0 20px;
-    }
-    .product-detail-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
-    .product-detail-tags .tag {
-      background: #eef4fb;
-      color: #1b6f9d;
-      border-radius: 999px;
-      padding: 5px 10px;
-      font-size: 12px;
-    }
-    .product-detail-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .product-detail-actions .cta-button {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="product.css">
+  
 </head>
 <body>
   <nav class="site-nav">
-    <ul>
-      <li><a href="{home_url}/index.html">Trang chủ</a></li>
-      <li><a href="{home_url}/index.html#products">Sản phẩm</a></li>
-      <li><a href="{home_url}/index.html#faqs">Câu hỏi thường gặp</a></li>
+    <button class="burger-menu" id="burger-btn" aria-label="Toggle navigation">
+      ☰
+  </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Trang chủ</a></li>
+      <li><a href="#products">Sản phẩm</a></li>
+      <!-- <li><a href="#about">Về chúng tôi</a></li> -->
+      <li><a href="#faqs">Câu hỏi thường gặp</a></li>
       <li><a href="#footer">Liên hệ</a></li>
     </ul>
   </nav>
@@ -313,6 +193,13 @@
         }
       });
     }
+
+    const burgerBtn = document.getElementById('burger-btn');
+    const navLinks = document.getElementById('nav-links');
+
+    burgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
 
     renderSiteNav();
     renderProductDetail();

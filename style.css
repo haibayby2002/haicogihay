@@ -9,7 +9,7 @@ header {
     position: relative;
     color: #111;
     padding: 36px 18px;
-    min-height: 350px;
+    /* min-height: 350px; */
     display: flex;
     align-items: center;
     background-image: url("assets/store_image/hai_co_gi_hay_removed_bg.png");
@@ -55,6 +55,14 @@ header .header-brand {
     padding: 10px;
 }
 
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .site-nav {
     display: flex;
     justify-content: center;
@@ -63,7 +71,7 @@ header .header-brand {
     margin-bottom: 24px;
 }
 
-.site-nav ul {
+.nav-links {
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
@@ -113,6 +121,41 @@ header .header-brand {
 
 .site-nav a:hover {
     background: #f0f0f0;
+}
+
+@media (max-width: 576px) {
+  .site-nav {
+    display: flex;
+    justify-content: flex-start; /* Căn lề trái */
+    gap: 1rem; /* Khoảng cách giữa nút và logo */
+  } 
+  .burger-menu {
+    display: block;
+    order: -1; /* Đưa nút burger lên trước */
+  }
+
+  .logo {
+    order: 0; /* Logo sau nút burger */
+  }
+
+  .nav-links {
+    display: none; /* Ẩn mặc định */
+    flex-direction: row; /* Hiển thị theo hàng ngang */
+    
+    /* Vị trí xuất hiện */
+    position: sticky;
+    top: 100%;    /* Hiện ngay dưới thanh navbar */
+    left: 0;      /* Căn lề sát bên trái (ngay dưới nút burger) */
+    
+    
+    padding: 1rem;
+    z-index: 100;
+  }
+
+  /* Khi nhấn vào burger, class này được JS thêm vào */
+  .nav-links.active {
+    display: flex; 
+  }
 }
 
 .section-title {
@@ -505,6 +548,10 @@ footer a:hover {
         bottom: 90px;
         max-width: 180px;
     }
+}
+
+@media (min-width: 904px) {
+    
 }
 
 .fa {
