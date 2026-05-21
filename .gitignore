@@ -1,0 +1,6 @@
+data/
+scripts/
+archive/
+*.log
+*.tmp
+assets/product_image/*.jpg
