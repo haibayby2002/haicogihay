@@ -316,6 +316,12 @@ header p {
     color: #1b6f9d;
 }
 
+.product-info .sale-price {
+    /* font-size: 1.5rem; */
+    font-weight: 700;
+    color: #1b6f9d;
+}
+
 .product-info .tags {
     margin-top: 12px;
     display: flex;

@@ -1,13 +1,26 @@
 
 import re
 import unicodedata
+# from slugify import slugify
 
 def slugify(text, max_length=200):
-    text = unicodedata.normalize("NFKD", text)
-    text = re.compile(r"[^\x00-\x7f]+").sub("", text)
+    # 1. Chuyển thành chữ thường
     text = text.lower()
-    text = re.compile(r"[^a-z0-9]+").sub("-", text).strip("-")
-    return text[:max_length] or "-"
+    
+    # 2. Chuẩn hóa chuỗi (Unicode Normalization Form D) để tách ký tự và dấu
+    text = unicodedata.normalize('NFKD', text)
+    
+    # 3. Loại bỏ các dấu (combining characters)
+    text = "".join([c for c in text if not unicodedata.combining(c)])
+    
+    # 4. Thay thế các ký tự tiếng Việt đặc biệt khác nếu cần (ví dụ: đ -> d)
+    text = text.replace('đ', 'd')
+    
+    # 5. Thay thế các ký tự đặc biệt, khoảng trắng bằng dấu gạch ngang
+    text = re.sub(r'[^a-z0-9\s-]', '', text)
+    text = re.sub(r'[\s]+', '-', text).strip('-')
+    
+    return text[:max_length]
 
 
 def load_json(file_path):
