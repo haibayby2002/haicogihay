@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tạm biệt Wordpress - Vì sao mình chuyển sang content engine thay vì hệ thống back-end CMS — Hải có gì hay?</title>
+  <link rel="icon" href="../assets/store_image/logo_hai_co_gi_hay_removed_background.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <button class="burger-menu" id="burger-btn" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="../index.html#products">Sản phẩm</a></li>
+      <li><a href="./index.html#blogs">Blog</a></li>
+      <li><a href="index.html#faqs">Câu hỏi thường gặp</a></li>
+      <li><a href="index.html#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main class="container blog-page">
+    <section class="blog-hero">
+      <span class="blog-hero-badge">Bài viết mới</span>
+      <h1>Tạm biệt Wordpress - Vì sao mình chuyển sang content engine thay vì hệ thống back-end CMS</h1>
+      <p>Từng nghiên cứu Wordpress 5 năm và thực chiến 2 năm, cũng xuất bản được kha khá blog. Bản thân Hải thấy Wordpress đem lại rất nhiều trải nghiệm thú vị nơi blogger chỉ cần quan tâm tới tuyến nội dung và quản trị thay vì đầu tư nhiều thời gia...</p>
+      <div class="blog-meta">
+        <span><i class="fa-regular fa-calendar"></i> 24-05-2026</span>
+        <span><i class="fa-regular fa-edit"></i> 05-06-2026</span>
+        <span><i class="fa-regular fa-user"></i> Quý Hải Ng</span>
+        <span><i class="fa-solid fa-tag"></i> Công nghệ</span>
+      </div>
+    </section>
+
+    <section class="blog-shell">
+      <aside class="blog-sidebar">
+        <div class="toc">
+          <h2>Mục lục</h2>
+          <div class="toc">
+<ul>
+<li><a href="#tam-biet-wordpress-vi-sao-minh-chuyen-sang-content-engine-thay-vi-he-thong-back-end-cms">Tạm biệt Wordpress - Vì sao mình chuyển sang content engine thay vì hệ thống back-end CMS</a><ul>
+<li><a href="#khi-cms-khong-con-la-su-lua-chon-phu-hop-cho-1-ca-nhan">Khi CMS không còn là sự lựa chọn phù hợp cho 1 cá nhân</a><ul>
+<li><a href="#wordpress-la-mien-phi-nhung-cloud-host-thi-khong">Wordpress là miễn phí nhưng Cloud / Host thì không</a></li>
+<li><a href="#khi-nhung-plugin-tich-hop-lai-tro-thanh-van-e">Khi những plugin tích hợp lại trở thành vấn đề</a></li>
+<li><a href="#van-e-spam-binh-luan">Vấn đề spam bình luận</a></li>
+<li><a href="#van-e-migrate-du-lieu">Vấn đề migrate dữ liệu</a></li>
+</ul>
+</li>
+<li><a href="#wordpress-manh-nhung-khong-ca-nhan-hoa-tot">Wordpress mạnh nhưng không cá nhân hóa tốt</a></li>
+<li><a href="#1-ty-rui-ro-bao-mat-khi-lam-web-co-back-end-va-database">1 tỷ rủi ro bảo mật khi làm web có back-end và database</a></li>
+<li><a href="#cms-thi-van-can-quan-tri">CMS thì vẫn cần quản trị</a></li>
+<li><a href="#tinh-thang-ong-static-dynamic">Tĩnh thắng động (Static &gt; Dynamic)</a></li>
+<li><a href="#iem-yeu-cua-static-web-van-hanh-bang-content-engine">Điểm yếu của static web vận hành bằng content engine</a><ul>
+<li><a href="#thong-ke-luot-truy-cap-va-hanh-vi-nguoi-dung">Thống kê lượt truy cập và hành vi người dùng</a></li>
+<li><a href="#cho-phep-oc-gia-e-lai-binh-luan">Cho phép độc giả để lại bình luận</a></li>
+<li><a href="#noi-dung-khong-the-cap-nhat-theo-thoi-gian-thuc">Nội dung không thể cập nhật theo thời gian thực</a></li>
+</ul>
+</li>
+<li><a href="#tong-ket">Tổng kết</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+        </div>
+      </aside>
+
+      <article class="blog-post">
+        <h1 id="tam-biet-wordpress-vi-sao-minh-chuyen-sang-content-engine-thay-vi-he-thong-back-end-cms">Tạm biệt Wordpress - Vì sao mình chuyển sang content engine thay vì hệ thống back-end CMS</h1>
+<p>Từng nghiên cứu Wordpress 5 năm và thực chiến 2 năm, cũng xuất bản được kha khá blog. Bản thân Hải thấy Wordpress đem lại rất nhiều trải nghiệm thú vị nơi blogger chỉ cần quan tâm tới tuyến nội dung và quản trị thay vì đầu tư nhiều thời gian cho code, web, database, ...  Wordpress mang lại rất nhiều giá trị cho Hải. Với những anh em đã từng đau đầu hoặc đã trả giá vì hệ thống quản lý phân quyền, quản lý media, danh mục, bình luận,... thì sẽ hiểu rõ Wordpress có thể giúp anh em tiết kiệm cả tỷ đồng. Và trên hết nó là mã nguồn mở, miễn phí.</p>
+<h2 id="khi-cms-khong-con-la-su-lua-chon-phu-hop-cho-1-ca-nhan">Khi CMS không còn là sự lựa chọn phù hợp cho 1 cá nhân</h2>
+<p>Chỉ cần 1 vài cú click chuột là đã có 1 website giao diện ổn, trình soạn thảo blog, giao diện dashboard, tích hợp đủ thứ plugins. Anh em không cần lo về việc phân loại, hiển thị danh sách bài viết như thế nào? Vì đằng sau đó CMS đã làm đủ mọi thứ cho anh em. Wordpress hỗ trợ quản lý danh mục, danh mục con, quản lý bài viết theo thẻ tag, ngày đăng. Anh em thậm chí có thể tạo nhiều tài khoản cho đồng đội cùng cộng tác viết bài. Lúc đó Wordpress còn giúp anh em phân loại bài viết theo tác giả. </p>
+<h3 id="wordpress-la-mien-phi-nhung-cloud-host-thi-khong">Wordpress là miễn phí nhưng Cloud / Host thì không</h3>
+<p>Cá nhân mới bắt đầu viết blog luôn muốn lựa chọn giải pháp giá rẻ nhất có thể. Vì lúc mới bắt đầu, họ thường mơ hồ về đường dài, về việc coi đây là sở thích hay là công việc, về khả năng kiếm tiền từ viết blog. Vì thế, hầu hết sẽ quan tâm tới tổng chi phí để có trang web hiển thị và vận hành blog. Bây giờ hãy cùng tính toán một vài chi phí phổ biến khi làm blog hiện nay:
+- Tên miền (đuôi .com hoặc .vn)
+- Thuê web hosting hoặc cloud
+- Các chi phí phát sinh khác cho giải pháp bảo mật, backup, chống spam, ...</p>
+<p><strong>Về tên miền</strong>, đó là khoảng gần như là bắt buộc vì đó là thương hiệu, là sự định danh. Khi chưa có tiền, anh em có thể cân nhắc những tên miền miễn phí với đuôi <code>.dev</code>, <code>.github.io</code>. Còn muốn độc giả tin tưởng thương hiệu, 1 tên miền <code>.com</code> là bắt buộc. Hoặc có thể dùng tên miền <code>.vn</code> nếu ở Việt Nam. Như vậy nếu muốn tên miền <strong><em>định danh</em></strong>, anh em sẽ tốn khoảng 300.000VNĐ mỗi năm. </p>
+<p><strong>Về hosting</strong>, nếu sử dụng Wordpress, bắt buộc phải có database ở phía sau. Và vì thế, thuê host sẽ tốn từ 600.000VNĐ mỗi năm. Thuê cloud sẽ tốn trên dưới 1 triệu mỗi năm. Còn nếu chỉ cần dựng web tĩnh, chi phí có thể bằng 0 cho người mới bắt đầu. </p>
+<p><strong>Về các chi phí phát sinh</strong>, đây là khoản chi phí khó ước lượng nhất. Bởi nó phụ thuộc vào đơn vị cung cấp dịch vụ điện toán, lựa chọn phương án xây blog, lựa chọn tích hợp từ bên ngoài vào hay chọn bộ giải pháp toàn diện của 1 hệ sinh thái.</p>
+<p>Về cơ bản, làm blog 0 đồng chỉ có thể áp dụng khi anh em làm static web với tên miền miễn phí. Khi đã dùng Wordpress, anh em bắt buộc phải chi trả cho dịch vụ host hoặc cloud để đặt database.</p>
+<h3 id="khi-nhung-plugin-tich-hop-lai-tro-thanh-van-e">Khi những plugin tích hợp lại trở thành vấn đề</h3>
+<p>Để đáp ứng được nhu cầu người dùng nhiều nhất có thể, chỉ Wordpress core là không đủ. Vì thế, Wordpress sẽ cho phép nhiều người cùng cộng tác để tham gia phát triển plugin. Từ quản lý, tối ưu, khảo sát độc giả, tích hợp thương mại điện tử, tích hợp engine thống kê của Google,... Anh em hoàn toàn không cần tự build, chỉ cần tải xuống, tích hợp và cấu hình.</p>
+<p>Nhưng khi tích hợp càng nhiều plugin thì càng nhiều vấn đề sẽ xảy ra. 1 plugin có thể quản lý tài nguyên chung với Wordpress và các plugins khác. Nên việc update plugin làm hỏng layout hay việc update Wordpress làm plugin chết là chuyện bình thường. Các plugin không bắt buộc phải hiểu nhau, vì vậy nếu anh em quản lý plugin không tốt thì rất dễ xảy ra xung đột. Một plugin khi được kích hoạt có thể làm chậm website, tạo lỗ hổng bảo mật hoặc gây ra hiệu ứng domino lên các plugin khác.</p>
+<h3 id="van-e-spam-binh-luan">Vấn đề spam bình luận</h3>
+<p>Khi Hải mới viết được vài bài viết bằng Wordpress, nhìn thấy lượt bình luận nhảy lên vài chục nghìn, vài trăm nghìn, Hải đã nghĩ Hải là ngôi sao vì con số đó ngay cả những content-writers nhiều năm cũng phải mơ ước. Nhưng khi xem nội dung bình luận, chúng chỉ là những bình luận của ngôn ngữ nước ngoài, điều hướng tới trang web khác, kèm theo format rất quen thuộc, Hải bắt đầu nhận ra đó là spam.</p>
+<p>Lúc đầu Hải quyết định duyệt hết vì đằng nào web cũng ít traffic. Nhưng về sau Hải nhận ra mình cần phân loại bình luận spam để Hải có thể dành thời gian để đọc góp ý của độc giả thật, đồng thời làm web gọn gàng hơn. Hải cần những bình luận khen chê về bài viết để hiệu chỉnh và cải thiện cho những bài viết sau. Vì thế Hải cài plugin chống spam. Nhưng các plugin không thật sự hiệu quả như những gì Hải mong đợi. Các thuật toán nhận diện spam thời đó so với LLM ngày nay quả thật không thể bì tị và hoàn toàn không hiệu quả nếu so với LLM ngày nay. Và nhiều khi chúng lại vô tình xóa luôn bình luận thật. Chưa kể plugin hay gửi email thông báo spam cho Hải liên tục.</p>
+<p>Về sau Hải mới nhận ra phần lớn người đọc thật không comment, nếu họ thật sự thích bài viết hoặc muốn liên hệ tác giả, họ sẽ phản hồi email hoặc tin nhắn trực tiếp. Chỉ có các bot là hoạt động 24/7 khiến người thực sự bình luận bì chìm xuống. Với blog cá nhân, để lại email hoặc số điện thoại cho độc giả liên hệ lại khiến web quản lý hiệu quả hơn và người dùng trải nghiệm tốt hơn. Lúc đó, Hải chỉ cần thêm phản hồi của độc giả qua email vào cuối bài viết nếu độc giả đồng ý. Như vậy khiến cho web sạch hơn nhiều so với việc mở comment cho bất kỳ ai để lại bình luận.</p>
+<h3 id="van-e-migrate-du-lieu">Vấn đề migrate dữ liệu</h3>
+<p>Thoạt nghĩ qua thì câu chuyện di chuyển dữ liệu có vẻ đơn giản, chỉ việc bê dữ liệu từ chỗ này qua chỗ kia là xong. Nhưng bài viết được lưu trên Wordpress sẽ ràng buộc với tác giả, danh mục và bình luận. Vì thế cùng là bài viết nhưng schema có thể khác nhau. Khi xuất hàng loạt bài viết để migrate, việc bị vỡ nội dung, bị sai format, bị mất liên kết hình ảnh là chuyện có thể hiểu được. Lúc đó bắt buộc phải viết parser, converter, migration script hoặc content transformer để có thể đưa dữ liệu đúng khuôn.</p>
+<p>Khi bản thân Hải nhận ra bản thân việc parser, converter, transfomer chính là content-engine và điều đó là không tránh khỏi với web blog, thì toàn bộ bộ não đứng đằng sau blog thực chất có thể chỉ cần content-engine làm nhiệm vụ đọc nội dung, parse cấu trúc, chuẩn hóa dữ liệu, khớp nối các trường dữ liệu và render ra format mới. Đó là lúc Hải cảm thấy trình biên dịch (compiler) mạnh hơn hệ quản trị nội dung (CMS). Và trong thời đại AI / LLM phát triển mạnh mẽ như ngày nay, việc viết parser, render hay compiler ngày càng trở nên dễ dàng. </p>
+<h2 id="wordpress-manh-nhung-khong-ca-nhan-hoa-tot">Wordpress mạnh nhưng không cá nhân hóa tốt</h2>
+<p>Điểm mạnh đầu tiên của Wordpress là quản lý rất tốt thẻ tag và danh mục, giúp độc giả dễ dàng tìm bài viết, nhưng nó không thể thực hiện truy vấn riêng biệt mà Hải yêu cầu. Đã có lần Hải thử tạo series bài viết để độc giả dễ dàng tìm kiếm hơn kiểu như <code>Series Python</code> cơ bản hoặc <code>30 ngày làm dự án ABC với framework XYZ</code>,... Chúng không thể chia theo danh mục bởi vì danh mục rộng hơn thế. Chúng giống như playlist của Youtube. Hải không muốn gom hết chúng vào 1 bài viết mà phải chia ra để mỗi bài có độ dài vừa phải với độc giả. Nhưng Hải cũng biết rõ chỉ phân loại theo danh mục hoặc thẻ tag là không đủ. Hải muốn thêm vào danh sách thủ công hoặc là tự động thêm vào danh sách khi tiêu đề bắt đầu bằng từ khóa nhất định hoặc thỏa regex. Và danh sách đó cũng có id riêng và độc giả có quyền lọc tất cả bài viết trong series đó. Và tất cả các giải pháp Hải đã thử trên Wordpress ở thời điểm đó vẫn không thể đáp ứng được yêu cầu của Hải.</p>
+<p>Điểm mạnh thứ hai của Wordpress cho phép tự động thêm mục lục bài viết (TOC) ở đầu. Khi một bài viết trở nên dài hơn thì việc chia từng mục trong bài viết trở nên cần thiết và mục lục giúp anh em nhanh chóng đi đến nội dung quan tâm thay vì đọc những nội dung không cần thiết. Thời điểm đó, Hải luôn muốn blog của Hải có chất lượng tốt nhất nên muốn làm mục lục dính bên hông, tự động đánh dấu chỉ mục xanh ở phần mục tương ứng. Nhưng làm tính năng này không thể cấu hình thủ công mà phải chèn đoạn mã và phụ thuộc rất nhiều vào theme và plugin. Và vấn đề xung đột plugin với theme là chuyện rất bình thường. Một thứ Hải có thể giải quyết rất dễ dàng khi tự viết code blog thuần thì lại gặp khó khi sử dụng trên plugin và theme của Wordpress. Như đã đề cập ở trên, việc update phiên bản của Wordpress, theme hoặc plugin mà diễn ra không đồng bộ thì rất dễ gặp lỗi.</p>
+<p>Thực tế, dù Wordpress rất mạnh nhưng các trang báo lớn thường không sử dụng Wordpress vì các theme không đáp ứng đủ nhu cầu, và cấu hình trang thật sự chưa đủ mạnh.</p>
+<h2 id="1-ty-rui-ro-bao-mat-khi-lam-web-co-back-end-va-database">1 tỷ rủi ro bảo mật khi làm web có back-end và database</h2>
+<p>Khi một website bắt đầu có tính năng đăng nhập, phân quyền, giao diện admin, database, tải lên tập tin, tính năng bình luận, API, phiên đăng nhập (session) thì nó mở ra hàng loạt rủi ro có thể bị khai thác và tấn công. Và lúc đó Hải lại phải giành thời gian để tìm hiểu về các giải pháp chống brute-force, chống SQL-injection, giám sát request lạ, chống DDoS, back-up database,... trong khi mục đích ban đầu chỉ đơn giản là viết blog.</p>
+<p>Và từ lúc này Hải mới nhận ra cách bảo mật tốt nhất đôi khi không phải là thêm nhiều lớp bảo vệ hơn mà là giảm bớt thứ cần phải bảo vệ. Và câu này rất giống với câu nói mà Hải đã từng nghe từ thầy trước đây: "Hệ thống thông tin an toàn nhất là hệ thống không có thông tin". Làm sao 1 người có thể tấn công vào một hệ thống khi bên trong nó không chứa gì?</p>
+<h2 id="cms-thi-van-can-quan-tri">CMS thì vẫn cần quản trị</h2>
+<p>Khi dùng CMS, Hải vẫn phải quan tâm tới hosting, domain, backup, bảo mật, phân quyền, plugin, cập nhật phiên bản, tối ưu hiệu năng, xử lý spam, khắc phục sự cố. Nói cách khác, công việc lập trình gần như bằng không, nhưng công việc vận hành lại xuất hiện. </p>
+<p>Để thêm 1 tính năng mới, Hải không cần tự viết code từ đầu. Nhưng Hải vẫn phải tìm plugin phù hợp, đánh giá độ uy tín, kiểm tra tương thích, cấu hình và cập nhật định kỳ. Và khi website gặp sự cố, CMS cũng không tự sửa được mà bản thân vẫn phải tìm hiểu plugin nào gây lỗi, update nào vừa làm hỏng website, vì sao web vẫn bị spam. </p>
+<p>Điều này không phải điểm yếu của CMS. Thực ra đó chính là cái giá phải trả cho sự tiện lợi. CMS giúp người dùng không cần trở thành lập trình viên, nhưng chỉ cần tập trung viết blog đơn thuần là chưa đủ. Khi mục tiêu đơn giản chỉ là viết nội dung và xuất bản nội dung, một content engine tối giản đôi khi lại phù hợp hơn rất nhiều so với một CMS đầy đủ tính năng.</p>
+<h2 id="tinh-thang-ong-static-dynamic">Tĩnh thắng động (Static &gt; Dynamic)</h2>
+<p>Sau một thời gian làm web, Hải bắt đầu nhận ra một điều khá thú vị là nhiều website thực ra không cần phải lúc nào cũng đọc database. Một bài blog sau khi viết xong ít thay đổi, không cần realtime, không cần query database liên tục, không cần render động mỗi request thì việc chạy back-end framework, kết nối database và thực thi hàng loạt logic phía sau nó chỉ để trả về 1 bài viết gần như là không cần thiết</p>
+<p>Static site có vẻ đẹp rất riêng là đơn giản dễ hiểu, ít lỗi, dễ deploy trên bất cứ môi trường nào. Một file HTML tĩnh không query database, không chạy business logic, không cần ORM, không cần middleware, không cần auth flow phức tạp. Công việc của server chỉ đơn giản là trả file. Nhiều website cá nhân thực chất chỉ cần chuyển đổi file markdown để trả về HTML là đủ để phục vụ hàng chục nghìn lượt truy cập.</p>
+<p>Thật ra, công nghệ tốt không phải công nghệ làm được nhiều thứ nhất. Mà là công nghệ phù hợp nhất với bản chất của bài toán, giải quyết đúng nhu cầu của người dùng. </p>
+<h2 id="iem-yeu-cua-static-web-van-hanh-bang-content-engine">Điểm yếu của static web vận hành bằng content engine</h2>
+<p>Dù static web có nhiều ưu điểm về hiệu năng, chi phí và bảo mật, một số tính năng phổ biến trên các nền tảng CMS truyền thống sẽ khó triển khai hơn hoặc phải sử dụng giải pháp bên thứ ba.</p>
+<h3 id="thong-ke-luot-truy-cap-va-hanh-vi-nguoi-dung">Thống kê lượt truy cập và hành vi người dùng</h3>
+<p>Static web không có backend để tự ghi nhận dữ liệu truy cập. Nếu muốn biết có bao nhiêu người đọc bài viết, họ đến từ đâu, ở lại bao lâu hay bài viết nào được quan tâm nhất, chủ website thường phải tích hợp các dịch vụ phân tích của Google Analytics hoặc Cloudflare Analytics. Điều này đồng nghĩa với việc dữ liệu phân tích nằm trên hệ thống bên ngoài thay vì hoàn toàn do website kiểm soát. </p>
+<h3 id="cho-phep-oc-gia-e-lai-binh-luan">Cho phép độc giả để lại bình luận</h3>
+<p>Bình luận là một tính năng tưởng chừng đơn giản nhưng thực tế lại đòi hỏi rất nhiều thành phần phía server như lưu trữ dữ liệu, chống spam, kiểm duyệt nội dung và quản lý tài khoản người dùng. Tuy nhiên, khi bắt đầu thêm backend chỉ để phục vụ bình luận, website cũng bắt đầu đối mặt với các vấn đề như spam bot, lưu trữ dữ liệu, bảo mật và vận hành hệ thống. Đây chính là điều mà kiến trúc static web ban đầu cố gắng tránh.</p>
+<h3 id="noi-dung-khong-the-cap-nhat-theo-thoi-gian-thuc">Nội dung không thể cập nhật theo thời gian thực</h3>
+<p>Mỗi khi có bài viết mới hoặc thay đổi nội dung, website cần được build lại trước khi xuất bản. Với blog cá nhân điều này thường không thành vấn đề, nhưng với các hệ thống cần cập nhật liên tục theo thời gian thực như mạng xã hội, diễn đàn hoặc sàn thương mại điện tử, static web không phải là lựa chọn phù hợp.</p>
+<h2 id="tong-ket">Tổng kết</h2>
+<p>Static web vận hành bằng content engine không phải là giải pháp phù hợp cho mọi loại website. Nếu anh em đang xây dựng một mạng xã hội, diễn đàn, hay sàn thương mại điện tử với nhiều tương tác thời gian thực, việc sử dụng backend và database là điều bắt buộc. Tuy nhiên, đối với blog cá nhân, website giới thiệu doanh nghiệp, trang tài liệu kỹ thuật hoặc các hệ thống chủ yếu phục vụ việc đọc nội dung, static web lại mang đến nhiều lợi ích đáng kể. Website tải nhanh hơn, chi phí vận hành thấp hơn, ít phụ thuộc vào cơ sở dữ liệu và quan trọng nhất là giảm đáng kể rủi ro bị tấn công. </p>
+<p>Với 1 blogger, thay vì phải duy trì một CMS phức tạp với hàng loạt plugin, tài khoản quản trị, cơ sở dữ liệu và các bản vá bảo mật định kỳ, việc thuần tập trung vào sản xuất nội dung mới là ưu tiền hàng đầu. Toàn bộ quá trình còn lại được tự động hóa thông qua content engine để chuyển đổi cắt văn bản và nhúng vào các tập tin định dạng.</p>
+      </article>
+    </section>
+
+    <section class="related-section">
+      <h2>Bài viết bạn có thể quan tâm</h2>
+      <div class="related-grid">
+        <a class="related-card" href="#">
+          <span>Khám phá thêm</span>
+          <strong>5 cách tránh rơi vào vòng lặp phụ thuộc</strong>
+          <p>Giải pháp từ nhận diện sớm, thay thế dopamine lành mạnh và hỗ trợ cộng đồng.</p>
+        </a>
+        <a class="related-card" href="#">
+          <span>Đọc tiếp</span>
+          <strong>Những thói quen giúp tinh thần ổn định hơn</strong>
+          <p>Hướng dẫn thực tế để xây dựng nhịp sống cân bằng, ít căng thẳng và ít phụ thuộc vào cảm giác tức thì.</p>
+        </a>
+        <a class="related-card" href="#">
+          <span>Gợi ý</span>
+          <strong>Khám phá sản phẩm giúp hỗ trợ nếp sống lành mạnh</strong>
+          <p>Danh sách sản phẩm tiện ích, dễ dùng và phù hợp cho không gian làm việc và thư giãn.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên hệ</h2>
+        <p>Email: <a href="mailto:nguyenquyhai2002@gmail.com">nguyenquyhai2002@gmail.com</a></p>
+        <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
+        <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">https://zalo.me/0703017645</a></p>
+        <div class="footer-socials"></div>
+      </div>
+      <div class="footer-cta"></div>
+    </div>
+  </footer>
+
+  <a class="zalo-button" href="mailto:nguyenquyhai2002@gmail.com" target="_blank" rel="noreferrer noopener" aria-label="Liên hệ qua Email">
+    <img src="../assets/blog_image/ChatGPT Image Jun 5, 2026, 10_27_52 AM.png" alt="Email" width="64" height="64" />
+  </a>
+  <div class="zalo-bubble">Anh em muốn góp ý hoặc trao đổi thêm về bài viết, liên hệ qua nguyenquyhai2002@gmail.com</div>
+
+  <script>
+    // const storeData = {"name": "Blog Hải có gì hay?", "homepage": "http://haicogihay.com/", "description": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay không phải là nơi để chia sẻ những kiến thức chuyên sâu, mà là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về các chủ đề khác nhau, với mong muốn mang đến những điều thú vị và hữu ích cho độc giả.", "brand": {"name": "Hải có gì hay?", "logo": "assets/store_image/logo_hai_co_gi_hay_removed_background.png", "background": "assets/store_image/hai_co_gi_hay_removed_bg.png"}, "contact": {"email": "nguyenquyhai2002@gmail.com", "phone": "+84 703 016 645", "zalo": "https://zalo.me/0703017645", "facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay"}, "social_links": {"facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay", "youtube": "https://www.youtube.com/@haicogihay"}, "dear_readers": "Tri thức không chỉ phát triển nhờ sự đồng thuận tuyệt đối, mà nhờ những cuộc đối thoại tử tế. Vì vậy, mong anh em đọc bài viết như một góc nhìn để suy ngẫm, thay vì một kết luận cuối cùng. Mọi quan điểm ít nhiều đều mang dấu vết của trải nghiệm cá nhân. Mục đích của mỗi bài viết không phải là để ai đúng tuyệt đối, mà là liệu chúng ta có thể cùng nhau suy nghĩ sâu hơn sau mỗi bài viết hay không? Vì vậy, hãy đọc với tinh thần cởi mở và phản biện hoặc góp ý khi anh em có suy nghĩ khác nha! 🌿", "cta": {"subscribe": {"call": "Nếu anh em muốn nhanh chóng cập nhật bài viết mới từ blog Hải có gì hay, hãy đăng ký nhận thông báo để không bỏ lỡ những bài viết của Hải trong tương lai!", "action": "Đăng ký nhận thông báo", "link": "https://forms.gle/c8bUfvF6evuVDU2L8"}, "collaborate": {"call": "Anh em cũng có thể hợp tác với Hải để quảng bá doanh nghiệp. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo hoặc gmail để trao đổi kỹ hơn.", "action": "Liên hệ hợp tác", "link": "https://zalo.me/0703017645"}, "buy": {"call": "Anh em muốn góp ý, phản hồi bài viết? Liên hệ với Hải qua Gmail! nguyenquyhai2002@gmail.com", "action": "Phản hồi bài viết", "link": "mailto:nguyenquyhai2002@gmail.com"}}, "faqs": [{"id": 1, "question": "Blog Hải có gì hay?", "answer": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về nhiều chủ đề khác nhau, với mong muốn mang đến góc nhìn mới và hi vọng hữu ích cho độc giả."}, {"id": 2, "question": "Tôi có chủ đề nào đó muốn Hải viết bài về nó, tôi có thể đề xuất được không?", "answer": "Có, anh em hoàn toàn có thể đề xuất chủ đề mà anh em muốn Hải viết bài về nó. Nếu anh em có chủ đề nào đó mà anh em nghĩ sẽ có ích cho độc giả, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}, {"id": 3, "question": "Làm thế nào để nhận thông báo bài viết mới?", "answer": "Anh em có thể nhận thông báo bài viết mới bằng cách đăng ký nhận thông báo qua link: https://forms.gle/c8bUfvF6evuVDU2L8. Hải sẽ gửi thông báo đến anh em mỗi khi có bài viết mới được đăng trên blog."}, {"id": 4, "question": "Tôi có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay không?", "answer": "Có, anh em hoàn toàn có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}]}; {
+    //   brand: { name: 'Hải có gì hay?', logo: '../assets/store_image/logo_hai_co_gi_hay_removed_background.png' },
+    //   social_links: { facebook: 'https://www.facebook.com/profile.php?id=61590145161911', tiktok: 'https://www.tiktok.com/@haicogihay', youtube: 'https://www.youtube.com/@haicogihay' },
+    //   cta: {
+    //     subscribe: { call: 'Nếu anh em muốn nhanh chóng cập nhật sản phẩm mới từ cửa hàng Hải có gì hay, hãy đăng ký nhận tin để không bỏ lỡ những món đồ thú vị và tiện ích trong tương lai!', action: 'Đăng ký nhận tin', link: 'https://forms.gle/c8bUfvF6evuVDU2L8' },
+    //     collaborate: { call: 'Anh em cũng có thể hợp tác với Hải để niêm yết sản phẩm nếu anh em có sản phẩm hay muốn bán.', action: 'Liên hệ hợp tác', link: 'https://zalo.me/0703017645' }
+    //   },
+    //   buy: { call: 'Anh em muốn đặt hàng? Liên hệ với Hải qua Zalo! 0703.017.645', link: 'https://zalo.me/0703017645' }
+    // };
+    const storeData = {"name": "Blog Hải có gì hay?", "homepage": "http://haicogihay.com/", "description": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay không phải là nơi để chia sẻ những kiến thức chuyên sâu, mà là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về các chủ đề khác nhau, với mong muốn mang đến những điều thú vị và hữu ích cho độc giả.", "brand": {"name": "Hải có gì hay?", "logo": "assets/store_image/logo_hai_co_gi_hay_removed_background.png", "background": "assets/store_image/hai_co_gi_hay_removed_bg.png"}, "contact": {"email": "nguyenquyhai2002@gmail.com", "phone": "+84 703 016 645", "zalo": "https://zalo.me/0703017645", "facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay"}, "social_links": {"facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay", "youtube": "https://www.youtube.com/@haicogihay"}, "dear_readers": "Tri thức không chỉ phát triển nhờ sự đồng thuận tuyệt đối, mà nhờ những cuộc đối thoại tử tế. Vì vậy, mong anh em đọc bài viết như một góc nhìn để suy ngẫm, thay vì một kết luận cuối cùng. Mọi quan điểm ít nhiều đều mang dấu vết của trải nghiệm cá nhân. Mục đích của mỗi bài viết không phải là để ai đúng tuyệt đối, mà là liệu chúng ta có thể cùng nhau suy nghĩ sâu hơn sau mỗi bài viết hay không? Vì vậy, hãy đọc với tinh thần cởi mở và phản biện hoặc góp ý khi anh em có suy nghĩ khác nha! 🌿", "cta": {"subscribe": {"call": "Nếu anh em muốn nhanh chóng cập nhật bài viết mới từ blog Hải có gì hay, hãy đăng ký nhận thông báo để không bỏ lỡ những bài viết của Hải trong tương lai!", "action": "Đăng ký nhận thông báo", "link": "https://forms.gle/c8bUfvF6evuVDU2L8"}, "collaborate": {"call": "Anh em cũng có thể hợp tác với Hải để quảng bá doanh nghiệp. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo hoặc gmail để trao đổi kỹ hơn.", "action": "Liên hệ hợp tác", "link": "https://zalo.me/0703017645"}, "buy": {"call": "Anh em muốn góp ý, phản hồi bài viết? Liên hệ với Hải qua Gmail! nguyenquyhai2002@gmail.com", "action": "Phản hồi bài viết", "link": "mailto:nguyenquyhai2002@gmail.com"}}, "faqs": [{"id": 1, "question": "Blog Hải có gì hay?", "answer": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về nhiều chủ đề khác nhau, với mong muốn mang đến góc nhìn mới và hi vọng hữu ích cho độc giả."}, {"id": 2, "question": "Tôi có chủ đề nào đó muốn Hải viết bài về nó, tôi có thể đề xuất được không?", "answer": "Có, anh em hoàn toàn có thể đề xuất chủ đề mà anh em muốn Hải viết bài về nó. Nếu anh em có chủ đề nào đó mà anh em nghĩ sẽ có ích cho độc giả, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}, {"id": 3, "question": "Làm thế nào để nhận thông báo bài viết mới?", "answer": "Anh em có thể nhận thông báo bài viết mới bằng cách đăng ký nhận thông báo qua link: https://forms.gle/c8bUfvF6evuVDU2L8. Hải sẽ gửi thông báo đến anh em mỗi khi có bài viết mới được đăng trên blog."}, {"id": 4, "question": "Tôi có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay không?", "answer": "Có, anh em hoàn toàn có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}]};
+    function renderSocialLinks() {
+      const footerSocials = document.querySelector('.footer-socials');
+      if (!footerSocials) return;
+      const icons = { facebook: 'fab fa-facebook-f', tiktok: 'fab fa-tiktok', youtube: 'fab fa-youtube' };
+      footerSocials.innerHTML = Object.entries(storeData.social_links || {}).map(([platform, url]) => `
+        <a href="${url}" class="social-icon ${icons[platform] || ''}" target="_blank" rel="noreferrer noopener" aria-label="${platform.charAt(0).toUpperCase() + platform.slice(1)}"></a>
+      `).join('');
+    }
+
+    const relatedPostsData = [{"title": "Tâm lý học blogger - Tại sao Hải viết blog?", "status": "done", "category": "Tâm lý", "tags": ["web", "blog"], "slug": "tam-ly-hoc-blogger---tai-sao-hai-viet-blog", "created_time": "01-06-2026", "updated_time": "05-06-2026", "excerpt": "Hôm nay, Hải vào xem lại trận Argentina gặp Pháp vào mùa World Cup năm 2018. Đó là năm Mbappe 19 tuổi và đã khiến Messi dừng bước với 1 kiến tạo Penalty và ghi 2 bàn thắng. Tất cả những phút chạy của Mbappe đều được tường thuật trực tiếp và..."}, {"title": "Tâm lý học của người lười nhưng tham vọng lớn", "status": "done", "category": "Tâm lý", "slug": "tam-ly-hoc-cua-nguoi-luoi-nhung-tham-vong-lon", "created_time": "26-05-2026", "updated_time": "05-06-2026", "excerpt": "Theo lẽ thường, người lười thường sẽ chọn sống yên ổn thay vì tham vọng còn người đã tham vọng thì không được phép lười biếng. Nhưng có 1 kiểu tâm lý nghe qua có vẻ lạ vì nó khá đặc biệt và giống như đang trêu đùa logic nhưng nó vẫn đang xu...", "tags": []}, {"title": "Tâm lý học FOMO", "status": "done", "category": "Tâm lý", "tags": ["fomo"], "slug": "tam-ly-hoc-fomo", "created_time": "28-05-2026", "updated_time": "05-06-2026", "excerpt": "Từ thời nguyên thủy, con người đã luôn sợ bỏ lỡ. Nếu bộ lạc săn được thức ăn mà 1 cá thể trong bầy không biết, cá thể đó có thể bị đói. Nếu 1 thành viên nào trong bầy người nguyên thủy bỏ lỡ việc di dời theo bầy vì thời tiết cực đoan, thành..."}];
+
+    function renderFooterCTA() {
+      const footerCTA = document.querySelector('.footer-cta');
+      if (!footerCTA) return;
+      footerCTA.innerHTML = `
+        <h2>Quan tâm Blog</h2>
+        <p>${storeData.cta.subscribe.call}</p>
+        <p style="margin-top: 16px;">${storeData.cta.collaborate.call}</p>
+        <ul class="footer-cta-list" style="margin-top: 16px; list-style: none; padding: 0;">
+          <li><a class="cta-button" href="${storeData.cta.subscribe.link}" target="_blank" rel="noreferrer noopener">${storeData.cta.subscribe.action}</a></li>
+          <li><a class="cta-button" href="${storeData.cta.collaborate.link}" target="_blank" rel="noreferrer noopener">${storeData.cta.collaborate.action}</a></li>
+        </ul>
+      `;
+    }
+
+    function renderZaloBuy() {
+      const zaloButton = document.querySelector('.zalo-button');
+      const bubble = document.querySelector('.zalo-bubble');
+      if (zaloButton && storeData.buy?.link) zaloButton.href = storeData.buy.link;
+      if (bubble && storeData.buy?.call) bubble.textContent = storeData.buy.call;
+    }
+
+    const typeOfRelatedMess = [
+      "Khám phá thêm",
+      "Đọc tiếp",
+      "Gợi ý"
+    ];
+
+    function renderRelatedPosts() {
+      const relatedSection = document.querySelector('.related-section .related-grid');
+      if (!relatedSection || !relatedPostsData.length) return;
+      relatedSection.innerHTML = relatedPostsData.map(post => `
+        <a class="related-card" href="${post.slug}.html">
+          <span>${typeOfRelatedMess[Math.floor(Math.random() * typeOfRelatedMess.length)]}</span>
+          <strong>${post.title}</strong>
+          <p>${post.excerpt}</p>
+        </a>
+      `).join('');
+    }
+
+    renderSocialLinks();
+    renderFooterCTA();
+    renderZaloBuy();
+    renderRelatedPosts();
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{POST_TITLE}} — Hải có gì hay?</title>
+  <link rel="icon" href="../assets/store_image/logo_hai_co_gi_hay_removed_background.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <button class="burger-menu" id="burger-btn" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="../index.html#products">Sản phẩm</a></li>
+      <li><a href="./index.html#blogs">Blog</a></li>
+      <li><a href="index.html#faqs">Câu hỏi thường gặp</a></li>
+      <li><a href="index.html#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <main class="container blog-page">
+    <section class="blog-hero">
+      <span class="blog-hero-badge">Bài viết mới</span>
+      <h1>{{POST_TITLE}}</h1>
+      <p>{{POST_EXCERPT}}</p>
+      <div class="blog-meta">
+        <span><i class="fa-regular fa-calendar"></i> {{POST_DATE}}</span>
+        <span><i class="fa-regular fa-edit"></i> {{POST_UPDATED}}</span>
+        <span><i class="fa-regular fa-user"></i> {{POST_AUTHOR}}</span>
+        <span><i class="fa-solid fa-tag"></i> {{POST_CATEGORY}}</span>
+      </div>
+    </section>
+
+    <section class="blog-shell">
+      <aside class="blog-sidebar">
+        <div class="toc">
+          <h2>Mục lục</h2>
+          {{TOC_HTML}}
+        </div>
+      </aside>
+
+      <article class="blog-post">
+        {{POST_CONTENT}}
+      </article>
+    </section>
+
+    <section class="related-section">
+      <h2>Bài viết bạn có thể quan tâm</h2>
+      <div class="related-grid">
+        <a class="related-card" href="#">
+          <span>Khám phá thêm</span>
+          <strong>5 cách tránh rơi vào vòng lặp phụ thuộc</strong>
+          <p>Giải pháp từ nhận diện sớm, thay thế dopamine lành mạnh và hỗ trợ cộng đồng.</p>
+        </a>
+        <a class="related-card" href="#">
+          <span>Đọc tiếp</span>
+          <strong>Những thói quen giúp tinh thần ổn định hơn</strong>
+          <p>Hướng dẫn thực tế để xây dựng nhịp sống cân bằng, ít căng thẳng và ít phụ thuộc vào cảm giác tức thì.</p>
+        </a>
+        <a class="related-card" href="#">
+          <span>Gợi ý</span>
+          <strong>Khám phá sản phẩm giúp hỗ trợ nếp sống lành mạnh</strong>
+          <p>Danh sách sản phẩm tiện ích, dễ dùng và phù hợp cho không gian làm việc và thư giãn.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên hệ</h2>
+        <p>Email: <a href="mailto:nguyenquyhai2002@gmail.com">nguyenquyhai2002@gmail.com</a></p>
+        <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
+        <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">https://zalo.me/0703017645</a></p>
+        <div class="footer-socials"></div>
+      </div>
+      <div class="footer-cta"></div>
+    </div>
+  </footer>
+
+  <a class="zalo-button" href="mailto:nguyenquyhai2002@gmail.com" target="_blank" rel="noreferrer noopener" aria-label="Liên hệ qua Email">
+    <img src="../assets/blog_image/ChatGPT Image Jun 5, 2026, 10_27_52 AM.png" alt="Email" width="64" height="64" />
+  </a>
+  <div class="zalo-bubble">Anh em muốn góp ý hoặc trao đổi thêm về bài viết, liên hệ qua nguyenquyhai2002@gmail.com</div>
+
+  <script>
+    // const storeData = {{BLOG_DATA}}; {
+    //   brand: { name: 'Hải có gì hay?', logo: '../assets/store_image/logo_hai_co_gi_hay_removed_background.png' },
+    //   social_links: { facebook: 'https://www.facebook.com/profile.php?id=61590145161911', tiktok: 'https://www.tiktok.com/@haicogihay', youtube: 'https://www.youtube.com/@haicogihay' },
+    //   cta: {
+    //     subscribe: { call: 'Nếu anh em muốn nhanh chóng cập nhật sản phẩm mới từ cửa hàng Hải có gì hay, hãy đăng ký nhận tin để không bỏ lỡ những món đồ thú vị và tiện ích trong tương lai!', action: 'Đăng ký nhận tin', link: 'https://forms.gle/c8bUfvF6evuVDU2L8' },
+    //     collaborate: { call: 'Anh em cũng có thể hợp tác với Hải để niêm yết sản phẩm nếu anh em có sản phẩm hay muốn bán.', action: 'Liên hệ hợp tác', link: 'https://zalo.me/0703017645' }
+    //   },
+    //   buy: { call: 'Anh em muốn đặt hàng? Liên hệ với Hải qua Zalo! 0703.017.645', link: 'https://zalo.me/0703017645' }
+    // };
+    const storeData = {{BLOG_DATA}};
+    function renderSocialLinks() {
+      const footerSocials = document.querySelector('.footer-socials');
+      if (!footerSocials) return;
+      const icons = { facebook: 'fab fa-facebook-f', tiktok: 'fab fa-tiktok', youtube: 'fab fa-youtube' };
+      footerSocials.innerHTML = Object.entries(storeData.social_links || {}).map(([platform, url]) => `
+        <a href="${url}" class="social-icon ${icons[platform] || ''}" target="_blank" rel="noreferrer noopener" aria-label="${platform.charAt(0).toUpperCase() + platform.slice(1)}"></a>
+      `).join('');
+    }
+
+    const relatedPostsData = {{RELATED_POSTS}};
+
+    function renderFooterCTA() {
+      const footerCTA = document.querySelector('.footer-cta');
+      if (!footerCTA) return;
+      footerCTA.innerHTML = `
+        <h2>Quan tâm Blog</h2>
+        <p>${storeData.cta.subscribe.call}</p>
+        <p style="margin-top: 16px;">${storeData.cta.collaborate.call}</p>
+        <ul class="footer-cta-list" style="margin-top: 16px; list-style: none; padding: 0;">
+          <li><a class="cta-button" href="${storeData.cta.subscribe.link}" target="_blank" rel="noreferrer noopener">${storeData.cta.subscribe.action}</a></li>
+          <li><a class="cta-button" href="${storeData.cta.collaborate.link}" target="_blank" rel="noreferrer noopener">${storeData.cta.collaborate.action}</a></li>
+        </ul>
+      `;
+    }
+
+    function renderZaloBuy() {
+      const zaloButton = document.querySelector('.zalo-button');
+      const bubble = document.querySelector('.zalo-bubble');
+      if (zaloButton && storeData.buy?.link) zaloButton.href = storeData.buy.link;
+      if (bubble && storeData.buy?.call) bubble.textContent = storeData.buy.call;
+    }
+
+    const typeOfRelatedMess = [
+      "Khám phá thêm",
+      "Đọc tiếp",
+      "Gợi ý"
+    ];
+
+    function renderRelatedPosts() {
+      const relatedSection = document.querySelector('.related-section .related-grid');
+      if (!relatedSection || !relatedPostsData.length) return;
+      relatedSection.innerHTML = relatedPostsData.map(post => `
+        <a class="related-card" href="${post.slug}.html">
+          <span>${typeOfRelatedMess[Math.floor(Math.random() * typeOfRelatedMess.length)]}</span>
+          <strong>${post.title}</strong>
+          <p>${post.excerpt}</p>
+        </a>
+      `).join('');
+    }
+
+    renderSocialLinks();
+    renderFooterCTA();
+    renderZaloBuy();
+    renderRelatedPosts();
+  </script>
+</body>
+</html>

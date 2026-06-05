@@ -140,5 +140,16 @@
       "/assets/product_image/bang-lo-4.webp"
     ],
     "tags": ["đồ gia dụng", "pegboard", "treo tường", "decor"]
+  },
+  {
+    "id": 10,
+    "name": "Áo thể dục Bách Khoa TPHCM cũ (limited)",
+    "category": "Thời trang",
+    "price": 32900000000,
+    "sale_price": 29900000000,
+    "description": "Áo thể dục polo cũ của trường Bách Khoa TPHCM đã ngưng sản xuất từ năm 2019, phiên bản limited, độ hiếm cực cao. Dành cho những ai muốn sở hữu một món đồ cổ và mang đậm dấu ấn sinh viên Bách Khoa. Áo được làm từ chất liệu vải cao cấp, thoáng mát, phù hợp để mặc trong các hoạt động thể dục thể thao hoặc làm áo thun hàng ngày. Với thiết kế đơn giản nhưng tinh tế, áo thể dục Bách Khoa TPHCM cũ là sự lựa chọn hoàn hảo để hoàn thành bộ sưu tập và phong cách thời trang cá nhân.",
+    "image": "/assets/product_image/ao-bk-1.webp",
+    "more_images": [],
+    "tags": ["thời trang", "thể dục", "bách khoa", "limited"]
   }
 ]

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Hải có gì hay?</title>
+  <link rel="icon" href="../assets/store_image/logo_hai_co_gi_hay_removed_background.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <button class="burger-menu" id="burger-btn" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="../index.html#products">Sản phẩm</a></li>
+      <li><a href="./index.html#blogs">Blog</a></li>
+      <li><a href="index.html#faqs">Câu hỏi thường gặp</a></li>
+      <li><a href="index.html#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero-header blog-hero-header">
+    <div class="container header-inner">
+      <div class="header-brand">
+        <a id="page_address" href="../index.html">
+          <img id="logo" alt="Hải có gì hay logo" />
+        </a>
+      </div>
+      <div class="hero-copy">
+        <!-- <p class="eyebrow">Blog & Góc nhìn</p> -->
+        <h1>Các độc giả thân mến!</h1>
+        <p id="blogIntro">Tìm nhanh bài viết bạn muốn đọc, lọc theo chủ đề và sắp xếp theo tên, ngày cập nhật hoặc danh mục.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="blogs" class="products-section">
+      <div class="section-title">Bài viết nổi bật</div>
+      <div class="toolbar">
+        <div class="search">
+          <label for="searchInput">🔎 Tìm kiếm</label>
+          <input id="searchInput" type="search" placeholder="Tìm bài viết theo tiêu đề hoặc mô tả..." />
+        </div>
+        <div class="filter">
+          <label for="categoryFilter">📚 Danh mục</label>
+          <select id="categoryFilter">
+            <option value="all">Tất cả danh mục</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="sortCriteria">📊 Sắp xếp theo</label>
+          <div class="sort-control">
+            <select id="sortCriteria">
+              <option value="title" selected>Tiêu đề</option>
+              <option value="updated_time">Ngày cập nhật</option>
+              <option value="category">Danh mục</option>
+            </select>
+            <button id="sortToggle" class="sort-toggle" type="button" aria-label="Sort descending">
+              <span class="sort-icon">▲</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="products-grid blog-grid" id="blogGrid"></div>
+    </section>
+
+    <section id="faqs" class="faqs-section">
+      <div class="section-title">Câu hỏi thường gặp</div>
+      <div class="faqs-container" id="faqsContainer"></div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên hệ</h2>
+        <p>Email: <a href="mailto:nguyenquyhai2002@gmail.com">nguyenquyhai2002@gmail.com</a></p>
+        <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
+        <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">https://zalo.me/0703017645</a></p>
+        <div class="footer-socials"></div>
+      </div>
+      <div class="footer-cta"></div>
+    </div>
+  </footer>
+
+  <a class="zalo-button" href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener" aria-label="Liên hệ qua Zalo">
+    <img src="../assets/blog_image/ChatGPT Image Jun 5, 2026, 10_27_52 AM.png" alt="Zalo" width="64" height="64" />
+  </a>
+  <div class="zalo-bubble">Anh em muốn góp ý hoặc trao đổi thêm về bài viết, liên hệ qua nguyenquyhai2002@gmail.com</div>
+
+  <script>
+    const storeData = {"name": "Blog Hải có gì hay?", "homepage": "http://haicogihay.com/", "description": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay không phải là nơi để chia sẻ những kiến thức chuyên sâu, mà là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về các chủ đề khác nhau, với mong muốn mang đến những điều thú vị và hữu ích cho độc giả.", "brand": {"name": "Hải có gì hay?", "logo": "assets/store_image/logo_hai_co_gi_hay_removed_background.png", "background": "assets/store_image/hai_co_gi_hay_removed_bg.png"}, "contact": {"email": "nguyenquyhai2002@gmail.com", "phone": "+84 703 016 645", "zalo": "https://zalo.me/0703017645", "facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay"}, "social_links": {"facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay", "youtube": "https://www.youtube.com/@haicogihay"}, "dear_readers": "Tri thức không chỉ phát triển nhờ sự đồng thuận tuyệt đối, mà nhờ những cuộc đối thoại tử tế. Vì vậy, mong anh em đọc bài viết như một góc nhìn để suy ngẫm, thay vì một kết luận cuối cùng. Mọi quan điểm ít nhiều đều mang dấu vết của trải nghiệm cá nhân. Mục đích của mỗi bài viết không phải là để ai đúng tuyệt đối, mà là liệu chúng ta có thể cùng nhau suy nghĩ sâu hơn sau mỗi bài viết hay không? Vì vậy, hãy đọc với tinh thần cởi mở và phản biện hoặc góp ý khi anh em có suy nghĩ khác nha! 🌿", "cta": {"subscribe": {"call": "Nếu anh em muốn nhanh chóng cập nhật bài viết mới từ blog Hải có gì hay, hãy đăng ký nhận thông báo để không bỏ lỡ những bài viết của Hải trong tương lai!", "action": "Đăng ký nhận thông báo", "link": "https://forms.gle/c8bUfvF6evuVDU2L8"}, "collaborate": {"call": "Anh em cũng có thể hợp tác với Hải để quảng bá doanh nghiệp. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo hoặc gmail để trao đổi kỹ hơn.", "action": "Liên hệ hợp tác", "link": "https://zalo.me/0703017645"}, "buy": {"call": "Anh em muốn góp ý, phản hồi bài viết? Liên hệ với Hải qua Gmail! nguyenquyhai2002@gmail.com", "action": "Phản hồi bài viết", "link": "mailto:nguyenquyhai2002@gmail.com"}}, "faqs": [{"id": 1, "question": "Blog Hải có gì hay?", "answer": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về nhiều chủ đề khác nhau, với mong muốn mang đến góc nhìn mới và hi vọng hữu ích cho độc giả."}, {"id": 2, "question": "Tôi có chủ đề nào đó muốn Hải viết bài về nó, tôi có thể đề xuất được không?", "answer": "Có, anh em hoàn toàn có thể đề xuất chủ đề mà anh em muốn Hải viết bài về nó. Nếu anh em có chủ đề nào đó mà anh em nghĩ sẽ có ích cho độc giả, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}, {"id": 3, "question": "Làm thế nào để nhận thông báo bài viết mới?", "answer": "Anh em có thể nhận thông báo bài viết mới bằng cách đăng ký nhận thông báo qua link: https://forms.gle/c8bUfvF6evuVDU2L8. Hải sẽ gửi thông báo đến anh em mỗi khi có bài viết mới được đăng trên blog."}, {"id": 4, "question": "Tôi có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay không?", "answer": "Có, anh em hoàn toàn có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}]};
+    const blogs = [{"title": "Tạm biệt Wordpress - Vì sao mình chuyển sang content engine thay vì hệ thống back-end CMS", "category": "Công nghệ", "tags": ["web", "tech", "wp"], "date": "2026-05-24", "thumbnail": "assets\\blog_image\\say_bye_word_press.png", "status": "done", "slug": "tam-biet-wordpress---vi-sao-minh-chuyen-sang-content-engine-thay-vi-he-thong-back-end-cms", "created_time": "24-05-2026", "updated_time": "05-06-2026", "excerpt": "Từng nghiên cứu Wordpress 5 năm và thực chiến 2 năm, cũng xuất bản được kha khá blog. Bản thân Hải thấy Wordpress đem lại rất nhiều trải nghiệm thú vị nơi blogger chỉ cần quan tâm tới tuyến nội dung và quản trị thay vì đầu tư nhiều thời gia..."}, {"title": "Tâm lý học blogger - Tại sao Hải viết blog?", "status": "done", "category": "Tâm lý", "tags": ["web", "blog"], "slug": "tam-ly-hoc-blogger---tai-sao-hai-viet-blog", "created_time": "01-06-2026", "updated_time": "05-06-2026", "excerpt": "Hôm nay, Hải vào xem lại trận Argentina gặp Pháp vào mùa World Cup năm 2018. Đó là năm Mbappe 19 tuổi và đã khiến Messi dừng bước với 1 kiến tạo Penalty và ghi 2 bàn thắng. Tất cả những phút chạy của Mbappe đều được tường thuật trực tiếp và..."}, {"title": "Tâm lý học của người lười nhưng tham vọng lớn", "status": "done", "category": "Tâm lý", "slug": "tam-ly-hoc-cua-nguoi-luoi-nhung-tham-vong-lon", "created_time": "26-05-2026", "updated_time": "05-06-2026", "excerpt": "Theo lẽ thường, người lười thường sẽ chọn sống yên ổn thay vì tham vọng còn người đã tham vọng thì không được phép lười biếng. Nhưng có 1 kiểu tâm lý nghe qua có vẻ lạ vì nó khá đặc biệt và giống như đang trêu đùa logic nhưng nó vẫn đang xu...", "tags": []}, {"title": "Tâm lý học FOMO", "status": "done", "category": "Tâm lý", "tags": ["fomo"], "slug": "tam-ly-hoc-fomo", "created_time": "28-05-2026", "updated_time": "05-06-2026", "excerpt": "Từ thời nguyên thủy, con người đã luôn sợ bỏ lỡ. Nếu bộ lạc săn được thức ăn mà 1 cá thể trong bầy không biết, cá thể đó có thể bị đói. Nếu 1 thành viên nào trong bầy người nguyên thủy bỏ lỡ việc di dời theo bầy vì thời tiết cực đoan, thành..."}, {"title": "Tâm lý học ngành bột mì", "author": "Quý Hải Ng", "status": "done", "category": "Tâm lý", "tags": ["bột mì"], "thumbnail": "assets\\blog_image\\drug_psycology.png", "slug": "tam-ly-hoc-nganh-bot-mi", "created_time": "28-05-2026", "updated_time": "05-06-2026", "excerpt": "Chỉ trong 1 thời gian ngắn trước lúc Hải viết bài này, đã có rất nhiều người nhận kết quả test dương tính với bột mì. Trong số đó có cả những người nổi tiếng, có sức ảnh hưởng. Đa phần chúng ta đều thắc mắc tại sao những người đã giàu, đã c..."}, {"title": "Tâm lý học nhà thầu", "author": "Quý Hải Ng", "status": "done", "category": "Tâm lý", "tags": ["thầu", "dự án"], "slug": "tam-ly-hoc-nha-thau", "created_time": "26-05-2026", "updated_time": "05-06-2026", "excerpt": "Trước khi bắt đầu bài viết, Hải muốn lưu ý rằng đấu thầu và quản lý dự án là lĩnh vực cực kỳ rộng. Mỗi người tham gia dự án đều đứng ở một vị trí khác nhau nên sẽ nhìn thấy những vấn đề khác nhau. Một chủ đầu tư sẽ có góc nhìn khác nhà thầu..."}, {"title": "Điều mà nhà trường không bao giờ nói với anh em", "status": "done", "category": "Kinh tế", "slug": "dieu-ma-nha-truong-khong-bao-gio-noi-voi-anh-em", "created_time": "25-05-2026", "updated_time": "05-06-2026", "excerpt": "Hầu hết chúng ta được dạy rằng, phải học thật giỏi, thi vào những trường tốt nhất thì mới có cơ hội vào được 1 công ty tốt. Sau đó làm việc thật chăm chỉ, 8 tiếng mỗi ngày, 5 ngày mỗi tuần, có thể chủ động xin tăng ca để tích lũy thêm tiền...", "tags": []}];
+
+    const blogGrid = document.getElementById('blogGrid');
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const sortCriteria = document.getElementById('sortCriteria');
+    const sortToggle = document.getElementById('sortToggle');
+    let sortOrder = 'asc';
+
+    function limitText(text, maxLength = 160) {
+      if (typeof text !== 'string') return '';
+      return text.length <= maxLength ? text : text.slice(0, maxLength).trimEnd() + '...';
+    }
+
+    function formatDate(value) {
+      if (!value) return 'Chưa cập nhật';
+      return value;
+    }
+
+    function resolveAsset(pathValue) {
+      if (!pathValue) return '';
+      if (/^https?:\/\//i.test(pathValue) || pathValue.startsWith('data:')) return pathValue;
+      if (pathValue.startsWith('./') || pathValue.startsWith('../') || pathValue.startsWith('/')) return pathValue;
+      return '../' + pathValue;
+    }
+
+    function getThumbnail(post) {
+      const candidate = post.thumbnail || post.image || post.cover || '';
+      if (!candidate) return '';
+      return resolveAsset(candidate);
+    }
+
+    function hasThumbnail(post) {
+      return Boolean(post.thumbnail || post.image || post.cover);
+    }
+
+    function renderHeader() {
+      const pageAddress = document.getElementById('page_address');
+      if (pageAddress) pageAddress.href = storeData.homepage || '../index.html';
+      const logo = document.getElementById('logo');
+      if (logo) {
+        logo.src = resolveAsset((storeData.brand && storeData.brand.logo) || 'assets/store_image/logo_hai_co_gi_hay_removed_background.png');
+        logo.alt = (storeData.brand && storeData.brand.name) || 'Hải có gì hay';
+      }
+      const intro = document.getElementById('blogIntro');
+      if (intro) intro.textContent = storeData.dear_readers || 'Tìm nhanh bài viết bạn muốn đọc.';
+    }
+
+    function renderCategoryOptions() {
+      const categories = [...new Set(blogs
+        .map(post => (post.category || 'Chưa phân loại').trim())
+        .filter(Boolean))];
+      categoryFilter.innerHTML = '<option value="all">Tất cả danh mục</option>' +
+        categories.map(cat => `<option value="${cat}">${cat}</option>`).join('');
+    }
+
+    function renderCards(items) {
+      blogGrid.innerHTML = items.map(post => {
+        const thumb = hasThumbnail(post) ? `<a href="./${post.slug}.html" class="blog-thumb-link"><img src="${getThumbnail(post)}" alt="${post.title}" /></a>` : '';
+        return `
+          <article class="blog-card ${hasThumbnail(post) ? 'blog-card--with-thumb' : 'blog-card--text-only'}">
+            ${thumb}
+            <div class="blog-card-body">
+              <p class="blog-card-meta">${post.category || 'Chưa phân loại'} · ${formatDate(post.updated_time || post.created_time)}</p>
+              <h2><a href="./${post.slug}.html">${post.title}</a></h2>
+              <p class="blog-card-excerpt">${limitText(post.excerpt || post.description || '')}</p>
+              <div class="tags">${(post.tags || []).slice(0, 4).map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
+              <a class="blog-read-more" href="./${post.slug}.html">Đọc bài viết →</a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function updateSortToggle() {
+      sortToggle.classList.toggle('desc', sortOrder === 'desc');
+      sortToggle.querySelector('.sort-icon').textContent = sortOrder === 'asc' ? '▲' : '▼';
+      sortToggle.setAttribute('aria-label', sortOrder === 'asc' ? 'Sắp xếp giảm dần' : 'Sắp xếp tăng dần');
+    }
+
+    function sortBlogs(items) {
+      const criterion = sortCriteria.value;
+      const sorted = [...items].sort((a, b) => {
+        let aValue = a[criterion];
+        let bValue = b[criterion];
+
+        if (criterion === 'title') {
+          aValue = String(aValue || '').toLowerCase();
+          bValue = String(bValue || '').toLowerCase();
+        } else if (criterion === 'updated_time' || criterion === 'created_time') {
+          aValue = new Date(String(aValue || '1970-01-01').split('-').reverse().join('-')).getTime();
+          bValue = new Date(String(bValue || '1970-01-01').split('-').reverse().join('-')).getTime();
+        } else {
+          aValue = String(aValue || '').toLowerCase();
+          bValue = String(bValue || '').toLowerCase();
+        }
+
+        if (aValue < bValue) return -1;
+        if (aValue > bValue) return 1;
+        return 0;
+      });
+
+      return sortOrder === 'desc' ? sorted.reverse() : sorted;
+    }
+
+    function normalizeVietnamese(text) {
+    return text
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '') // remove accents
+        .replace(/đ/g, 'd')
+        .replace(/Đ/g, 'd');
+}
+
+    function filterBlogs() {
+      const query = searchInput.value.trim().toLowerCase();
+      const category = categoryFilter.value;
+
+      const filtered = blogs.filter(post => {
+        const text = `${post.title || ''} ${post.excerpt || ''} ${post.description || ''} ${(post.tags || []).join(' ')}`.toLowerCase();
+        const matchesQuery = normalizeVietnamese(text).includes(normalizeVietnamese(query));
+        const matchesCategory = category === 'all' || (post.category || 'Chưa phân loại') === category;
+        return matchesQuery && matchesCategory;
+      });
+
+      renderCards(sortBlogs(filtered));
+    }
+
+    function renderFAQs() {
+      const faqsContainer = document.getElementById('faqsContainer');
+      if (!faqsContainer) return;
+      const faqs = (storeData.faqs || []).map(faq => `
+        <details class="faq-item">
+          <summary class="faq-question">${faq.question}</summary>
+          <p class="faq-answer">${faq.answer}</p>
+        </details>
+      `).join('');
+      faqsContainer.innerHTML = faqs;
+    }
+
+    function renderSocialLinks() {
+      const footerSocials = document.querySelector('.footer-socials');
+      if (!footerSocials) return;
+      const socialLinks = storeData.social_links || {};
+      const icons = { facebook: 'fab fa-facebook-f', tiktok: 'fab fa-tiktok', youtube: 'fab fa-youtube' };
+      footerSocials.innerHTML = Object.entries(socialLinks).map(([platform, url]) => `
+        <a href="${url}" class="social-icon ${icons[platform] || ''}" target="_blank" rel="noreferrer noopener" aria-label="${platform.charAt(0).toUpperCase() + platform.slice(1)}"></a>
+      `).join('');
+    }
+
+    function renderFooterCTA() {
+      const footerCTA = document.querySelector('.footer-cta');
+      if (!footerCTA) return;
+      footerCTA.innerHTML = `
+        <h2>Quan tâm blog</h2>
+        <p>${(storeData.cta && storeData.cta.subscribe && storeData.cta.subscribe.call) || 'Đăng ký để nhận bài viết mới nhất từ Hải.'}</p>
+        <p style="margin-top: 16px;">${(storeData.cta && storeData.cta.collaborate && storeData.cta.collaborate.call) || 'Hợp tác với Hải để kết nối thêm nhiều độc giả.'}</p>
+        <ul class="footer-cta-list" style="margin-top: 16px; list-style: none; padding: 0; display: flex; gap: 10px;">
+          <li><a class="cta-button" href="${(storeData.cta && storeData.cta.subscribe && storeData.cta.subscribe.link) || 'https://forms.gle/c8bUfvF6evuVDU2L8'}" target="_blank" rel="noreferrer noopener">${(storeData.cta && storeData.cta.subscribe && storeData.cta.subscribe.action) || 'Đăng ký nhận thông báo'}</a></li>
+          <li><a class="cta-button" href="${(storeData.cta && storeData.cta.collaborate && storeData.cta.collaborate.link) || 'https://zalo.me/0703017645'}" target="_blank" rel="noreferrer noopener">${(storeData.cta && storeData.cta.collaborate && storeData.cta.collaborate.action) || 'Liên hệ hợp tác'}</a></li>
+        </ul>
+      `;
+    }
+
+    function renderZaloBuy() {
+      const zaloButton = document.querySelector('.zalo-button');
+      const bubble = document.querySelector('.zalo-bubble');
+      if (zaloButton && storeData.buy?.link) zaloButton.href = storeData.buy.link;
+      if (bubble && storeData.buy?.call) bubble.textContent = storeData.buy.call;
+    }
+
+    const burgerBtn = document.getElementById('burger-btn');
+    const navLinks = document.getElementById('nav-links');
+    if (burgerBtn && navLinks) {
+      burgerBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+    }
+
+    searchInput.addEventListener('input', filterBlogs);
+    categoryFilter.addEventListener('change', filterBlogs);
+    sortCriteria.addEventListener('change', filterBlogs);
+    sortToggle.addEventListener('click', () => {
+      sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+      updateSortToggle();
+      filterBlogs();
+    });
+
+    renderHeader();
+    renderCategoryOptions();
+    updateSortToggle();
+    filterBlogs();
+    renderFAQs();
+    renderSocialLinks();
+    renderFooterCTA();
+    renderZaloBuy();
+  </script>
+</body>
+</html>

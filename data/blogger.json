@@ -1,0 +1,62 @@
+{
+    "name": "Blog Hải có gì hay?",
+    "homepage": "http://haicogihay.com/",
+    "description": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay không phải là nơi để chia sẻ những kiến thức chuyên sâu, mà là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về các chủ đề khác nhau, với mong muốn mang đến những điều thú vị và hữu ích cho độc giả.",
+    "brand": {
+        "name": "Hải có gì hay?",
+        "logo": "assets/store_image/logo_hai_co_gi_hay_removed_background.png",
+        "background": "assets/store_image/hai_co_gi_hay_removed_bg.png"
+    },
+    "contact": {
+        "email": "nguyenquyhai2002@gmail.com",  
+        "phone": "+84 703 016 645",
+        "zalo": "https://zalo.me/0703017645",
+        "facebook": "https://www.facebook.com/profile.php?id=61590145161911",
+        "tiktok": "https://www.tiktok.com/@haicogihay"
+    },
+    "social_links": {
+        "facebook": "https://www.facebook.com/profile.php?id=61590145161911",
+        "tiktok": "https://www.tiktok.com/@haicogihay",
+        "youtube": "https://www.youtube.com/@haicogihay"
+    },
+    "dear_readers": "Tri thức không chỉ phát triển nhờ sự đồng thuận tuyệt đối, mà nhờ những cuộc đối thoại tử tế. Vì vậy, mong anh em đọc bài viết như một góc nhìn để suy ngẫm, thay vì một kết luận cuối cùng. Mọi quan điểm ít nhiều đều mang dấu vết của trải nghiệm cá nhân. Mục đích của mỗi bài viết không phải là để ai đúng tuyệt đối, mà là liệu chúng ta có thể cùng nhau suy nghĩ sâu hơn sau mỗi bài viết hay không? Vì vậy, hãy đọc với tinh thần cởi mở và phản biện hoặc góp ý khi anh em có suy nghĩ khác nha! 🌿",
+    "cta": {
+        "subscribe": {
+            "call": "Nếu anh em muốn nhanh chóng cập nhật bài viết mới từ blog Hải có gì hay, hãy đăng ký nhận thông báo để không bỏ lỡ những bài viết của Hải trong tương lai!",
+            "action": "Đăng ký nhận thông báo",
+            "link": "https://forms.gle/c8bUfvF6evuVDU2L8"
+        },
+        "collaborate": {
+            "call": "Anh em cũng có thể hợp tác với Hải để quảng bá doanh nghiệp. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo hoặc gmail để trao đổi kỹ hơn.",
+            "action": "Liên hệ hợp tác",    
+            "link": "https://zalo.me/0703017645"
+        },
+        "buy": {
+            "call": "Anh em muốn góp ý, phản hồi bài viết? Liên hệ với Hải qua Gmail! nguyenquyhai2002@gmail.com",
+            "action": "Phản hồi bài viết",
+            "link": "mailto:nguyenquyhai2002@gmail.com"
+        }
+    },
+    "faqs": [
+        {
+            "id": 1,
+            "question": "Blog Hải có gì hay?",
+            "answer": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về nhiều chủ đề khác nhau, với mong muốn mang đến góc nhìn mới và hi vọng hữu ích cho độc giả."
+        },
+        {
+            "id": 2,
+            "question": "Tôi có chủ đề nào đó muốn Hải viết bài về nó, tôi có thể đề xuất được không?",
+            "answer": "Có, anh em hoàn toàn có thể đề xuất chủ đề mà anh em muốn Hải viết bài về nó. Nếu anh em có chủ đề nào đó mà anh em nghĩ sẽ có ích cho độc giả, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."
+        },
+        {
+            "id": 3,
+            "question": "Làm thế nào để nhận thông báo bài viết mới?",
+            "answer": "Anh em có thể nhận thông báo bài viết mới bằng cách đăng ký nhận thông báo qua link: https://forms.gle/c8bUfvF6evuVDU2L8. Hải sẽ gửi thông báo đến anh em mỗi khi có bài viết mới được đăng trên blog."
+        },
+        {
+            "id": 4,
+            "question": "Tôi có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay không?",
+            "answer": "Có, anh em hoàn toàn có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."
+        }
+    ]
+}

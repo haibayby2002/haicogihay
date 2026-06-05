@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Hải có gì hay?</title>
+  <link rel="icon" href="../assets/store_image/logo_hai_co_gi_hay_removed_background.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <button class="burger-menu" id="burger-btn" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="../index.html#products">Sản phẩm</a></li>
+      <li><a href="./index.html#blogs">Blog</a></li>
+      <li><a href="index.html#faqs">Câu hỏi thường gặp</a></li>
+      <li><a href="index.html#footer">Liên hệ</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero-header blog-hero-header">
+    <div class="container header-inner">
+      <div class="header-brand">
+        <a id="page_address" href="../index.html">
+          <img id="logo" alt="Hải có gì hay logo" />
+        </a>
+      </div>
+      <div class="hero-copy">
+        <!-- <p class="eyebrow">Blog & Góc nhìn</p> -->
+        <h1>Các độc giả thân mến!</h1>
+        <p id="blogIntro">Tìm nhanh bài viết bạn muốn đọc, lọc theo chủ đề và sắp xếp theo tên, ngày cập nhật hoặc danh mục.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="blogs" class="products-section">
+      <div class="section-title">Bài viết nổi bật</div>
+      <div class="toolbar">
+        <div class="search">
+          <label for="searchInput">🔎 Tìm kiếm</label>
+          <input id="searchInput" type="search" placeholder="Tìm bài viết theo tiêu đề hoặc mô tả..." />
+        </div>
+        <div class="filter">
+          <label for="categoryFilter">📚 Danh mục</label>
+          <select id="categoryFilter">
+            <option value="all">Tất cả danh mục</option>
+          </select>
+        </div>
+        <div class="filter">
+          <label for="sortCriteria">📊 Sắp xếp theo</label>
+          <div class="sort-control">
+            <select id="sortCriteria">
+              <option value="title" selected>Tiêu đề</option>
+              <option value="updated_time">Ngày cập nhật</option>
+              <option value="category">Danh mục</option>
+            </select>
+            <button id="sortToggle" class="sort-toggle" type="button" aria-label="Sort descending">
+              <span class="sort-icon">▲</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="products-grid blog-grid" id="blogGrid"></div>
+    </section>
+
+    <section id="faqs" class="faqs-section">
+      <div class="section-title">Câu hỏi thường gặp</div>
+      <div class="faqs-container" id="faqsContainer"></div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên hệ</h2>
+        <p>Email: <a href="mailto:nguyenquyhai2002@gmail.com">nguyenquyhai2002@gmail.com</a></p>
+        <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
+        <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">https://zalo.me/0703017645</a></p>
+        <div class="footer-socials"></div>
+      </div>
+      <div class="footer-cta"></div>
+    </div>
+  </footer>
+
+  <a class="zalo-button" href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener" aria-label="Liên hệ qua Zalo">
+    <img src="../assets/blog_image/ChatGPT Image Jun 5, 2026, 10_27_52 AM.png" alt="Zalo" width="64" height="64" />
+  </a>
+  <div class="zalo-bubble">Anh em muốn góp ý hoặc trao đổi thêm về bài viết, liên hệ qua nguyenquyhai2002@gmail.com</div>
+
+  <script>
+    const storeData = {storeData};
+    const blogs = {blogs};
+
+    const blogGrid = document.getElementById('blogGrid');
+    const searchInput = document.getElementById('searchInput');
+    const categoryFilter = document.getElementById('categoryFilter');
+    const sortCriteria = document.getElementById('sortCriteria');
+    const sortToggle = document.getElementById('sortToggle');
+    let sortOrder = 'asc';
+
+    function limitText(text, maxLength = 160) {
+      if (typeof text !== 'string') return '';
+      return text.length <= maxLength ? text : text.slice(0, maxLength).trimEnd() + '...';
+    }
+
+    function formatDate(value) {
+      if (!value) return 'Chưa cập nhật';
+      return value;
+    }
+
+    function resolveAsset(pathValue) {
+      if (!pathValue) return '';
+      if (/^https?:\/\//i.test(pathValue) || pathValue.startsWith('data:')) return pathValue;
+      if (pathValue.startsWith('./') || pathValue.startsWith('../') || pathValue.startsWith('/')) return pathValue;
+      return '../' + pathValue;
+    }
+
+    function getThumbnail(post) {
+      const candidate = post.thumbnail || post.image || post.cover || '';
+      if (!candidate) return '';
+      return resolveAsset(candidate);
+    }
+
+    function hasThumbnail(post) {
+      return Boolean(post.thumbnail || post.image || post.cover);
+    }
+
+    function renderHeader() {
+      const pageAddress = document.getElementById('page_address');
+      if (pageAddress) pageAddress.href = storeData.homepage || '../index.html';
+      const logo = document.getElementById('logo');
+      if (logo) {
+        logo.src = resolveAsset((storeData.brand && storeData.brand.logo) || 'assets/store_image/logo_hai_co_gi_hay_removed_background.png');
+        logo.alt = (storeData.brand && storeData.brand.name) || 'Hải có gì hay';
+      }
+      const intro = document.getElementById('blogIntro');
+      if (intro) intro.textContent = storeData.dear_readers || 'Tìm nhanh bài viết bạn muốn đọc.';
+    }
+
+    function renderCategoryOptions() {
+      const categories = [...new Set(blogs
+        .map(post => (post.category || 'Chưa phân loại').trim())
+        .filter(Boolean))];
+      categoryFilter.innerHTML = '<option value="all">Tất cả danh mục</option>' +
+        categories.map(cat => `<option value="${cat}">${cat}</option>`).join('');
+    }
+
+    function renderCards(items) {
+      blogGrid.innerHTML = items.map(post => {
+        const thumb = hasThumbnail(post) ? `<a href="./${post.slug}.html" class="blog-thumb-link"><img src="${getThumbnail(post)}" alt="${post.title}" /></a>` : '';
+        return `
+          <article class="blog-card ${hasThumbnail(post) ? 'blog-card--with-thumb' : 'blog-card--text-only'}">
+            ${thumb}
+            <div class="blog-card-body">
+              <p class="blog-card-meta">${post.category || 'Chưa phân loại'} · ${formatDate(post.updated_time || post.created_time)}</p>
+              <h2><a href="./${post.slug}.html">${post.title}</a></h2>
+              <p class="blog-card-excerpt">${limitText(post.excerpt || post.description || '')}</p>
+              <div class="tags">${(post.tags || []).slice(0, 4).map(tag => `<span class="tag">${tag}</span>`).join('')}</div>
+              <a class="blog-read-more" href="./${post.slug}.html">Đọc bài viết →</a>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function updateSortToggle() {
+      sortToggle.classList.toggle('desc', sortOrder === 'desc');
+      sortToggle.querySelector('.sort-icon').textContent = sortOrder === 'asc' ? '▲' : '▼';
+      sortToggle.setAttribute('aria-label', sortOrder === 'asc' ? 'Sắp xếp giảm dần' : 'Sắp xếp tăng dần');
+    }
+
+    function sortBlogs(items) {
+      const criterion = sortCriteria.value;
+      const sorted = [...items].sort((a, b) => {
+        let aValue = a[criterion];
+        let bValue = b[criterion];
+
+        if (criterion === 'title') {
+          aValue = String(aValue || '').toLowerCase();
+          bValue = String(bValue || '').toLowerCase();
+        } else if (criterion === 'updated_time' || criterion === 'created_time') {
+          aValue = new Date(String(aValue || '1970-01-01').split('-').reverse().join('-')).getTime();
+          bValue = new Date(String(bValue || '1970-01-01').split('-').reverse().join('-')).getTime();
+        } else {
+          aValue = String(aValue || '').toLowerCase();
+          bValue = String(bValue || '').toLowerCase();
+        }
+
+        if (aValue < bValue) return -1;
+        if (aValue > bValue) return 1;
+        return 0;
+      });
+
+      return sortOrder === 'desc' ? sorted.reverse() : sorted;
+    }
+
+    function normalizeVietnamese(text) {
+    return text
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '') // remove accents
+        .replace(/đ/g, 'd')
+        .replace(/Đ/g, 'd');
+}
+
+    function filterBlogs() {
+      const query = searchInput.value.trim().toLowerCase();
+      const category = categoryFilter.value;
+
+      const filtered = blogs.filter(post => {
+        const text = `${post.title || ''} ${post.excerpt || ''} ${post.description || ''} ${(post.tags || []).join(' ')}`.toLowerCase();
+        const matchesQuery = normalizeVietnamese(text).includes(normalizeVietnamese(query));
+        const matchesCategory = category === 'all' || (post.category || 'Chưa phân loại') === category;
+        return matchesQuery && matchesCategory;
+      });
+
+      renderCards(sortBlogs(filtered));
+    }
+
+    function renderFAQs() {
+      const faqsContainer = document.getElementById('faqsContainer');
+      if (!faqsContainer) return;
+      const faqs = (storeData.faqs || []).map(faq => `
+        <details class="faq-item">
+          <summary class="faq-question">${faq.question}</summary>
+          <p class="faq-answer">${faq.answer}</p>
+        </details>
+      `).join('');
+      faqsContainer.innerHTML = faqs;
+    }
+
+    function renderSocialLinks() {
+      const footerSocials = document.querySelector('.footer-socials');
+      if (!footerSocials) return;
+      const socialLinks = storeData.social_links || {};
+      const icons = { facebook: 'fab fa-facebook-f', tiktok: 'fab fa-tiktok', youtube: 'fab fa-youtube' };
+      footerSocials.innerHTML = Object.entries(socialLinks).map(([platform, url]) => `
+        <a href="${url}" class="social-icon ${icons[platform] || ''}" target="_blank" rel="noreferrer noopener" aria-label="${platform.charAt(0).toUpperCase() + platform.slice(1)}"></a>
+      `).join('');
+    }
+
+    function renderFooterCTA() {
+      const footerCTA = document.querySelector('.footer-cta');
+      if (!footerCTA) return;
+      footerCTA.innerHTML = `
+        <h2>Quan tâm blog</h2>
+        <p>${(storeData.cta && storeData.cta.subscribe && storeData.cta.subscribe.call) || 'Đăng ký để nhận bài viết mới nhất từ Hải.'}</p>
+        <p style="margin-top: 16px;">${(storeData.cta && storeData.cta.collaborate && storeData.cta.collaborate.call) || 'Hợp tác với Hải để kết nối thêm nhiều độc giả.'}</p>
+        <ul class="footer-cta-list" style="margin-top: 16px; list-style: none; padding: 0; display: flex; gap: 10px;">
+          <li><a class="cta-button" href="${(storeData.cta && storeData.cta.subscribe && storeData.cta.subscribe.link) || 'https://forms.gle/c8bUfvF6evuVDU2L8'}" target="_blank" rel="noreferrer noopener">${(storeData.cta && storeData.cta.subscribe && storeData.cta.subscribe.action) || 'Đăng ký nhận thông báo'}</a></li>
+          <li><a class="cta-button" href="${(storeData.cta && storeData.cta.collaborate && storeData.cta.collaborate.link) || 'https://zalo.me/0703017645'}" target="_blank" rel="noreferrer noopener">${(storeData.cta && storeData.cta.collaborate && storeData.cta.collaborate.action) || 'Liên hệ hợp tác'}</a></li>
+        </ul>
+      `;
+    }
+
+    function renderZaloBuy() {
+      const zaloButton = document.querySelector('.zalo-button');
+      const bubble = document.querySelector('.zalo-bubble');
+      if (zaloButton && storeData.buy?.link) zaloButton.href = storeData.buy.link;
+      if (bubble && storeData.buy?.call) bubble.textContent = storeData.buy.call;
+    }
+
+    const burgerBtn = document.getElementById('burger-btn');
+    const navLinks = document.getElementById('nav-links');
+    if (burgerBtn && navLinks) {
+      burgerBtn.addEventListener('click', () => navLinks.classList.toggle('active'));
+    }
+
+    searchInput.addEventListener('input', filterBlogs);
+    categoryFilter.addEventListener('change', filterBlogs);
+    sortCriteria.addEventListener('change', filterBlogs);
+    sortToggle.addEventListener('click', () => {
+      sortOrder = sortOrder === 'asc' ? 'desc' : 'asc';
+      updateSortToggle();
+      filterBlogs();
+    });
+
+    renderHeader();
+    renderCategoryOptions();
+    updateSortToggle();
+    filterBlogs();
+    renderFAQs();
+    renderSocialLinks();
+    renderFooterCTA();
+    renderZaloBuy();
+  </script>
+</body>
+</html>

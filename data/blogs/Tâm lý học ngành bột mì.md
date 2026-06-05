@@ -1,0 +1,72 @@
+---
+title: Tâm lý học ngành bột mì
+author: Quý Hải Ng
+status: done
+category: Tâm lý
+tags:
+  - bột mì
+thumbnail: assets\blog_image\drug_psycology.png
+---
+
+# Tâm lý học ngành bột mì
+
+Chỉ trong 1 thời gian ngắn trước lúc Hải viết bài này, đã có rất nhiều người nhận kết quả test dương tính với bột mì. Trong số đó có cả những người nổi tiếng, có sức ảnh hưởng. Đa phần chúng ta đều thắc mắc tại sao những người đã giàu, đã có gần như tất cả mọi thứ lại dính vào thứ tệ nạn này? Và tại sao trong rất nhiều thập kỷ, ngành công nghiệp này vẫn tồn tại bất kể luật pháp trừng phạt rất mạnh tay?
+
+
+## Người buôn đánh vào sự phụ thuộc
+
+Với một ngành nghề kinh doanh thông thường như mở quán cà phê hay mở shop thời trang, chủ cửa hàng có thể phải chạy khuyến mãi, chạy quảng cáo để thu hút khách, phải xây dựng thương hiệu trong nhiều năm trời. Nhưng cũng không có gì đảm bảo khách sẽ đến hay khách sẽ quay lại bởi ngành nghề cạnh tranh, sản phẩm kinh doanh tuy giải quyết nhu cầu nhưng không có nghĩa khách phải có bằng được hay phải mua thêm. Bao nhiêu công sức tiếp thị, bao nhiêu chất xám bỏ ra để lựa chọn ngách, loại, kiểu mẫu sản phẩm, chiến lược giá cũng không đảm bảo sẽ có khách hàng trung thành. Bởi điều đơn giản mà ai cũng thấy đó là thị trường cạnh tranh, thị hiếu người dùng có thể thay đổi nhanh chóng.
+
+Bây giờ quay trở lại với ngành bột mì, chỉ với 1 lần cho khách dùng thử là chắc suất có khách hàng trung thành 100% nếu không có sự can thiệp bên ngoài. Bởi vì sản phẩm này không chỉ bán giải pháp, nó bán cảm giác hưng phấn và cảm giác thoát khỏi thực tại, thứ mà để có được 1 cách lành mạnh từ thực tại thì phải chơi thể thao, giao lưu xã hội, tham gia các cuộc thi và nhận lời khen thưởng, tán dương từ bạn bè. Đó là thứ rất mất thời gian với một người đã dính vào thứ chất có thể cho họ cảm giác đó ngay lập tức. Vì thế, mỗi khi họ thấy thiếu cảm giác đó, họ sẽ sử dụng loại chất đó. Có thể là sử dụng định kỳ hoặc khi gặp cảm giác thiếu thốn sự hưng phấn. Điều đặc biệt nhất là khi bột mì hết tác dụng và người sử dụng trở lại trạng thái bình thường, họ bắt đầu cảm thấy tẻ nhạt, buồn chán và thiếu thiếu cái gì đó chứ không phải là bình thường đơn thuần. Như vậy, một khi đã dính vào, người dùng bột mì gần như đã trở thành khách hàng trung thành cho những con buôn. 
+
+
+|                                           | Ngành kinh doanh truyển thống | Ngành bột mì
+| --------                                  | -------                       |-------
+| Chi phí để có được khách mới              | Marketing liên tục          |Cho thử sản phẩm 1 lần
+| Chi phí giữ chân khách hàng               | Khuyến mãi, giảm giá, mua 1 tặng 1                       |Vẫn là 1 lần dùng thử
+| Doanh thu trung bình từ 1 khách hàng      | Bị giới hạn bởi nhu cầu thực tế                          | Không giới hạn 
+| Lợi nhuận     | doanh thu - (mặt bằng + nguyên liệu + nhân viên + CAC)                          | doanh thu - (nguyên liệu + vận chuyển)
+
+Với 1 quán cà phê, việc bán cho 1 khách 3 ly cà phê mỗi ngày là điều không dễ. Với 1 cửa hàng thời trang, việc chốt 1 khách 50 bộ quần áo mỗi năm cũng là 1 cái gì đó rất giỏi. Bởi đơn giản với ngành truyền thống, khi khách đã được đáp ửng đủ nhu cầu, việc khách mua thêm là lãng phí, là không cần thiết bất kể là khách giàu hay nghèo. Vì vậy, 1 doanh nghiệp bình thường phải liên tục tạo ra giá trị mới, sản phẩm mới, đổi mới để kiếm lợi nhuận. Còn với ngành bột mì, khách hàng càng mất kiểm soát, càng phụ thuộc thì càng kiếm được nhiều tiền. Đây là mô hình kinh doanh dựa vào việc làm suy yếu khả năng kiểm soát của khách hàng. Nếu lợi nhuận của ngành truyền thống có thể lỗ, có thể đủ ăn, có thể đủ để mua nhà mua xe thì lợi nhuận của ngành bột mì đem lại có thể đủ để xây chùa, xây bệnh viện, trường học. Con số đó đủ sức làm mờ mắt bất kỳ ai bất chấp án tử. 
+
+## Tiếp cận bằng truyền miệng
+
+Ngành bột mì không tiếp cận khách hàng thông qua quảng cáo công khai trên các nền tảng như những ngành nghề truyền thống khác. Hoạt động tiếp thị của ngành bột mì thường diễn ra ở các hoạt động tiệc tùng, sinh nhật hay nhảy nhót ở trong quán bar. Một vài câu chào mời phổ biến của dân sales bột mì sẽ là `thử cho biết`, `ở đây ai cũng thế mà`, `có sao đâu`, `thử một lần thôi` , `không dùng là đồ quê mùa`, `không chơi là đời không nể`... Đứng trước những lời kêu gọi hành động mạnh mẽ như vậy, nếu không có đủ bản lĩnh, việc dính vào bột mì là gần như không thể tránh khỏi. Và điều đặc biệt là chỉ sau một thời ngắn sử dụng, bản thân người dùng lại trở thành người đi giới thiệu, chào mời người khác với cùng mẫu văn phong `dùng đi vui lắm`, `dùng nhanh để còn quẩy`. Tương tự khi người khác đã bước vào chỗ được người quen giới thiệu, lại được đám đông tác động thì phần lớn người ta sẽ đánh giá thấp hậu quả khi sử dụng vì thấy nhiều người cùng làm và người khác vẫn không sao. Họ thường sẽ bắt đầu vì tò mò, vì muốn hòa nhập với nhóm và muốn thử cảm giác như lời quảng cáo. 
+
+
+
+## Vòng lặp tâm lý của người sử dụng bột mì
+
+Con người dù là bất kỳ ai cũng sẽ có những lúc căng thẳng. Có hàng ngàn lý do để bản thân 1 người rơi vào trạng thái stress: áp lực kiếm tiền, mạng xã hội, so sánh, FOMO, thất nghiệp, thất bại, cô đơn, thất tình, gia đình tan vỡ, khủng hoảng bản thân… Khi 1 người sống trong trạng thái căng thẳng kéo dài, họ thường bắt đầu tìm kiếm thứ gì đó giúp mình đỡ cảm thấy tệ hơn và càng nhanh càng tốt. Lúc này nếu có người giới thiệu, bột mì có thể là giải pháp cho tất cả những thứ trên. Vòng lặp tâm lý ở đây sẽ là:
+- Căng thẳng / buồn chán
+- Dùng bột mì
+- Não nhận cảm giác sung sướng
+- Quay lại đời thực với cảm giác trống rỗng hơn
+- Muốn dùng tiếp bột mì để thoát khỏi cảm giác đó
+
+Như vậy, người gặp vấn đề trên bắt đầu tìm đến bột mì như là cách để giải quyết căng thẳng, buồn chán. Càng về sau, não giảm khả năng cảm nhận niềm vui từ những thứ bình thường như ăn uống, học tập, chơi thể thao và giao tiếp. Khi đó người dùng rơi vào cảm giác “không dùng thì thấy cuộc sống vô vị”. Kể từ đó, bột mì trở thành vấn đề chứ không còn là giải pháp. Vì nếu không dùng nó, họ sẽ không có được niềm vui từ những thứ bình thường trên. Bột mì là con đường duy nhất để họ chiều lòng bộ não của bản thân. Lúc này không có nó, người dùng không còn cách nào khác. Sử dụng nó, bộ não con người ngày càng trở nên trống rỗng hơn khi bột mì hết hiệu lực. Còn không sử dụng nó, bộ não càng trở nên thèm khát phần thưởng tức thì. Lúc này, chỉ có sự can thiệp và giúp đỡ từ bên ngoài mới có thể thoát được.
+
+## Vậy giải pháp là gì?
+
+### Xác định những lúc bản thân hoặc người thân có khả năng tìm đến bột mì nhất
+
+Cách để bản thân và người thân không dính vào bột mì là tìm ra những lúc 1 người có khả năng dính tới nhất để tránh hoặc can thiệp kịp thời. Như đã trình bày ở trên, áp lực, cô đơn, thất bại kéo dài, cảm giác vô dụng, chia tay, mất định hướng, thì não bộ sẽ tự đi tìm dopamine ở bất kỳ nơi nào có thể. Tất nhiên đó chỉ là lúc con người muốn đi tìm, chứ chưa có cơ hội tiếp cận bột mì. 
+
+Ở thời điểm này, việc kết nối và giao tiếp trở nên quan trọng hơn bao giờ hết. Việc lắng nghe và được lắng nghe chính là cách để giải tỏa áp lực. Và việc tham gia vào các nhóm lành mạnh của những người có chung sở thích hoặc các câu lạc bộ thể thao, tổ chức và tham gia các cuộc thi / giải đấu (dù chỉ là cấp độ ao làng) là giải pháp giúp 1 người thoát ra khủng hoảng và nhận phần thưởng dopamine.
+
+Còn khi anh em đã tham gia vào các buổi tiệc tùng, các tụ điểm ăn chơi, đó là lúc 1 người có khả năng tiếp cận và sử dụng bột mì nhất. Đây là lúc họ có thể bắt đầu sử dụng không cần biết có áp lực hay không. Nhiều người nghĩ bản thân đủ tỉnh táo để “chỉ thử cho biết”. Nhưng thực tế, môi trường có tác động đến hành vi mạnh hơn rất nhiều so với chúng ta tưởng. Về cơ bản, nếu xác định những môi trường này anh em có khả năng sử dụng nhất thì anh em có thể chủ động từ chối khéo ngay từ đầu. Hạn chế đặt bản thân vào những môi trường khiến mình dễ mất kiểm soát. Còn 1 khi đã vào, dưới những bản nhạc remix gây nghiện kèm với lời chào mời và cổ vũ của đám đông, anh em thường xem nhẹ rủi ro khi sử dụng. Và kết quả là từ thử cho biết thì trở thành con nghiện bị phụ thuộc bột mì.
+
+
+### Tìm kiếm dopamine khác
+
+Não bộ con người luôn cần phần thưởng. Dopamine từ bột mì không bền vững. Bột mì cho dopamine cực nhanh nhưng để lại khoảng trống rất lớn sau đó. Ngược lại, những nguồn dopamine lành mạnh thường đến chậm hơn nhưng bền vững hơn: tập luyện thể thao, học kỹ năng mới, hoàn thành công việc và gửi báo cáo, chơi 1 bản nhạc mới, xây dựng dự án cá nhân, kiếm được tiền sạch hoặc đơn giản là ngủ nghỉ điều độ. Những hoạt động này không tạo cảm giác “phê cực mạnh” ngay lập tức, nhưng chúng giúp não bộ quay về trạng thái ổn định và khỏe mạnh hơn theo thời gian.
+
+### Giao tiếp xã hội nhiều hơn
+ 
+Một trong những yếu tố nguy hiểm nhất là sự cô lập. Dù là 3 ngàn năm hay 3 triệu năm tiến hóa, con người vẫn là loài động vật sống theo bầy đàn. Khi con người mất kết nối xã hội, não bộ rất dễ rơi vào trạng thái suy nghĩ tiêu cực, tự nhốt mình, mất động lực, và tìm kiếm các lối thoát ngắn hạn. Những mối quan hệ lành mạnh có tác dụng như một “hệ thống chống sốc tâm lý”. Nếu những người xung quanh chỉ mang lại năng lượng tiêu cực, anh em nên dũng cảm bước ra khỏi vòng tròn đó để tìm kiếm những kết nối mới lành mạnh hơn. Điều đó giúp con người cảm thấy: “mình vẫn còn kết nối với cuộc sống này”. Trong nhiều trường hợp, thứ cứu một người không phải bài giảng đạo đức, mà chỉ đơn giản là có ai đó thật sự lắng nghe họ.
+
+
+# Kết
+
+Đứng trước lợi nhuận khổng lồ, nhiều cá nhân chấp nhận rủi ro đối mặt án tử để đi sản xuất, tàng trữ và vận chuyển bột mì. Và tất nhiên, phía bên kia của lợi nhuận đó chính là những cuộc đời bị phá hủy, những gia đình tan vỡ, những người trẻ đánh mất tương lai. Bản thân ngành công nghiệp bột mì còn tồn tại không phải chỉ nằm ở việc nó là chất kích thích, nó khai thác vào cảm giác cô đơn, áp lực, muốn hòa nhập, muốn thoát khỏi thực tại của mỗi người. Nó không chỉ là câu chuyện của pháp luật, nó còn là câu chuyện của giáo dục, môi trường sống và các mối quan hệ. 
+
