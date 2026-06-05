@@ -8,7 +8,7 @@
             "wp"
         ],
         "date": "2026-05-24",
-        "thumbnail": "assets\\blog_image\\say_bye_word_press.png",
+        "thumbnail": "assets/blog_image/say_bye_word_press.png",
         "status": "done",
         "slug": "tam-biet-wordpress---vi-sao-minh-chuyen-sang-content-engine-thay-vi-he-thong-back-end-cms",
         "created_time": "24-05-2026",
@@ -58,7 +58,7 @@
         "tags": [
             "bột mì"
         ],
-        "thumbnail": "assets\\blog_image\\drug_psycology.png",
+        "thumbnail": "assets/blog_image/drug_psycology.png",
         "slug": "tam-ly-hoc-nganh-bot-mi",
         "created_time": "28-05-2026",
         "updated_time": "05-06-2026",

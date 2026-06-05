@@ -5,7 +5,7 @@ status: done
 category: Tâm lý
 tags:
   - bột mì
-thumbnail: assets\blog_image\drug_psycology.png
+thumbnail: assets/blog_image/drug_psycology.png
 ---
 
 # Tâm lý học ngành bột mì

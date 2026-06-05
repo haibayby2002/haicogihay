@@ -6,7 +6,7 @@ tags:
   - tech
   - wp
 date: 2026-05-24
-thumbnail: assets\blog_image\say_bye_word_press.png
+thumbnail: assets/blog_image/say_bye_word_press.png
 status: done
 ---
 
