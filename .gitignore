@@ -4,6 +4,4 @@ archive/
 *.tmp
 assets/product_image/*.jpg
 assets/product_image/*.png
-assets/blog_image/*.jpg
-assets/blog_image/*.png
 instructions/
