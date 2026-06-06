@@ -159,7 +159,7 @@
       `).join('');
     }
 
-    const relatedPostsData = [{"title": "Tạm biệt Wordpress - Vì sao mình chuyển sang content engine thay vì hệ thống back-end CMS", "category": "Công nghệ", "tags": ["web", "tech", "wp"], "date": "2026-05-24", "thumbnail": "assets\\blog_image\\say_bye_word_press.png", "status": "done", "slug": "tam-biet-wordpress---vi-sao-minh-chuyen-sang-content-engine-thay-vi-he-thong-back-end-cms", "created_time": "24-05-2026", "updated_time": "05-06-2026", "excerpt": "Từng nghiên cứu Wordpress 5 năm và thực chiến 2 năm, cũng xuất bản được kha khá blog. Bản thân Hải thấy Wordpress đem lại rất nhiều trải nghiệm thú vị nơi blogger chỉ cần quan tâm tới tuyến nội dung và quản trị thay vì đầu tư nhiều thời gia..."}, {"title": "Tâm lý học blogger - Tại sao Hải viết blog?", "status": "done", "category": "Tâm lý", "tags": ["web", "blog"], "slug": "tam-ly-hoc-blogger---tai-sao-hai-viet-blog", "created_time": "01-06-2026", "updated_time": "05-06-2026", "excerpt": "Hôm nay, Hải vào xem lại trận Argentina gặp Pháp vào mùa World Cup năm 2018. Đó là năm Mbappe 19 tuổi và đã khiến Messi dừng bước với 1 kiến tạo Penalty và ghi 2 bàn thắng. Tất cả những phút chạy của Mbappe đều được tường thuật trực tiếp và..."}, {"title": "Tâm lý học của người lười nhưng tham vọng lớn", "status": "done", "category": "Tâm lý", "slug": "tam-ly-hoc-cua-nguoi-luoi-nhung-tham-vong-lon", "created_time": "26-05-2026", "updated_time": "05-06-2026", "excerpt": "Theo lẽ thường, người lười thường sẽ chọn sống yên ổn thay vì tham vọng còn người đã tham vọng thì không được phép lười biếng. Nhưng có 1 kiểu tâm lý nghe qua có vẻ lạ vì nó khá đặc biệt và giống như đang trêu đùa logic nhưng nó vẫn đang xu...", "tags": []}];
+    const relatedPostsData = [{"title": "Tạm biệt Wordpress - Vì sao mình chuyển sang content engine thay vì hệ thống back-end CMS", "category": "Công nghệ", "tags": ["web", "tech", "wp"], "date": "2026-05-24", "thumbnail": "assets/blog_image/say_bye_word_press.png", "status": "done", "slug": "tam-biet-wordpress---vi-sao-minh-chuyen-sang-content-engine-thay-vi-he-thong-back-end-cms", "created_time": "24-05-2026", "updated_time": "05-06-2026", "excerpt": "Từng nghiên cứu Wordpress 5 năm và thực chiến 2 năm, cũng xuất bản được kha khá blog. Bản thân Hải thấy Wordpress đem lại rất nhiều trải nghiệm thú vị nơi blogger chỉ cần quan tâm tới tuyến nội dung và quản trị thay vì đầu tư nhiều thời gia..."}, {"title": "Tâm lý học blogger - Tại sao Hải viết blog?", "status": "done", "category": "Tâm lý", "tags": ["web", "blog"], "slug": "tam-ly-hoc-blogger---tai-sao-hai-viet-blog", "created_time": "01-06-2026", "updated_time": "05-06-2026", "excerpt": "Hôm nay, Hải vào xem lại trận Argentina gặp Pháp vào mùa World Cup năm 2018. Đó là năm Mbappe 19 tuổi và đã khiến Messi dừng bước với 1 kiến tạo Penalty và ghi 2 bàn thắng. Tất cả những phút chạy của Mbappe đều được tường thuật trực tiếp và..."}, {"title": "Tâm lý học của người lười nhưng tham vọng lớn", "status": "done", "category": "Tâm lý", "slug": "tam-ly-hoc-cua-nguoi-luoi-nhung-tham-vong-lon", "created_time": "26-05-2026", "updated_time": "05-06-2026", "excerpt": "Theo lẽ thường, người lười thường sẽ chọn sống yên ổn thay vì tham vọng còn người đã tham vọng thì không được phép lười biếng. Nhưng có 1 kiểu tâm lý nghe qua có vẻ lạ vì nó khá đặc biệt và giống như đang trêu đùa logic nhưng nó vẫn đang xu...", "tags": []}];
 
     function renderFooterCTA() {
       const footerCTA = document.querySelector('.footer-cta');
@@ -199,6 +199,12 @@
         </a>
       `).join('');
     }
+
+    const burgerBtn = document.getElementById('burger-btn');
+    const navLinks = document.getElementById('nav-links');
+    burgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
 
     renderSocialLinks();
     renderFooterCTA();
