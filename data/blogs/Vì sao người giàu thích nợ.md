@@ -16,11 +16,16 @@ Tối đa 90% tiền trong xã hội này là nợ. Ý tưởng này xuất phá
 
 \[
 100 + 90 + 81 + \cdots
-=
-100 + 100(0.9) + 100(0.9)^2 + \cdots
-=
-\sum_{k=0}^{\infty} 100(0.9)^k
 \]
+
+\[
+=100 + 100(0.9) + 100(0.9)^2 + \cdots
+\]
+
+\[
+=\sum_{k=0}^{\infty} 100(0.9)^k
+\]
+
 
 Nếu anh em còn nhớ công thức tính tổng cấp số nhân ở thời trung học thì kết quả sẽ là 1000 đồng. Và tất nhiên 900 đồng là nợ, chỉ 100 đồng là tiền của ngân hàng. Ngân hàng lấy tiền của nhà thầu đem đi cho chủ đầu tư vay. Các chủ đầu tư từ tay không vay được 900 đồng của ngân hàng trong khi đó tiền thịt của ngân hàng chỉ là 100. 
 
