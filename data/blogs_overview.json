@@ -10,6 +10,21 @@
         "tags": []
     },
     {
+        "title": "Content Engine - Vì sao các cá nhân và doanh nghiệp nên quan tâm?",
+        "category": "Công nghệ",
+        "author": "Quý Hải Ng",
+        "tags": [
+            "content engine",
+            "content seeding",
+            "content generation"
+        ],
+        "status": "done",
+        "slug": "content-engine---vi-sao-cac-ca-nhan-va-doanh-nghiep-nen-quan-tam",
+        "created_time": "05-07-2026",
+        "updated_time": "06-07-2026",
+        "excerpt": "Trong nền kinh tế của sự chú ý - nơi mà các doanh nghiệp tận dụng mọi nền tảng để giành giật sự chú ý của khách hàng, sự chú ý của mọi người chỉ được tính bằng giây trước khi chuyển sang nội dung khác. Có thể nói trong thời kỳ này, thông ti..."
+    },
+    {
         "title": "Tạm biệt Wordpress - Vì sao mình chuyển sang content engine thay vì hệ thống back-end CMS",
         "category": "Công nghệ",
         "tags": [
@@ -119,7 +134,7 @@
         "status": "done",
         "slug": "vi-sao-nguoi-giau-thich-no",
         "created_time": "23-06-2026",
-        "updated_time": "01-07-2026",
+        "updated_time": "02-07-2026",
         "excerpt": "Có 1 lần trong cuộc phỏng vấn, tổng thống thứ 45 và 47 của Hoa Kỳ - Donald Trump có chia sẻ về câu chuyện cho tiền người giàu hơn ông khoảng 900 triệu đô. Đó là một ngày khi ông cùng người đẹp dạo phố và ông Trump nói với cô gái: “Em biết n...",
         "tags": []
     },
