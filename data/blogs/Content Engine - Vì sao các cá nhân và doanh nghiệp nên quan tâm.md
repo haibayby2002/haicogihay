@@ -58,6 +58,6 @@ Và 1 lưu ý nhỏ nữa khi xuất bản web đó là cấu hình triển khai
 
 ## Kết
 
-Khi nói đến 1 kho nội dung nhất quán, tin cậy và hữu ích là đang nói đến 1 cách để giữ chân người xem mà không mất phí, một cách tiếp cận người xem bằng việc tạo giá trị và trao đổi nội dung trực tiếp với nền tảng thay vì vung tiền cho quảng cáo. Và cũng là một thứ đã được chuẩn bị sẵn trong thời gian dài để những người có cùng tần số có thể tìm đến. Trên đời này có 2 cách để bắt bướm. Cách thứ nhất là cầm vợt đuổi theo và vợt lấy bướm. Cách thứ hai là trồng và chăm sóc một vườn hoa thật đẹp để bướm tự đến. Đến một lúc nào đó, càng đuổi bắt, bướm càng cảnh giác và càng chạy. Một "vườn hoa engine" được gieo hạt và chăm sóc hằng ngày khi đủ đẹp, đàn bướm sẽ tự tìm đến. 
+Khi nói đến 1 kho nội dung nhất quán, tin cậy và hữu ích là đang nói đến 1 cách để giữ chân người xem mà không mất phí, một cách tiếp cận người xem bằng việc tạo giá trị và trao đổi nội dung trực tiếp với nền tảng thay vì vung tiền cho quảng cáo. Và cũng là một thứ đã được chuẩn bị sẵn trong thời gian dài để những người có cùng tần số có thể tìm đến.
 
 Content engine không phải là thần thánh nhưng muốn có hệ sinh thái nội dung đồng bộ và vững chắc thì không thể bỏ qua content engine. Suy cho cùng, khi một người muốn nhanh chóng thay đổi môi trường triển khai, khi một người muốn nhanh chóng tích hợp nội dung và kể cả khi một người muốn phát triển lên các hệ thống back-end thì việc có cho mình 1 content engine đứng đằng sau là cực kỳ cần thiết.
