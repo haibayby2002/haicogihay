@@ -1,0 +1,48 @@
+---
+title: Giáp kèo môi giới
+author: Quý Hải Ng
+status: done
+---
+
+# Giáp kèo môi giới
+
+Khi nhắc tới 2 chữ môi giới, một vài người sẽ có suy nghĩ không mấy tích cực về công việc này. Đặc biệt là môi giới bất động sản khi mà có hẳn 1 thuật ngữ dành riêng cho nghề này - cò đất. Nhưng trên thực tế, nghề môi giới cũng như những ngành nghề khác, tạo ra giá trị và tồn tại tới tận ngày nay là vì giải quyết vấn đề cho người khác và có thể tạo ra thu nhập. Từ nông sản, bảo hiểm, tài chính - chứng khoán, gia sư, nhà đất cho tới việc làm hay thậm chí là mai mối. Những ngành nghề đó phát triển mạnh tới tận ngày nay là vì xã hội thực sự cần chúng. 
+
+## 2 cách để giải quyết cùng một vấn đề
+
+Khi ai đó than phiền về một điều gì đó đủ nhiều, đủ lâu thì có nghĩa là ở đó có vấn đề cần được giải quyết. Khi một người gặp vấn đề và nói điều đó với anh em thì anh em sẽ tiếp cận như thế nào? Có phải là anh em sẽ coi xem vấn đề đó anh em có giải quyết được hay không, đúng chứ? Nếu anh em có thể giúp được họ thì anh em sẽ làm. Còn nếu không làm được thì anh em sẽ nói dạ em không làm được, rồi thôi, đúng chứ?
+
+Nhưng khoan đã, trong trường hợp anh em không tự giải quyết được thì còn cách nào khác để giúp người đó hay không? Dĩ nhiên là có. Anh em vẫn có thể giúp được người khác bằng cách tìm và giới thiệu người có khả năng làm điều đó. Khi một người mang vải đến cần người đo may nhưng anh em không biết làm, anh em có thể chỉ người đó tới chỗ người may giỏi nhất khu. Khi một người hỏi anh em về dán kính cường lực, anh em có thể chỉ họ tới cửa hàng phụ kiện điện thoại gần đó. Bản chất việc đó về cơ bản có thể coi là hoạt động môi giới nhưng vẫn chưa đủ để kiếm ra tiền và được coi là nghề. Lý do là bởi vì khi anh em giới thiệu cho họ, họ có thể đến, có thể không. Và sau lời giới thiệu đó là lời cảm ơn và lời chào. Anh em cũng không còn biết hay quan tâm tới việc họ có giải quyết được vấn đề của họ hay không. Người tìm thợ may anh em giới thiệu có thể may được vải theo đúng ý, cũng có thể không đúng ý. Người ra cửa hàng phụ kiện có thể tìm được kính cường lực, có thể không. Và vì thế chúng ta chỉ nên dừng ở việc giúp họ tham khảo chứ chưa thể kiếm tiền từ hoạt động này.
+
+Và tất nhiên, một khi đã xem môi giới là một nghề kiếm ra tiền, anh em cần theo người đang gặp vấn đề cho tới khi họ tìm được giải pháp. Nếu người thợ may đầu tiên anh em giới thiệu chưa thể may cho họ trang phục như ý, anh em cần tìm cho họ một người thợ khác. Nếu cửa hàng đầu tiên anh em giới thiệu không có kính cường lực hoặc kính không vừa size, anh em cần tìm cho họ cửa hàng tiếp theo cho tới khi người ta thay được kính cường lực thì thôi. Tương tự một người khi đang cần tìm nhà, tìm gia sư, tìm việc làm, tìm lao động và hỏi môi giới, việc của anh em môi giới là tìm cho họ những chỗ thích hợp, những người thích hợp với họ. Theo người tìm nhà và giúp cho họ tới khi tìm được nhà thì thôi. Giúp người lao động đang thất nghiệp tìm việc làm cho tới khi tìm được việc phù hợp thì thôi. Giúp doanh nghiệp tìm lao động cho tới khi tìm đủ thì thôi. 
+
+
+
+
+## Có những lúc tìm người phù hợp tốt hơn là tự mình giải quyết vấn đề
+
+Khi một người đến tìm anh em và hỏi về chỗ ở, nếu anh em có nhà và còn trống thì anh em có thể tự mình giúp họ. Nhưng nếu anh em chỉ có 1 căn nhà để ở hoặc thậm chí không có nhà mà phải đi thuê, thì rõ ràng anh em không thể tự giải quyết vấn đề của người đó. Anh em muốn giúp họ chỉ có thể nắm thông tin các chủ nhà cần bán và cho thuê và sau đó dẫn người đó đến gặp từng chủ nhà. Quan trọng nhất không phải là anh em có sở hữu nhà cho họ ở hay không mà là anh em có thể tìm được nhà mà họ cần giữa một rừng chủ nhà cần bán và cho thuê ở ngoài kia hay không?
+
+Và cũng tương tự, nếu anh em không có khả năng để thực hiện một công việc mà doanh nghiệp nào đó cần, anh em có thể giới thiệu một người có khả năng đó. Đó là công việc mà các nhân sự công ty hay môi giới việc làm vẫn đang thực hiện ngày nay. Công việc của nhân sự là tìm cho tới khi công ty có đủ người. Công việc của một môi giới việc làm là giúp người lao động tới khi họ tìm được việc làm và giúp công ty tới khi họ tuyển được đủ người. 
+
+Nhiều người nghĩ rằng bản thân phải tự mình làm mọi thứ, tự mình biết mọi thứ, tự mình giỏi mọi thứ. Nhưng than ôi, khả năng, thời gian và nguồn lực của một con người không phải là vô hạn. Rất khó để một người vừa thành thạo tiếng Anh, tiếng Trung, tiếng Hàn, tiếng Nhật,... vừa chơi thạo đủ loại nhạc cụ từ guitar, violin, piano,... cho tới việc đạt mức cạnh tranh cao trong các môn thể thao như cờ vua, bóng đá, E-Sport... để có thể coaching trong mọi lĩnh vực khi ai đó cần. Thay vào đó, khi một người cần tìm ai giỏi trong lĩnh vực nào, hoặc là họ sẽ tự tìm, hoặc là họ sẽ nhờ ai đó tìm và giới thiệu. Điều quan trọng nhất là giúp cho họ, là tìm cho họ người phù hợp nhất nếu bản thân chưa đủ cạnh tranh trong lĩnh vực đó.
+
+Là môi giới thì hãy nhớ rằng người khác đang gặp vấn đề thì họ mới kiếm mình. Và tất nhiên, khi đã tìm được người, 2 bên thấy ưng ý và giải quyết được vấn đề cho cả 2 phía, một khoản hoa hồng nhỏ cho môi giới là hoàn toàn xứng đáng, không việc gì phải bàn cãi. Đừng bao giờ có suy nghĩ làm trung gian kiếm tiền là công việc kém sang. Cũng đừng bao giờ mặc cảm, tự ti hay xấu hổ vì bản thân làm nghề môi giới. Làm môi giới chỉ nên xấu hổ khi bản thân đã nhận lời nhưng không giúp được người khác tìm giải pháp.  
+
+
+## Giải quyết sự hoài nghi và không tin tưởng lẫn nhau
+
+Lý do một người họ không thích môi giới là vì họ không tin tưởng môi giới. Họ coi môi giới là vấn đề thay vì giải pháp. Họ cảm thấy bị làm phiền nhiều hơn là đang được giúp. Và vì thế trong một số trường hợp, người ta còn chặn luôn số và các kênh liên lạc của môi giới. Với một người đang tìm sản phẩm dịch vụ hay giải pháp, anh em môi giới nên tạo cho họ cảm giác rằng anh em đang giúp họ, đang muốn giúp họ, đang tìm mọi giải pháp, mọi khả năng, tận dụng mọi mối quan hệ để giúp họ. Khi anh em thấy họ vẫn chưa tìm được giải pháp mà im lặng, anh em đừng ngại hỏi họ xem đã tìm được người hay sản phẩm / dịch vụ phù hợp chưa? Vì sao? Vì có như vậy môi giới mới biết họ còn cần nữa hay không, bản thân có còn giúp được họ hay không? 
+
+Sự thật là môi giới xuất hiện và có thể giải quyết được vấn đề vì 2 bên chưa biết nhau hoặc chưa đủ tin tưởng lẫn nhau giữa một rừng sự lựa chọn ngoài kia. "Tại sao tôi phải chọn anh? Tại sao tôi phải mua của anh? Xin lỗi, tôi chưa biết anh là ai!". Lúc này môi giới được cả 2 bên tin tưởng chính là giải pháp cho vấn đề niềm tin. 
+
+Một người khám răng khi tìm kiếm trên Google có thể ra hàng trăm kết quả nha khoa trong 1 khu vưc. Tại sao họ nhất định phải chọn 1 trung tâm nha khoa thay vì một trong hàng trăm trung tâm khác ngoài kia? Vì bác sĩ ở trung tâm đó có bằng cấp ư? Có lẽ là chưa đủ thuyết phục vì bác sĩ ở trung tâm nào mà chẳng có bằng cấp. Vì họ tin rằng dịch vụ khám răng và làm răng ở chỗ đó giải quyết được vấn đề răng của họ trong tầm giá phù hợp. Làm sao họ biết điều đó khi chưa đi khám? Không thể phủ nhận đánh giá trên Map có ảnh hưởng, nhưng quan trọng nhất vẫn là nhờ có người họ tin tưởng giới thiệu. Tương tự với việc tìm gia sư tiếng Anh, tin học, tìm giáo viên thanh nhạc, tìm coach cờ tướng, cờ vua, TFT, tìm dạy kèm piano,... Người có thể thực sự giải quyết vấn đề đôi khi không phải là người nổi tiếng nhất trên mạng và chào giá cao ngất ngưởng mà là người đồng hành thực sự, phù hợp, hiểu năng lực người học, đưa ra chương trình phù hợp, hiểu tiến trình học viên, thực sự "kèm trực tiếp" và chỉ nguồn tài liệu. Và để một người mới bắt đầu chưa có một tí kiến thức kinh nghiệm gì về lĩnh vực đó tìm được chuyên gia phù hợp, việc nhờ một người tin tưởng có trình độ nhất định tìm giúp rõ ràng là yên tâm và hiệu quả hơn tự tìm. 
+
+
+## Để giáp kèo thành công
+
+Khi môi giới đưa cung cầu gặp nhau và cả 2 phía đều thấy giá và sản phẩm / dịch vụ đều quá tốt thì cơ bản môi giới đã giáp kèo thành công. Nhưng trong nhiều trường hợp, cung cầu có lệch pha nhận thức về giá: "Tại sao căn này mắc giữ vậy? Bên kia trả có thấp quá không em?...". Lúc này môi giới sẽ có 2 khả năng. Một là hỗ trợ 2 bên thương lượng, hiểu nôm na là nói chuyện với cả 2 bên và kiến nghị cả 2 bên nhường nhau một chút, hạ bớt sự kỳ vọng xuống một chút để chốt. Còn hai là tìm mối khác cho cả hai, tức là dẫn khách đi chỗ khác và dẫn khách khác tới chỗ đó. 
+
+Kể cả khi 2 bên có cảm thấy phù hợp thì vẫn muốn nâng lên hạ xuống một chút. Vì với người mua, trả giá được 1 đồng vẫn là tối ưu lợi ích được 1 đồng. Còn với người cung cấp sản phẩm, đã bị ép xuống thì có gắng nhích lên được chút nào hay chút đó. Không ai muốn mình chịu thiệt bất kể đã được hưởng lợi từ hợp tác, giao dịch. Lúc này cả 2 có thể sẽ nói riêng với môi giới và nhờ môi giới truyền đạt lại suy nghĩ với người kia. Tất nhiên anh em giúp họ nhưng cũng nên xác định rõ với họ rằng nếu không điều chỉnh giá thì có chốt hay không, hay điều chỉnh trong khoản nào thì chốt? Khi cả 2 bên đủ tin tưởng, họ sẽ nói cho môi giới nghe con số cụ thể hoặc khoản mà họ thực sự mong muốn.
+
+Cuối cùng, khi 2 bên đang lệch suy nghĩ về sản phẩm dịch vụ hay về tiền, đừng cố đưa họ đi đến giao dịch vì ngoài kia cũng còn rất nhiều người khác có khả năng cung cấp giải pháp. Tiếp tục tìm kiếm cho tới khi tìm được thì dừng. Tiếp tục tìm giáo viên cho học viên tới khi tìm được người phù hợp về năng lực và về giá. Tiếp tục tìm công việc cho người thất nghiệp cho tới khi tìm được chỗ phù hợp về JD và lương. Tiếp tục tìm quỹ đầu tư cho start-up cho tới khi họ tìm được nhà đầu tư và kêu gọi đủ vốn. Tiếp tục tìm khách để giải ngân cho tới khi đạt chỉ tiêu. Tiếp tục tìm nhà cho tới khi tìm được căn phù hợp trong khả năng tài chính của khách thì thôi.
