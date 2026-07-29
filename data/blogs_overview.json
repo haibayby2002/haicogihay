@@ -35,6 +35,16 @@
         "tags": []
     },
     {
+        "title": "Kỹ năng cốt lõi để thành công - dành cho tất cả mọi người",
+        "author": "Quý Hải Ng",
+        "status": "done",
+        "slug": "ky-nang-cot-loi-de-thanh-cong---danh-cho-tat-ca-moi-nguoi",
+        "created_time": "23-07-2026",
+        "updated_time": "28-07-2026",
+        "excerpt": "Khi đọc sách self-help hay tham gia bất kỳ hội thảo khóa học nào, anh em có thể đã nghe que hàng trăm đức tính để trở nên thành công, thành đạt, thịnh vượng. Nào là cần cù, chịu thương, chịu khó. Nào là thông minh, sáng tạo, tư duy mở. Nào...",
+        "tags": []
+    },
+    {
         "title": "Tạm biệt Wordpress - Vì sao mình chuyển sang content engine thay vì hệ thống back-end CMS",
         "category": "Công nghệ",
         "tags": [
