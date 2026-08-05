@@ -6,3 +6,4 @@ assets/product_image/*.jpg
 assets/product_image/*.png
 instructions/
 .tmp*
+*.gdoc
