@@ -1,5 +1,5 @@
 ---
-title: Góc nhìn của cao thủ TFT 3 mùa
+title: Góc nhìn về thành công và thất bại từ cao thủ TFT 3 mùa
 author: Quý Hải Ng
 status: done
 ---
