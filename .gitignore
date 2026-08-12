@@ -7,3 +7,4 @@ assets/product_image/*.png
 instructions/
 .tmp*
 *.gdoc
+*__pycache__/*
