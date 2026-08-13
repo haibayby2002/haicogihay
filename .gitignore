@@ -8,3 +8,4 @@ instructions/
 .tmp*
 *.gdoc
 *__pycache__/*
+*/~*
