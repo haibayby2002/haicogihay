@@ -1,0 +1,2 @@
+/pdf2mcqs https://pdf2mcqs-iota.vercel.app 301
+/pdf2mcqs/* https://pdf2mcqs-iota.vercel.app/:splat 301
