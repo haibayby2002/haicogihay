@@ -80,6 +80,7 @@ Vậy cha đẻ của Bitcoin là Satoshi Nakamoto có biết trước về ch�
 ## Tương lai công nghệ hay chiêu trò thổi bong bóng?
 
 Khi chúng ta đã đi qua 4 câu hỏi:
+
 - [x] Tư duy nào hình thành nên sổ cái phi tập trung?
 - [x] Làm sao để chuyển tiền?
 - [x] Làm sao để biết giao dịch có hợp lệ hay không?
