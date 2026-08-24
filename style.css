@@ -587,6 +587,11 @@ footer a:hover {
     background: #0086cc;
 }
 
+.zalo-button,
+.zalo-bubble {
+    display: none !important;
+}
+
 .zalo-button {
     position: fixed;
     right: 24px;
