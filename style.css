@@ -1031,3 +1031,45 @@ footer a:hover {
     gap: 12px;
     flex-wrap: wrap;
 }
+
+/* Headline ticker (blog index) - scrolls right-to-left, looping */
+.headline-bar {
+    position: relative;
+    overflow: hidden;
+    background: #00a8ff;
+    color: #fff;
+}
+
+.headline-track {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 10px 0;
+    will-change: transform;
+    animation: headline-scroll 40s linear infinite;
+}
+
+.headline-bar:hover .headline-track {
+    animation-play-state: paused;
+}
+
+.headline-item {
+    padding: 0 28px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.headline-sep {
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+@keyframes headline-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .headline-track { animation: none; }
+}

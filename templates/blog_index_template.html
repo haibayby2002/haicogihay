@@ -35,6 +35,10 @@
     </div>
   </header>
 
+  <div class="headline-bar" id="headlineBar" aria-label="Tin nổi bật">
+    <div class="headline-track" id="headlineTrack"></div>
+  </div>
+
   <main class="container">
     <section id="blogs" class="products-section">
       <div class="section-title">Bài viết nổi bật</div>
@@ -94,6 +98,7 @@
   <script>
     const storeData = {storeData};
     const blogs = {blogs};
+    const headlines = {headline};
 
     const blogGrid = document.getElementById('blogGrid');
     const searchInput = document.getElementById('searchInput');
@@ -110,6 +115,34 @@
     function formatDate(value) {
       if (!value) return 'Chưa cập nhật';
       return value;
+    }
+
+    function escapeHtml(text) {
+      return String(text)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function renderHeadlines() {
+      const bar = document.getElementById('headlineBar');
+      const track = document.getElementById('headlineTrack');
+      if (!bar || !track) return;
+      const items = Array.isArray(headlines) ? headlines.filter(Boolean) : [];
+      if (items.length === 0) {
+        bar.style.display = 'none';
+        return;
+      }
+      // Two identical copies so the -50% keyframe loops seamlessly.
+      const unit = items.map(text =>
+        `<span class="headline-item">${escapeHtml(text)}</span><span class="headline-sep" aria-hidden="true">◆</span>`
+      ).join('');
+      track.innerHTML = unit + unit;
+      // Constant scroll speed regardless of how much text there is.
+      const distance = track.scrollWidth / 2;
+      const speed = 90; // pixels per second
+      track.style.animationDuration = Math.max(12, Math.round(distance / speed)) + 's';
     }
 
     function resolveAsset(pathValue) {
@@ -293,6 +326,7 @@
     }
 
     renderHeader();
+    renderHeadlines();
     renderCategoryOptions();
     updateSortToggle();
     filterBlogs();
