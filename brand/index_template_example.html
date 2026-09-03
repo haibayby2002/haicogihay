@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title data-i18n="meta.title">Hải Có Gì Hay? — Marketing Pay-as-You-Go</title>
+<meta name="description" data-i18n="meta.desc" content="Bạn có ngân sách bao nhiêu? Chúng tôi biến nó thành một gói marketing cụ thể." />
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- ============================================================
+     index_template.html  —  edit THIS file, never index.html.
+
+     Build:   python build.py            -> writes index.html
+              python build.py --example  -> also refreshes index_template_example.html
+
+     build.py replaces the data tokens below with <script> blocks
+     generated from config.json, pricing.csv and i18n.json.
+     ============================================================ -->
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="top">
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="Hải Có Gì Hay?" class="brand-logo" />
+      <span class="brand-name">Hải Có Gì Hay?</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#services" data-i18n="nav.services">Dịch vụ</a>
+      <a href="#builder" data-i18n="nav.builder">Tạo gói</a>
+      <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="pill" id="langToggle" aria-label="Language">
+        <span class="lang-opt is-active" data-lang="vi">VI</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-opt" data-lang="en">EN</span>
+      </button>
+      <button class="icon-btn" id="themeToggle" aria-label="Theme">
+        <span class="theme-icon-sun">☀</span>
+        <span class="theme-icon-moon">☾</span>
+      </button>
+      <button class="icon-btn nav-burger" id="navBurger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ============ CAROUSEL / HERO ============ -->
+  <section class="carousel" id="home">
+   <div class="carousel-stage">
+    <div class="carousel-track" id="carouselTrack">
+      <article class="slide">
+        <div class="container slide-inner">
+          <div class="slide-copy">
+            <p class="eyebrow" data-i18n="hero.4.eyebrow">Storytelling • Thương hiệu</p>
+            <h1 data-i18n="hero.4.title">Cùng kể những câu chuyện, chạm đến khách hàng tiềm năng.</h1>
+            <p class="lead" data-i18n="hero.4.text">Làm cho khách hàng biết đến và yêu thương thương hiệu của bạn nhiều hơn mỗi ngày.</p>
+            <div class="slide-cta">
+              <a href="#contact" class="btn btn-primary" data-i18n="hero.4.cta">Kể chuyện cùng Hải</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide">
+        <div class="container slide-inner">
+          <div class="slide-copy">
+            <p class="eyebrow" data-i18n="hero.1.eyebrow">Marketing • Brand • Content</p>
+            <h1 data-i18n="hero.1.title">Nói ngân sách của bạn. Chúng tôi lo phần còn lại.</h1>
+            <p class="lead" data-i18n="hero.1.text">Mô hình Pay-as-You-Go: chọn số tiền muốn đầu tư, hệ thống đề xuất ngay một gói marketing hợp lý.</p>
+            <div class="slide-cta">
+              <a href="#builder" class="btn btn-primary" data-i18n="hero.1.cta">Tạo gói của bạn</a>
+              <a href="#services" class="btn btn-ghost" data-i18n="hero.1.cta2">Xem dịch vụ</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide">
+        <div class="container slide-inner">
+          <div class="slide-copy">
+            <p class="eyebrow" data-i18n="hero.2.eyebrow">Realtime calculator</p>
+            <h1 data-i18n="hero.2.title">Kéo thanh ngân sách — thấy ngay bạn nhận được gì.</h1>
+            <p class="lead" data-i18n="hero.2.text">Không cần chọn gói cố định. Tăng giảm từng hạng mục, tổng chi phí cập nhật tức thì.</p>
+            <div class="slide-cta">
+              <a href="#builder" class="btn btn-primary" data-i18n="hero.2.cta">Thử ngay</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="slide">
+        <div class="container slide-inner">
+          <div class="slide-copy">
+            <p class="eyebrow" data-i18n="hero.3.eyebrow">Freelance • Linh hoạt</p>
+            <h1 data-i18n="hero.3.title">Content, Video, Tư vấn & Quản lý — trong một chỗ.</h1>
+            <p class="lead" data-i18n="hero.3.text">Làm việc trực tiếp, minh bạch chi phí, không hợp đồng ràng buộc dài hạn.</p>
+            <div class="slide-cta">
+              <a href="#contact" class="btn btn-primary" data-i18n="hero.3.cta">Liên hệ ngay</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <button class="carousel-arrow prev" id="carPrev" aria-label="Previous">‹</button>
+    <button class="carousel-arrow next" id="carNext" aria-label="Next">›</button>
+    <div class="carousel-dots" id="carouselDots"></div>
+   </div>
+
+   <div class="container">
+     <p class="carousel-note">
+       <span data-i18n="hero.blog">Want to discover more about me, read my</span>
+       <a href="https://haicogihay.com/blog" target="_blank" rel="noopener" data-i18n="hero.blogLink">blog</a>
+     </p>
+   </div>
+  </section>
+
+  <!-- ============ 4 SERVICES ============ -->
+  <section class="section" id="services">
+    <div class="container">
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="services.eyebrow">Dịch vụ</p>
+        <h2 data-i18n="services.title">Bốn nhóm dịch vụ chính</h2>
+        <p class="section-sub" data-i18n="services.sub">Các hạng mục nhỏ được gộp bên trong mỗi nhóm để bạn không bị rối.</p>
+      </header>
+
+      <!-- Cards are rendered from window.PRICING (pricing.csv -> build.py) -->
+      <div class="cards" id="serviceCards"></div>
+
+      <p class="addon-note">
+        <span data-i18n="services.addon">Cần thứ khác? Thiết kế Landing Page —</span>
+        <strong id="addonPrice">từ $300</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ INTERACTIVE BUILDER + CONTACT + CTA ============ -->
+  <section class="section section-builder" id="builder">
+    <div class="container builder-grid">
+      <div class="builder-panel">
+        <p class="eyebrow" data-i18n="builder.eyebrow">Interactive</p>
+        <h2 data-i18n="builder.title">Bạn muốn đầu tư bao nhiêu?</h2>
+
+        <div class="budget-row">
+          <input type="range" id="budget" min="15" max="2000" step="5" value="250" />
+          <div class="budget-value"><span id="budgetValue">250</span><span data-i18n="builder.perMonth">/tháng</span></div>
+        </div>
+
+        <ul class="package-list" id="packageList"></ul>
+
+        <div class="package-total">
+          <span data-i18n="builder.total">Tổng ước tính</span>
+          <strong><span id="packageTotal">0</span></strong>
+        </div>
+        <p class="builder-hint" data-i18n="builder.hint">Dùng nút +/− để tinh chỉnh từng hạng mục — ngân sách tự cập nhật.</p>
+      </div>
+
+      <div class="contact-panel" id="contact">
+        <h2 data-i18n="contact.title">Liên hệ</h2>
+        <p class="section-sub" data-i18n="contact.sub">Gửi thông tin, chúng tôi phản hồi trong 24 giờ.</p>
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            <span data-i18n="contact.name">Họ tên</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span data-i18n="contact.email">Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span data-i18n="contact.phone">Số điện thoại</span>
+            <input type="tel" name="phone" inputmode="tel" autocomplete="tel" required />
+          </label>
+          <label>
+            <span data-i18n="contact.message">Nội dung</span>
+            <textarea name="message" rows="3" data-i18n-ph="contact.messagePh" placeholder="Mình cần hỗ trợ về..."></textarea>
+          </label>
+          <input type="hidden" name="package" id="packageSummary" />
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.send">Gửi yêu cầu</button>
+          <p class="form-status" id="formStatus" hidden></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="cta-band container">
+      <h2 data-i18n="cta.title">Vẫn chưa có thứ bạn cần?</h2>
+      <a href="https://zalo.me/0703017645" target="_blank" rel="noopener" class="btn btn-primary" data-i18n="cta.button">Liên hệ trực tiếp với Hải</a>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Hải Có Gì Hay?" />
+      <p data-i18n="footer.tagline">Marketing Pay-as-You-Go cho freelancer & doanh nghiệp nhỏ.</p>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.explore">Khám phá</h4>
+      <a href="#services" data-i18n="nav.services">Dịch vụ</a>
+      <a href="#builder" data-i18n="nav.builder">Tạo gói</a>
+      <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.connect">Kết nối</h4>
+      <a class="with-icon" href="mailto:nguyenquyhai2002@gmail.com">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+        nguyenquyhai2002@gmail.com
+      </a>
+      <a class="with-icon" href="tel:+840703017645">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (+84) 0703 017 645
+      </a>
+      <a class="with-icon" href="https://zalo.me/0703017645" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg>
+        zalo.me/0703017645
+      </a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> Hải Có Gì Hay?</span>
+    <span data-i18n="footer.rights">Bảo lưu mọi quyền.</span>
+  </div>
+</footer>
+
+<!-- build.py injects the data blocks here -->
+<script>window.CONFIG = {
+  "addonPriceUsd": 300,
+  "contact": {
+    "submitEndpoint": "https://api.web3forms.com/submit",
+    "accessKey": "9d6e8f5a-8ab1-427a-ae77-e7d821f6c0c4",
+    "email": "nguyenquyhai2002@gmail.com"
+  },
+  "currencies": {
+    "en": {
+      "code": "USD",
+      "symbol": "$",
+      "position": "before",
+      "perUsd": 1,
+      "roundTo": 1,
+      "locale": "en-US"
+    },
+    "vi": {
+      "code": "VND",
+      "symbol": "₫",
+      "position": "after",
+      "perUsd": 25400,
+      "roundTo": 1000,
+      "locale": "vi-VN"
+    }
+  }
+};</script>
+<script>window.PRICING = [
+  {
+    "id": "content",
+    "price": 15.0,
+    "min": 1,
+    "max": 60,
+    "weight": 30.0,
+    "name": {
+      "en": "Content",
+      "vi": "Content"
+    },
+    "unit": {
+      "en": "post",
+      "vi": "bài"
+    },
+    "card": {
+      "en": "Social posts, captions, blogs & scripts. Priced per post.",
+      "vi": "Social posts, caption, blog & kịch bản. Tính theo bài viết."
+    }
+  },
+  {
+    "id": "consulting",
+    "price": 15.0,
+    "min": 0,
+    "max": 20,
+    "weight": 20.0,
+    "name": {
+      "en": "Consulting",
+      "vi": "Tư vấn"
+    },
+    "unit": {
+      "en": "hour",
+      "vi": "giờ"
+    },
+    "card": {
+      "en": "Marketing, brand & strategy consulting. Priced per hour.",
+      "vi": "Tư vấn marketing, thương hiệu & chiến lược. Tính theo giờ."
+    }
+  },
+  {
+    "id": "video",
+    "price": 40.0,
+    "min": 0,
+    "max": 20,
+    "weight": 30.0,
+    "name": {
+      "en": "Video",
+      "vi": "Video"
+    },
+    "unit": {
+      "en": "video",
+      "vi": "video"
+    },
+    "card": {
+      "en": "TikTok, Reels, Shorts & video editing. Priced per video.",
+      "vi": "TikTok, Reels, Shorts & dựng video. Tính theo video."
+    }
+  },
+  {
+    "id": "management",
+    "price": 100.0,
+    "min": 0,
+    "max": 12,
+    "weight": 20.0,
+    "name": {
+      "en": "Management",
+      "vi": "Quản lý"
+    },
+    "unit": {
+      "en": "week",
+      "vi": "tuần"
+    },
+    "card": {
+      "en": "Channel management, scheduling & community. Priced per week.",
+      "vi": "Quản lý kênh, lên lịch & cộng đồng. Tính theo tuần."
+    }
+  }
+];</script>
+<script>window.I18N = {
+  "vi": {
+    "meta.title": "Hải Có Gì Hay? — Branding Pay-as-You-Go",
+    "meta.desc": "Bạn có ngân sách bao nhiêu? Chúng tôi biến nó thành một gói marketing cụ thể.",
+    "nav.services": "Dịch vụ",
+    "nav.builder": "Tạo gói",
+    "nav.contact": "Liên hệ",
+    "hero.1.eyebrow": "Marketing • Brand • Content",
+    "hero.1.title": "Nói ngân sách của bạn. Chúng tôi lo phần còn lại.",
+    "hero.1.text": "Mô hình Pay-as-You-Go: chọn ngân sách, nhận ngay đề xuất một gói branding hợp lý.",
+    "hero.1.cta": "Tạo gói của bạn",
+    "hero.1.cta2": "Xem dịch vụ",
+    "hero.2.eyebrow": "Realtime calculator",
+    "hero.2.title": "Kéo thanh ngân sách — thấy ngay bạn nhận được gì.",
+    "hero.2.text": "Không cần chọn gói cố định. Tăng giảm từng hạng mục, tổng chi phí cập nhật tức thì.",
+    "hero.2.cta": "Thử ngay",
+    "hero.3.eyebrow": "Freelance • Linh hoạt",
+    "hero.3.title": "Content, Video, Tư vấn & Quản lý — trong một chỗ.",
+    "hero.3.text": "Làm việc trực tiếp, minh bạch chi phí, không hợp đồng ràng buộc dài hạn.",
+    "hero.3.cta": "Liên hệ ngay",
+    "hero.4.eyebrow": "Storytelling • Thương hiệu",
+    "hero.4.title": "Cùng kể những câu chuyện, chạm đến khách hàng tiềm năng.",
+    "hero.4.text": "Làm cho khách hàng biết đến và yêu thương thương hiệu của bạn nhiều hơn mỗi ngày.",
+    "hero.4.cta": "Kể chuyện cùng Hải",
+    "hero.blog": "Muốn tìm hiểu thêm về mình? Đọc",
+    "hero.blogLink": "blog của mình",
+    "services.eyebrow": "Dịch vụ",
+    "services.title": "Bốn nhóm dịch vụ chính",
+    "services.sub": "Các hạng mục nhỏ được gộp bên trong mỗi nhóm để bạn không bị rối.",
+    "services.addon": "Cần thứ khác? Thiết kế Landing Page —",
+    "builder.eyebrow": "Interactive",
+    "builder.title": "Bạn muốn đầu tư bao nhiêu?",
+    "builder.perMonth": "/tháng",
+    "builder.total": "Tổng ước tính",
+    "builder.hint": "Dùng nút +/− để tinh chỉnh từng hạng mục — ngân sách tự cập nhật.",
+    "contact.title": "Liên hệ",
+    "contact.sub": "Gửi thông tin, chúng tôi phản hồi trong 24 giờ.",
+    "contact.name": "Họ tên",
+    "contact.email": "Email",
+    "contact.phone": "Số điện thoại",
+    "contact.message": "Nội dung",
+    "contact.messagePh": "Mình cần hỗ trợ về...",
+    "contact.send": "Gửi yêu cầu",
+    "contact.sending": "Đang gửi yêu cầu...",
+    "contact.ok": "Đã gửi! Chúng tôi sẽ liên hệ với bạn sớm.",
+    "contact.err": "Vui lòng nhập họ tên, email và số điện thoại hợp lệ.",
+    "contact.errNet": "Gửi chưa thành công. Vui lòng thử lại hoặc gọi trực tiếp cho chúng tôi.",
+    "msg.title": "🌟 Yêu cầu mới từ website Hải Có Gì Hay?",
+    "msg.package": "Gói quan tâm:",
+    "cta.title": "Vẫn chưa có thứ bạn cần?",
+    "cta.button": "Liên hệ trực tiếp với Hải",
+    "footer.tagline": "Branding Pay-as-You-Go cho freelancer & doanh nghiệp nhỏ.",
+    "footer.explore": "Khám phá",
+    "footer.connect": "Kết nối",
+    "footer.rights": "Bảo lưu mọi quyền.",
+    "unit.from": "từ"
+  },
+  "en": {
+    "meta.title": "Hải Có Gì Hay? — Branding Pay-as-You-Go",
+    "meta.desc": "Tell us your budget and we'll turn it into a concrete marketing package.",
+    "nav.services": "Services",
+    "nav.builder": "Build package",
+    "nav.contact": "Contact",
+    "hero.1.eyebrow": "Marketing • Brand • Content",
+    "hero.1.title": "Tell us your budget. We handle the rest.",
+    "hero.1.text": "A Pay-as-You-Go model: pick how much to invest and get a sensible branding package instantly.",
+    "hero.1.cta": "Build your package",
+    "hero.1.cta2": "See services",
+    "hero.2.eyebrow": "Realtime calculator",
+    "hero.2.title": "Drag the budget — see exactly what you get.",
+    "hero.2.text": "No fixed tiers. Adjust each line item and the total updates instantly.",
+    "hero.2.cta": "Try it now",
+    "hero.3.eyebrow": "Freelance • Flexible",
+    "hero.3.title": "Content, Video, Consulting & Management — in one place.",
+    "hero.3.text": "Work directly, transparent pricing, no long-term lock-in.",
+    "hero.3.cta": "Get in touch",
+    "hero.4.eyebrow": "Storytelling • Brand",
+    "hero.4.title": "Tell stories together, reach the customers who matter.",
+    "hero.4.text": "Help more people discover your brand — and love it a little more every day.",
+    "hero.4.cta": "Start your story",
+    "hero.blog": "Want to discover more about me, read my",
+    "hero.blogLink": "blog",
+    "services.eyebrow": "Services",
+    "services.title": "Four core service groups",
+    "services.sub": "Smaller deliverables are bundled inside each group so you stay focused.",
+    "services.addon": "Need something else? Landing Page Design —",
+    "builder.eyebrow": "Interactive",
+    "builder.title": "How much do you want to invest?",
+    "builder.perMonth": "/month",
+    "builder.total": "Estimated total",
+    "builder.hint": "Use the +/− buttons to fine-tune each item — the budget updates automatically.",
+    "contact.title": "Contact",
+    "contact.sub": "Send your details and we'll reply within 24 hours.",
+    "contact.name": "Full name",
+    "contact.email": "Email",
+    "contact.phone": "Phone number",
+    "contact.message": "Message",
+    "contact.messagePh": "I need help with...",
+    "contact.send": "Send request",
+    "contact.sending": "Sending your request...",
+    "contact.ok": "Sent! We'll get back to you soon.",
+    "contact.err": "Please enter your name, a valid email and phone number.",
+    "contact.errNet": "Couldn't send. Please try again or call us directly.",
+    "msg.title": "🌟 New request from the Hải Có Gì Hay? website",
+    "msg.package": "Package of interest:",
+    "cta.title": "Still can't find what you need?",
+    "cta.button": "Contact Hải directly",
+    "footer.tagline": "Branding Pay-as-You-Go for freelancers & small businesses.",
+    "footer.explore": "Explore",
+    "footer.connect": "Connect",
+    "footer.rights": "All rights reserved.",
+    "unit.from": "from"
+  }
+};</script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "addonPriceUsd": 300,
+  "contact": {
+    "submitEndpoint": "https://api.web3forms.com/submit",
+    "accessKey": "9d6e8f5a-8ab1-427a-ae77-e7d821f6c0c4",
+    "email": "nguyenquyhai2002@gmail.com"
+  },
+  "currencies": {
+    "en": {
+      "code": "USD",
+      "symbol": "$",
+      "position": "before",
+      "perUsd": 1,
+      "roundTo": 1,
+      "locale": "en-US"
+    },
+    "vi": {
+      "code": "VND",
+      "symbol": "₫",
+      "position": "after",
+      "perUsd": 25400,
+      "roundTo": 1000,
+      "locale": "vi-VN"
+    }
+  }
+}

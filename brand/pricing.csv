@@ -1,0 +1,5 @@
+id,name_en,name_vi,unit_en,unit_vi,price,min,max,weight,card_en,card_vi
+content,Content,Content,post,bài,15,1,60,30,"Social posts, captions, blogs & scripts. Priced per post.","Social posts, caption, blog & kịch bản. Tính theo bài viết."
+consulting,Consulting,Tư vấn,hour,giờ,15,0,20,20,"Marketing, brand & strategy consulting. Priced per hour.","Tư vấn marketing, thương hiệu & chiến lược. Tính theo giờ."
+video,Video,Video,video,video,30,0,20,30,"TikTok, Reels, Shorts & video editing. Priced per video.","TikTok, Reels, Shorts & dựng video. Tính theo video."
+management,Management,Quản lý,week,tuần,100,0,12,20,"Channel management, scheduling & community. Priced per week.","Quản lý kênh, lên lịch & cộng đồng. Tính theo tuần."
