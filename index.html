@@ -98,6 +98,15 @@
       font-size: 1rem; display: grid; place-items: center; flex-shrink: 0;
     }
     .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
+    .lang-toggle {
+      border: 1px solid var(--border); background: var(--surface); color: var(--muted);
+      height: 38px; padding: 0 12px; border-radius: 999px; cursor: pointer;
+      font-size: .82rem; font-weight: 700; letter-spacing: .02em;
+      display: flex; align-items: center; gap: 5px; flex-shrink: 0;
+    }
+    .lang-toggle:hover { border-color: var(--accent); }
+    .lang-toggle .sep { color: var(--border); font-weight: 400; }
+    .lang-toggle .active { color: var(--accent); }
     @media (max-width: 720px) { .nav-links { display: none; } }
 
     /* ---------- Hero ---------- */
@@ -219,13 +228,18 @@
       </a>
       <div class="nav-right">
         <ul class="nav-links">
-          <li><a href="https://haicogihay.com/blog">Blog</a></li>
-          <li><a href="https://haicogihay.com/blog_llm">Blog LLM</a></li>
-          <li><a href="https://haicogihay.com/pdf2mcqs">PDF → Trắc nghiệm</a></li>
-          <li><a href="https://haicogihay.com/brand">Branding</a></li>
-          <li><a href="https://haicogihay.com/store.html">Sản phẩm</a></li>
-          <li><a href="#contact">Liên hệ</a></li>
+          <li><a href="https://haicogihay.com/blog" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="https://haicogihay.com/blog_llm" data-i18n="nav.blogllm">Blog LLM</a></li>
+          <li><a href="https://haicogihay.com/pdf2mcqs" data-i18n="nav.pdf">PDF → Trắc nghiệm</a></li>
+          <li><a href="https://haicogihay.com/brand" data-i18n="nav.brand">Branding</a></li>
+          <li><a href="https://haicogihay.com/store.html" data-i18n="nav.store">Sản phẩm</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Liên hệ</a></li>
         </ul>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Language / Ngôn ngữ">
+          <span class="lang-opt" data-lang="vi">VI</span>
+          <span class="sep">/</span>
+          <span class="lang-opt" data-lang="en">EN</span>
+        </button>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển giao diện sáng/tối">
           <i class="fa-solid fa-moon"></i>
         </button>
@@ -237,7 +251,7 @@
     <div class="hero-inner">
       <img class="logo" src="assets/store_image/logo_hai_co_gi_hay_removed_background.png" alt="Hải có gì hay logo" />
       <h1>Hải có gì hay?</h1>
-      <p>
+      <p data-i18n="hero.desc">
         Đây là trang tổng hợp mọi thứ Hải đang làm — từ viết lách, chia sẻ góc nhìn,
         công cụ học tập, dịch vụ branding cho tới cửa hàng sản phẩm tuyển chọn.
         Chọn một mục bên dưới để bắt đầu.
@@ -247,51 +261,51 @@
 
   <main class="container">
     <section>
-      <div class="section-label">Đọc &amp; Góc nhìn</div>
+      <div class="section-label" data-i18n="sec.read">Đọc &amp; Góc nhìn</div>
       <div class="grid">
         <a class="card" href="https://haicogihay.com/blog">
           <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
-          <h3>Blog</h3>
+          <h3 data-i18n="card.blog.title">Blog</h3>
           <div class="url">haicogihay.com/blog</div>
-          <p>Những bài viết về tiền bạc, kỹ năng, khởi nghiệp và các góc nhìn đời sống — viết mộc, nói thẳng, dành cho tất cả anh em.</p>
-          <span class="more">Đọc blog <i class="fa-solid fa-arrow-right"></i></span>
+          <p data-i18n="card.blog.desc">Những bài viết về tiền bạc, kỹ năng, khởi nghiệp và các góc nhìn đời sống — viết mộc, nói thẳng, dành cho tất cả anh em.</p>
+          <span class="more"><span data-i18n="card.blog.more">Đọc blog</span> <i class="fa-solid fa-arrow-right"></i></span>
         </a>
 
         <a class="card" href="https://haicogihay.com/blog_llm">
           <div class="icon"><i class="fa-solid fa-robot"></i></div>
-          <h3>Blog LLM</h3>
+          <h3 data-i18n="card.blogllm.title">Blog LLM</h3>
           <div class="url">haicogihay.com/blog_llm</div>
-          <p>Ghi chép và thử nghiệm quanh mô hình ngôn ngữ lớn (LLM): cách dùng, cách xây ứng dụng, và những gì học được trên đường đi.</p>
-          <span class="more">Khám phá <i class="fa-solid fa-arrow-right"></i></span>
+          <p data-i18n="card.blogllm.desc">Ghi chép và thử nghiệm quanh mô hình ngôn ngữ lớn (LLM): cách dùng, cách xây ứng dụng, và những gì học được trên đường đi.</p>
+          <span class="more"><span data-i18n="card.blogllm.more">Khám phá</span> <i class="fa-solid fa-arrow-right"></i></span>
         </a>
       </div>
     </section>
 
     <section>
-      <div class="section-label">Công cụ &amp; Dịch vụ</div>
+      <div class="section-label" data-i18n="sec.tools">Công cụ &amp; Dịch vụ</div>
       <div class="grid">
         <a class="card" href="https://haicogihay.com/pdf2mcqs">
           <div class="icon"><i class="fa-solid fa-list-check"></i></div>
-          <h3>PDF → Trắc nghiệm</h3>
+          <h3 data-i18n="card.pdf.title">PDF → Trắc nghiệm</h3>
           <div class="url">haicogihay.com/pdf2mcqs</div>
-          <p>Tải lên một file PDF và nhận về bộ câu hỏi trắc nghiệm để ôn tập. Công cụ nhỏ giúp việc học từ tài liệu nhanh hơn.</p>
-          <span class="more">Dùng thử <i class="fa-solid fa-arrow-right"></i></span>
+          <p data-i18n="card.pdf.desc">Tải lên một file PDF và nhận về bộ câu hỏi trắc nghiệm để ôn tập. Công cụ nhỏ giúp việc học từ tài liệu nhanh hơn.</p>
+          <span class="more"><span data-i18n="card.pdf.more">Dùng thử</span> <i class="fa-solid fa-arrow-right"></i></span>
         </a>
 
         <a class="card" href="https://haicogihay.com/brand">
           <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
-          <h3>Hải làm branding</h3>
+          <h3 data-i18n="card.brand.title">Hải làm branding</h3>
           <div class="url">haicogihay.com/brand</div>
-          <p>Dịch vụ marketing &amp; branding theo mô hình Pay-as-You-Go: nói ngân sách của bạn, nhận ngay đề xuất một gói cụ thể.</p>
-          <span class="more">Xem dịch vụ <i class="fa-solid fa-arrow-right"></i></span>
+          <p data-i18n="card.brand.desc">Dịch vụ marketing &amp; branding theo mô hình Pay-as-You-Go: nói ngân sách của bạn, nhận ngay đề xuất một gói cụ thể.</p>
+          <span class="more"><span data-i18n="card.brand.more">Xem dịch vụ</span> <i class="fa-solid fa-arrow-right"></i></span>
         </a>
 
         <a class="card" href="https://haicogihay.com/store.html">
           <div class="icon"><i class="fa-solid fa-bag-shopping"></i></div>
-          <h3>Cửa hàng sản phẩm</h3>
+          <h3 data-i18n="card.store.title">Cửa hàng sản phẩm</h3>
           <div class="url">haicogihay.com/store.html</div>
-          <p>Cửa hàng trực tuyến lọc các sản phẩm thú vị, tiện ích và đáng mua. Mỗi thời điểm chỉ niêm yết tối đa 20 món để dễ chọn.</p>
-          <span class="more">Xem sản phẩm <i class="fa-solid fa-arrow-right"></i></span>
+          <p data-i18n="card.store.desc">Cửa hàng trực tuyến lọc các sản phẩm thú vị, tiện ích và đáng mua. Mỗi thời điểm chỉ niêm yết tối đa 20 món để dễ chọn.</p>
+          <span class="more"><span data-i18n="card.store.more">Xem sản phẩm</span> <i class="fa-solid fa-arrow-right"></i></span>
         </a>
       </div>
     </section>
@@ -301,7 +315,7 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <h2>Thông tin liên hệ</h2>
+          <h2 data-i18n="foot.contact">Thông tin liên hệ</h2>
           <p>Email: <a href="mailto:nguyenquyhai2002@gmail.com">nguyenquyhai2002@gmail.com</a></p>
           <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
           <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">zalo.me/0703017645</a></p>
@@ -312,14 +326,14 @@
           </div>
         </div>
         <div>
-          <h2>Giữ liên lạc</h2>
-          <p>Đăng ký nhận tin để không bỏ lỡ bài viết mới, công cụ mới và sản phẩm mới từ Hải.</p>
-          <a class="cta-button" href="https://forms.gle/c8bUfvF6evuVDU2L8" target="_blank" rel="noreferrer noopener">Đăng ký nhận tin</a>
+          <h2 data-i18n="foot.keep">Giữ liên lạc</h2>
+          <p data-i18n="foot.keep.desc">Đăng ký nhận tin để không bỏ lỡ bài viết mới, công cụ mới và sản phẩm mới từ Hải.</p>
+          <a class="cta-button" href="https://forms.gle/c8bUfvF6evuVDU2L8" target="_blank" rel="noreferrer noopener" data-i18n="foot.keep.btn">Đăng ký nhận tin</a>
         </div>
         <div>
-          <h2>Hợp tác</h2>
-          <p>Có sản phẩm hay muốn giới thiệu, hoặc cần làm branding? Liên hệ Hải qua Zalo hoặc email để trao đổi kỹ hơn.</p>
-          <a class="cta-button" href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">Liên hệ hợp tác</a>
+          <h2 data-i18n="foot.collab">Hợp tác</h2>
+          <p data-i18n="foot.collab.desc">Có sản phẩm hay muốn giới thiệu, hoặc cần làm branding? Liên hệ Hải qua Zalo hoặc email để trao đổi kỹ hơn.</p>
+          <a class="cta-button" href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener" data-i18n="foot.collab.btn">Liên hệ hợp tác</a>
         </div>
       </div>
       <div class="copyright">© <span id="year"></span> Hải có gì hay? — haicogihay.com</div>
@@ -332,6 +346,110 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ---------- Vietnamese / English ----------
+    (function () {
+      var I18N = {
+        vi: {
+          "meta.desc": "Trang tổng hợp mọi thứ Hải đang làm: blog góc nhìn, blog về LLM, công cụ PDF sang trắc nghiệm, dịch vụ branding và cửa hàng sản phẩm tuyển chọn.",
+          "nav.blog": "Blog",
+          "nav.blogllm": "Blog LLM",
+          "nav.pdf": "PDF → Trắc nghiệm",
+          "nav.brand": "Branding",
+          "nav.store": "Sản phẩm",
+          "nav.contact": "Liên hệ",
+          "hero.desc": "Đây là trang tổng hợp mọi thứ Hải đang làm — từ viết lách, chia sẻ góc nhìn, công cụ học tập, dịch vụ branding cho tới cửa hàng sản phẩm tuyển chọn. Chọn một mục bên dưới để bắt đầu.",
+          "sec.read": "Đọc & Góc nhìn",
+          "sec.tools": "Công cụ & Dịch vụ",
+          "card.blog.title": "Blog",
+          "card.blog.desc": "Những bài viết về tiền bạc, kỹ năng, khởi nghiệp và các góc nhìn đời sống — viết mộc, nói thẳng, dành cho tất cả anh em.",
+          "card.blog.more": "Đọc blog",
+          "card.blogllm.title": "Blog LLM",
+          "card.blogllm.desc": "Ghi chép và thử nghiệm quanh mô hình ngôn ngữ lớn (LLM): cách dùng, cách xây ứng dụng, và những gì học được trên đường đi.",
+          "card.blogllm.more": "Khám phá",
+          "card.pdf.title": "PDF → Trắc nghiệm",
+          "card.pdf.desc": "Tải lên một file PDF và nhận về bộ câu hỏi trắc nghiệm để ôn tập. Công cụ nhỏ giúp việc học từ tài liệu nhanh hơn.",
+          "card.pdf.more": "Dùng thử",
+          "card.brand.title": "Hải làm branding",
+          "card.brand.desc": "Dịch vụ marketing & branding theo mô hình Pay-as-You-Go: nói ngân sách của bạn, nhận ngay đề xuất một gói cụ thể.",
+          "card.brand.more": "Xem dịch vụ",
+          "card.store.title": "Cửa hàng sản phẩm",
+          "card.store.desc": "Cửa hàng trực tuyến lọc các sản phẩm thú vị, tiện ích và đáng mua. Mỗi thời điểm chỉ niêm yết tối đa 20 món để dễ chọn.",
+          "card.store.more": "Xem sản phẩm",
+          "foot.contact": "Thông tin liên hệ",
+          "foot.keep": "Giữ liên lạc",
+          "foot.keep.desc": "Đăng ký nhận tin để không bỏ lỡ bài viết mới, công cụ mới và sản phẩm mới từ Hải.",
+          "foot.keep.btn": "Đăng ký nhận tin",
+          "foot.collab": "Hợp tác",
+          "foot.collab.desc": "Có sản phẩm hay muốn giới thiệu, hoặc cần làm branding? Liên hệ Hải qua Zalo hoặc email để trao đổi kỹ hơn.",
+          "foot.collab.btn": "Liên hệ hợp tác"
+        },
+        en: {
+          "meta.desc": "A hub for everything Hải is building: a perspectives blog, an LLM blog, a PDF-to-quiz tool, branding services and a curated product store.",
+          "nav.blog": "Blog",
+          "nav.blogllm": "Blog LLM",
+          "nav.pdf": "PDF → Quiz",
+          "nav.brand": "Branding",
+          "nav.store": "Store",
+          "nav.contact": "Contact",
+          "hero.desc": "This is the hub for everything Hải is working on — writing and perspectives, learning tools, branding services, and a curated product store. Pick something below to get started.",
+          "sec.read": "Read & Perspectives",
+          "sec.tools": "Tools & Services",
+          "card.blog.title": "Blog",
+          "card.blog.desc": "Posts on money, skills, startups and everyday perspectives — plain-spoken and straight to the point, for everyone.",
+          "card.blog.more": "Read the blog",
+          "card.blogllm.title": "Blog LLM",
+          "card.blogllm.desc": "Notes and experiments around large language models (LLMs): how to use them, how to build with them, and what I learn along the way.",
+          "card.blogllm.more": "Explore",
+          "card.pdf.title": "PDF → Quiz",
+          "card.pdf.desc": "Upload a PDF and get back a set of multiple-choice questions to review. A small tool that makes studying from documents faster.",
+          "card.pdf.more": "Try it",
+          "card.brand.title": "Branding by Hải",
+          "card.brand.desc": "Pay-as-you-go marketing & branding: tell us your budget and get a concrete package proposal right away.",
+          "card.brand.more": "See services",
+          "card.store.title": "Product store",
+          "card.store.desc": "An online store curating interesting, useful and worth-buying products. At most 20 items listed at a time, so choosing stays easy.",
+          "card.store.more": "Browse products",
+          "foot.contact": "Contact",
+          "foot.keep": "Stay in touch",
+          "foot.keep.desc": "Subscribe so you don't miss new posts, new tools and new products from Hải.",
+          "foot.keep.btn": "Subscribe",
+          "foot.collab": "Collaborate",
+          "foot.collab.desc": "Have a great product to feature, or need branding help? Reach Hải on Zalo or by email to talk it through.",
+          "foot.collab.btn": "Get in touch"
+        }
+      };
+
+      var btn = document.getElementById('langToggle');
+      var meta = document.querySelector('meta[name="description"]');
+
+      function apply(lang) {
+        if (lang !== 'vi' && lang !== 'en') lang = 'vi';
+        var dict = I18N[lang];
+        document.documentElement.lang = lang;
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+          var k = el.getAttribute('data-i18n');
+          if (dict[k] != null) el.textContent = dict[k];
+        });
+        if (meta && dict['meta.desc']) meta.setAttribute('content', dict['meta.desc']);
+        btn.querySelectorAll('.lang-opt').forEach(function (s) {
+          s.classList.toggle('active', s.getAttribute('data-lang') === lang);
+        });
+        try { localStorage.setItem('lang', lang); } catch (e) {}
+      }
+
+      var saved;
+      try { saved = localStorage.getItem('lang'); } catch (e) {}
+      var initial = (saved === 'vi' || saved === 'en')
+        ? saved
+        : ((navigator.language || '').toLowerCase().indexOf('vi') === 0 ? 'vi'
+           : (navigator.language || '').toLowerCase().indexOf('en') === 0 ? 'en' : 'vi');
+      apply(initial);
+
+      btn.addEventListener('click', function () {
+        apply(document.documentElement.lang === 'vi' ? 'en' : 'vi');
+      });
+    })();
 
     // ---------- Light / dark toggle ----------
     (function () {
