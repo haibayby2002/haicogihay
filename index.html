@@ -13,13 +13,14 @@
   <style>
     /* ---------- Light palette (default) ---------- */
     :root {
-      --bg: #f7f6f3;
+      --bg: #ffffff;
+      --bg-gradient: var(--bg);
       --surface: #ffffff;
       --border: #e7e4dd;
-      --text: #1c1b19;
-      --muted: #6b6862;
-      --accent: #d9480f;
-      --accent-soft: #fbe7dd;
+      --text: #191c22;
+      --muted: #5c6472;
+      --accent: #1d63d1;
+      --accent-soft: #e6f0ff;
       --icon: #00a8ff;
       --icon-soft: #e2f4ff;
       --btn: #00a8ff;
@@ -31,42 +32,46 @@
     /* ---------- Dark palette: system default ---------- */
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
-        --bg: #16150f;
-        --surface: #201f18;
-        --border: #34322a;
-        --text: #f2efe6;
-        --muted: #a5a094;
-        --accent: #ff7a45;
-        --accent-soft: #3a2317;
+        --bg: #020308;
+        --bg-gradient: linear-gradient(160deg, #0a1230 0%, #04060f 45%, #000103 100%);
+        --surface: #0c1220;
+        --border: #1c2436;
+        --text: #e6ecfa;
+        --muted: #8c9ab3;
+        --accent: #5b9dff;
+        --accent-soft: #16233f;
         --icon: #38bdf8;
         --icon-soft: rgba(56,189,248,.14);
         --btn: #38bdf8;
         --btn-hover: #7dd3fc;
         --btn-text: #0b1a24;
-        --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+        --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.45);
       }
     }
     /* ---------- Dark palette: explicit toggle ---------- */
     :root[data-theme="dark"] {
-      --bg: #16150f;
-      --surface: #201f18;
-      --border: #34322a;
-      --text: #f2efe6;
-      --muted: #a5a094;
-      --accent: #ff7a45;
-      --accent-soft: #3a2317;
+      --bg: #020308;
+      --bg-gradient: linear-gradient(160deg, #0a1230 0%, #04060f 45%, #000103 100%);
+      --surface: #0c1220;
+      --border: #1c2436;
+      --text: #e6ecfa;
+      --muted: #8c9ab3;
+      --accent: #5b9dff;
+      --accent-soft: #16233f;
       --icon: #38bdf8;
       --icon-soft: rgba(56,189,248,.14);
       --btn: #38bdf8;
       --btn-hover: #7dd3fc;
       --btn-text: #0b1a24;
-      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.45);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
+      background: var(--bg-gradient);
+      background-attachment: fixed;
+      min-height: 100vh;
       color: var(--text);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
@@ -192,11 +197,14 @@
     .footer-socials a {
       width: 38px; height: 38px; border-radius: 50%;
       display: grid; place-items: center;
-      background: var(--icon-soft); color: var(--icon);
+      color: #fff;
       font-size: 1rem;
-      transition: transform .2s ease, background .2s ease, color .2s ease;
+      transition: transform .2s ease, filter .2s ease;
     }
-    .footer-socials a:hover { transform: translateY(-2px); color: #00a8ff; }
+    .footer-socials a:hover { transform: translateY(-2px); filter: brightness(1.12); }
+    .footer-socials a.social-facebook { background: #1877f2; }
+    .footer-socials a.social-tiktok { background: #010101; }
+    .footer-socials a.social-youtube { background: #ff0000; }
     .cta-button {
       display: inline-block; margin-top: 12px;
       background: var(--btn); color: var(--btn-text);
@@ -261,7 +269,7 @@
 
   <main class="container">
     <section>
-      <div class="section-label" data-i18n="sec.read">Đọc &amp; Góc nhìn</div>
+      <div class="section-label" data-i18n="sec.read">Blog &amp; Góc nhìn</div>
       <div class="grid">
         <a class="card" href="https://haicogihay.com/blog">
           <div class="icon"><i class="fa-solid fa-pen-nib"></i></div>
@@ -320,9 +328,9 @@
           <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
           <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">zalo.me/0703017645</a></p>
           <div class="footer-socials">
-            <a href="https://www.tiktok.com/@haicogihay" target="_blank" rel="noreferrer noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.youtube.com/@haicogihay" target="_blank" rel="noreferrer noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61590145161911" target="_blank" rel="noreferrer noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-tiktok" href="https://www.tiktok.com/@haicogihay" target="_blank" rel="noreferrer noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a class="social-youtube" href="https://www.youtube.com/@haicogihay" target="_blank" rel="noreferrer noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a class="social-facebook" href="https://www.facebook.com/profile.php?id=61590145161911" target="_blank" rel="noreferrer noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           </div>
         </div>
         <div>
@@ -351,29 +359,29 @@
     (function () {
       var I18N = {
         vi: {
-          "meta.desc": "Trang tổng hợp mọi thứ Hải đang làm: blog góc nhìn, blog về LLM, công cụ PDF sang trắc nghiệm, dịch vụ branding và cửa hàng sản phẩm tuyển chọn.",
+          "meta.desc": "Trang tổng hợp mọi thứ Hải đang làm: blog, tools, LLM, dịch vụ branding và hơn thế nữa.",
           "nav.blog": "Blog",
-          "nav.blogllm": "Blog LLM",
-          "nav.pdf": "PDF → Trắc nghiệm",
+          "nav.blogllm": "Chat",
+          "nav.pdf": "pdf2mcqs",
           "nav.brand": "Branding",
           "nav.store": "Sản phẩm",
           "nav.contact": "Liên hệ",
-          "hero.desc": "Đây là trang tổng hợp mọi thứ Hải đang làm — từ viết lách, chia sẻ góc nhìn, công cụ học tập, dịch vụ branding cho tới cửa hàng sản phẩm tuyển chọn. Chọn một mục bên dưới để bắt đầu.",
-          "sec.read": "Đọc & Góc nhìn",
+          "hero.desc": "Đây là trang tổng hợp mọi thứ Hải đang làm: blog, tools, LLM, dịch vụ branding và hơn thế nữa. Kéo xuống để khám phá!",
+          "sec.read": "Blog",
           "sec.tools": "Công cụ & Dịch vụ",
           "card.blog.title": "Blog",
           "card.blog.desc": "Những bài viết về tiền bạc, kỹ năng, khởi nghiệp và các góc nhìn đời sống — viết mộc, nói thẳng, dành cho tất cả anh em.",
           "card.blog.more": "Đọc blog",
-          "card.blogllm.title": "Blog LLM",
-          "card.blogllm.desc": "Ghi chép và thử nghiệm quanh mô hình ngôn ngữ lớn (LLM): cách dùng, cách xây ứng dụng, và những gì học được trên đường đi.",
+          "card.blogllm.title": "Chat với Hải",
+          "card.blogllm.desc": "Trò chuyện và hỏi đáp với LLM được xây dựng từ blog của Hải. Nhận câu trả lời kèm nguồn tham khảo từ blog.",
           "card.blogllm.more": "Khám phá",
-          "card.pdf.title": "PDF → Trắc nghiệm",
-          "card.pdf.desc": "Tải lên một file PDF và nhận về bộ câu hỏi trắc nghiệm để ôn tập. Công cụ nhỏ giúp việc học từ tài liệu nhanh hơn.",
+          "card.pdf.title": "pdf2mcqs",
+          "card.pdf.desc": "Tạo câu hỏi trắc nghiệm từ file PDF, hỗ trợ đa ngôn ngữ, đa định dạng, có giải thích đáp án và nguồn trang.",
           "card.pdf.more": "Dùng thử",
           "card.brand.title": "Hải làm branding",
-          "card.brand.desc": "Dịch vụ marketing & branding theo mô hình Pay-as-You-Go: nói ngân sách của bạn, nhận ngay đề xuất một gói cụ thể.",
+          "card.brand.desc": "Làm marketing & branding theo mô hình Pay-as-You-Go: nói ngân sách của bạn, nhận và điều chỉnh đề xuất một gói cụ thể.",
           "card.brand.more": "Xem dịch vụ",
-          "card.store.title": "Cửa hàng sản phẩm",
+          "card.store.title": "Cửa hàng",
           "card.store.desc": "Cửa hàng trực tuyến lọc các sản phẩm thú vị, tiện ích và đáng mua. Mỗi thời điểm chỉ niêm yết tối đa 20 món để dễ chọn.",
           "card.store.more": "Xem sản phẩm",
           "foot.contact": "Thông tin liên hệ",
@@ -381,28 +389,28 @@
           "foot.keep.desc": "Đăng ký nhận tin để không bỏ lỡ bài viết mới, công cụ mới và sản phẩm mới từ Hải.",
           "foot.keep.btn": "Đăng ký nhận tin",
           "foot.collab": "Hợp tác",
-          "foot.collab.desc": "Có sản phẩm hay muốn giới thiệu, hoặc cần làm branding? Liên hệ Hải qua Zalo hoặc email để trao đổi kỹ hơn.",
+          "foot.collab.desc": "Cần hỗ trợ làm branding? Liên hệ Hải qua Zalo hoặc email để trao đổi kỹ hơn.",
           "foot.collab.btn": "Liên hệ hợp tác"
         },
         en: {
-          "meta.desc": "A hub for everything Hải is building: a perspectives blog, an LLM blog, a PDF-to-quiz tool, branding services and a curated product store.",
+          "meta.desc": "A hub for everything I'm working on: blog, tools, LLM, branding services and more.",
           "nav.blog": "Blog",
-          "nav.blogllm": "Blog LLM",
-          "nav.pdf": "PDF → Quiz",
+          "nav.blogllm": "Chat",
+          "nav.pdf": "pdf2mcqs",
           "nav.brand": "Branding",
           "nav.store": "Store",
           "nav.contact": "Contact",
-          "hero.desc": "This is the hub for everything Hải is working on — writing and perspectives, learning tools, branding services, and a curated product store. Pick something below to get started.",
-          "sec.read": "Read & Perspectives",
+          "hero.desc": "This is the hub for everything I'm working on — writing and perspectives, learning tools, branding services, and a curated product store. Pick something below to get started.",
+          "sec.read": "Blog",
           "sec.tools": "Tools & Services",
           "card.blog.title": "Blog",
           "card.blog.desc": "Posts on money, skills, startups and everyday perspectives — plain-spoken and straight to the point, for everyone.",
           "card.blog.more": "Read the blog",
-          "card.blogllm.title": "Blog LLM",
-          "card.blogllm.desc": "Notes and experiments around large language models (LLMs): how to use them, how to build with them, and what I learn along the way.",
+          "card.blogllm.title": "Chat with Hải",
+          "card.blogllm.desc": "Chat and ask questions with the LLM built from Hải's blog. Get the answers with blog context and references.",
           "card.blogllm.more": "Explore",
-          "card.pdf.title": "PDF → Quiz",
-          "card.pdf.desc": "Upload a PDF and get back a set of multiple-choice questions to review. A small tool that makes studying from documents faster.",
+          "card.pdf.title": "pdf2mcqs",
+          "card.pdf.desc": "Create multiple-choice questions from PDF files, supporting multiple languages and formats, with answer explanations and source citations.",
           "card.pdf.more": "Try it",
           "card.brand.title": "Branding by Hải",
           "card.brand.desc": "Pay-as-you-go marketing & branding: tell us your budget and get a concrete package proposal right away.",
@@ -415,7 +423,7 @@
           "foot.keep.desc": "Subscribe so you don't miss new posts, new tools and new products from Hải.",
           "foot.keep.btn": "Subscribe",
           "foot.collab": "Collaborate",
-          "foot.collab.desc": "Have a great product to feature, or need branding help? Reach Hải on Zalo or by email to talk it through.",
+          "foot.collab.desc": "Need branding help? Reach Hải on Zalo or by email to talk it through.",
           "foot.collab.btn": "Get in touch"
         }
       };
