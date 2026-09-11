@@ -4,6 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{POST_TITLE}} — Hải có gì hay?</title>
+  <link rel="canonical" href="{{POST_URL}}" />
+  <meta property="og:title" content="{{POST_OG_TITLE}}" />
+  <meta property="og:description" content="{{POST_OG_DESCRIPTION}}" />
+  <meta property="og:url" content="{{POST_URL}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="{{POST_OG_IMAGE}}" />
+  <meta property="article:published_time" content="{{POST_PUBLISHED_ISO}}" />
+  <meta property="article:modified_time" content="{{POST_UPDATED_ISO}}" />
+  <meta property="article:author" content="{{POST_OG_AUTHOR}}" />
   <link rel="icon" href="../assets/store_image/logo_hai_co_gi_hay_removed_background.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
@@ -47,6 +56,34 @@
       </article>
     </section>
 
+    <section class="share-cite">
+      <div class="share-cite-block">
+        <h2>Chia sẻ bài viết</h2>
+        <div class="share-buttons" role="group" aria-label="Chia sẻ bài viết">
+          <a class="share-btn" data-share="facebook" href="#" target="_blank" rel="noreferrer noopener" aria-label="Chia sẻ lên Facebook">Facebook</a>
+          <a class="share-btn" data-share="x" href="#" target="_blank" rel="noreferrer noopener" aria-label="Chia sẻ lên X">X</a>
+          <a class="share-btn" data-share="zalo" href="#" target="_blank" rel="noreferrer noopener" aria-label="Chia sẻ qua Zalo">Zalo</a>
+          <a class="share-btn" data-share="linkedin" href="#" target="_blank" rel="noreferrer noopener" aria-label="Chia sẻ lên LinkedIn">LinkedIn</a>
+          <button type="button" class="share-btn" data-share="copy" aria-label="Sao chép liên kết bài viết">Copy link</button>
+        </div>
+        <span class="share-feedback" data-role="share-feedback" aria-live="polite"></span>
+      </div>
+
+      <div class="share-cite-block">
+        <h2>Trích dẫn bài viết</h2>
+        <div class="cite-tabs" role="tablist" aria-label="Kiểu trích dẫn">
+          <button type="button" class="cite-tab is-active" data-style="bibtex" role="tab" aria-selected="true">BibTeX</button>
+          <button type="button" class="cite-tab" data-style="plain" role="tab" aria-selected="false">Plain text</button>
+          <button type="button" class="cite-tab" data-style="ieee" role="tab" aria-selected="false">IEEE</button>
+        </div>
+        <textarea class="cite-output" data-role="cite-output" readonly rows="4" aria-label="Nội dung trích dẫn"></textarea>
+        <div class="cite-actions">
+          <button type="button" class="copy-btn" data-role="copy-citation">Copy citation</button>
+          <span class="cite-feedback" data-role="cite-feedback" aria-live="polite"></span>
+        </div>
+      </div>
+    </section>
+
     <section class="related-section">
       <h2>Bài viết bạn có thể quan tâm</h2>
       <div class="related-grid">
@@ -87,7 +124,11 @@
   </a>
   <div class="zalo-bubble">Anh em muốn góp ý hoặc trao đổi thêm về bài viết, liên hệ qua nguyenquyhai2002@gmail.com</div>
 
+  <script src="../assets/js/share-cite.js"></script>
   <script>
+    const articleMeta = {{POST_META_JSON}};
+    initShareCite(document.querySelector('.share-cite'), articleMeta);
+
     // const storeData = {{BLOG_DATA}}; {
     //   brand: { name: 'Hải có gì hay?', logo: '../assets/store_image/logo_hai_co_gi_hay_removed_background.png' },
     //   social_links: { facebook: 'https://www.facebook.com/profile.php?id=61590145161911', tiktok: 'https://www.tiktok.com/@haicogihay', youtube: 'https://www.youtube.com/@haicogihay' },
