@@ -52,7 +52,7 @@ Tôi nghĩ rằng với tính cách của cậu, cậu sẽ muốn đi xa - và 
 
 Nếu cậu đang sinh sống và làm việc ở nước ngoài mà xảy ra bất ổn, cậu có nghĩa vụ phải tìm cách liên lạc với lãnh sự quán để thực hiện quyền bảo hộ công dân. Nếu cậu đang ở ngoài khơi và gặp nạn, cậu phải bám lấy chiếc phao và giữ chặt lấy nó tới khi lên được con tàu trở về. Nếu cậu đã đạt được mục đích hoặc sự thành công ở ngoài kia, cậu cần phải trở về. Nghĩa vụ của cậu là trở về. Trở về là nghĩa vụ của cậu. 
 
-Chúc cậu đạt được điều những điều mình muốn và mang chúng trở về!
+Chúc cậu đạt được những điều mình muốn và mang chúng trở về!
 
 God bless you,
 
