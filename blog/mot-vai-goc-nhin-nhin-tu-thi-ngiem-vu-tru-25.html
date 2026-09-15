@@ -16,18 +16,135 @@
   <link rel="icon" href="../assets/store_image/logo_hai_co_gi_hay_removed_background.png" type="image/png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="../style.css">
+  <style>
+    /* ================= Dark mode (layered on top of style.css) ================= */
+    :root {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --surface-soft: #f5f9fd;
+      --surface-accent: #eef4fb;
+      --border: #e7edf5;
+      --input-border: #cccccc;
+      --text: #14253a;
+      --text-body: #3c4a5b;
+      --muted: #5c6472;
+      --accent: #1b6f9d;
+      --accent-strong: #00a8ff;
+      --accent-strong-hover: #0086cc;
+      --btn-text: #ffffff;
+      --nav-pill-bg: rgba(255, 255, 255, .95);
+      --nav-pill-text: #111111;
+      --shadow: 0 10px 24px rgba(15, 23, 42, .08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0b0f1a;
+        --surface: #121826;
+        --surface-soft: #182234;
+        --surface-accent: rgba(56, 189, 248, .12);
+        --border: #232d40;
+        --input-border: #2c3750;
+        --text: #e7ecf5;
+        --text-body: #c3ccdb;
+        --muted: #8b95a8;
+        --accent: #5ec2f0;
+        --accent-strong: #38bdf8;
+        --accent-strong-hover: #7dd3fc;
+        --btn-text: #072433;
+        --nav-pill-bg: #121826;
+        --nav-pill-text: #e7ecf5;
+        --shadow: 0 10px 28px rgba(0, 0, 0, .5);
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0b0f1a;
+      --surface: #121826;
+      --surface-soft: #182234;
+      --surface-accent: rgba(56, 189, 248, .12);
+      --border: #232d40;
+      --input-border: #2c3750;
+      --text: #e7ecf5;
+      --text-body: #c3ccdb;
+      --muted: #8b95a8;
+      --accent: #5ec2f0;
+      --accent-strong: #38bdf8;
+      --accent-strong-hover: #7dd3fc;
+      --btn-text: #072433;
+      --nav-pill-bg: #121826;
+      --nav-pill-text: #e7ecf5;
+      --shadow: 0 10px 28px rgba(0, 0, 0, .5);
+    }
+
+    body { background: var(--bg); color: var(--text-body); transition: background .2s ease, color .2s ease; }
+
+    .site-nav { border-bottom-color: var(--border); gap: 16px; }
+    .site-nav a { background: var(--nav-pill-bg); color: var(--nav-pill-text); border-color: var(--border); }
+    .site-nav a:hover { background: var(--surface-soft); }
+
+    .theme-toggle {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      width: 40px; height: 40px; border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 1rem; flex-shrink: 0;
+    }
+    .theme-toggle:hover { border-color: var(--accent-strong); color: var(--accent-strong); }
+
+    .toc { background: var(--surface); border-color: var(--border); }
+    .toc h2 { color: var(--accent); }
+    .toc ul { color: var(--muted); }
+    .toc a { color: var(--text); }
+    .toc a:hover { color: var(--accent); }
+
+    .blog-post { background: var(--surface); border-color: var(--border); }
+    .blog-post h1, .blog-post h2, .blog-post h3 { color: var(--text); }
+    .blog-post p, .blog-post li { color: var(--text-body); }
+    .blog-post code { background: var(--surface-accent); color: var(--accent); }
+    .blog-post table { border-color: var(--border); }
+    .blog-post th, .blog-post td { border-bottom-color: var(--border); }
+    .blog-post th { background: var(--surface-soft); color: var(--accent); }
+    .blog-post blockquote { background: var(--surface-soft); border-left-color: var(--accent); color: var(--text-body); }
+    .blog-post .footnote { color: var(--muted); }
+    .blog-post .footnote a { color: var(--accent); }
+
+    .share-cite { background: var(--surface); border-color: var(--border); }
+    .share-cite-block h2 { color: var(--text); }
+    .share-btn { background: var(--surface-accent); color: var(--accent); }
+    .share-btn:hover { background: var(--accent); color: var(--btn-text); }
+    .share-feedback, .cite-feedback { color: var(--accent); }
+    .cite-tab { background: var(--surface-soft); border-color: var(--border); color: var(--muted); }
+    .cite-tab:hover { border-color: var(--accent); color: var(--accent); }
+    .cite-tab.is-active { background: var(--accent); border-color: var(--accent); color: var(--btn-text); }
+    .cite-output { background: var(--surface-soft); border-color: var(--border); color: var(--text); }
+    .copy-btn { background: var(--accent-strong); color: var(--btn-text); }
+    .copy-btn:hover { background: var(--accent-strong-hover); }
+
+    .related-section h2 { color: var(--text); }
+    .related-card { background: var(--surface); border-color: var(--border); }
+    .related-card span { color: var(--accent); }
+    .related-card strong { color: var(--text); }
+    .related-card p { color: var(--muted); }
+
+    .cta-button { background: var(--accent-strong); color: var(--btn-text); }
+    .cta-button:hover { background: var(--accent-strong-hover); }
+    .social-icon:hover { color: var(--accent-strong); }
+  </style>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
 <body>
   <nav class="site-nav">
     <button class="burger-menu" id="burger-btn" aria-label="Toggle navigation">☰</button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="../index.html">Trang chủ</a></li>
       <li><a href="../index.html#products">Sản phẩm</a></li>
       <li><a href="./index.html#blogs">Blog</a></li>
       <li><a href="index.html#faqs">Câu hỏi thường gặp</a></li>
       <li><a href="index.html#footer">Liên hệ</a></li>
     </ul>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển giao diện sáng/tối">
+      <i class="fa-solid fa-moon"></i>
+    </button>
   </nav>
 
   <main class="container blog-page">
@@ -265,6 +382,36 @@
     renderFooterCTA();
     renderZaloBuy();
     renderRelatedPosts();
+
+    // ---------- Light / dark toggle ----------
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('themeToggle');
+      var icon = btn.querySelector('i');
+
+      function systemPrefersDark() {
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      function apply(theme) {
+        root.setAttribute('data-theme', theme);
+        icon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+      }
+      function currentTheme() {
+        return root.getAttribute('data-theme') || (systemPrefersDark() ? 'dark' : 'light');
+      }
+
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || saved === 'light') apply(saved);
+        else icon.className = systemPrefersDark() ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+      } catch (e) {}
+
+      btn.addEventListener('click', function () {
+        var next = currentTheme() === 'dark' ? 'light' : 'dark';
+        apply(next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    })();
   </script>
 </body>
 </html>
