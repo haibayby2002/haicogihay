@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Allow: /blog
 
-Sitemap: https://haicogihay.com
+Sitemap: https://haicogihay.com/sitemap.xml
