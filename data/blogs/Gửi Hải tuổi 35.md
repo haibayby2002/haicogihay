@@ -7,7 +7,7 @@ author: Quý Hải Ng
 
 # Gửi Hải tuổi 35
 
-MrBeast có "Hi Me In 10 Years", IShowSpeed có "Hi Me In 3 Years", Miêu Công Tử có "999 lá thư gửi bản thân". Và Hải nghĩ rằng không có một lý gì để một người nào đó không có điều gì muốn gửi tới chính mình nhiều năm sau. Và Hải cũng không ngoại lệ.
+MrBeast có "Hi Me In 10 Years", IShowSpeed có "Hi Me In 3 Years", Miêu Công Tử có "999 lá thư gửi bản thân". Và Hải nghĩ rằng không có một lý do gì để một người nào đó không có điều gì muốn gửi tới chính mình nhiều năm sau. Và Hải cũng không ngoại lệ.
 
 
 ## Tiêu đề
