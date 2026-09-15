@@ -54,6 +54,6 @@ Nếu cậu đang sinh sống và làm việc ở nước ngoài mà xảy ra b�
 
 Chúc cậu đạt được điều những điều mình muốn và mang chúng trở về!
 
-God blessing you,
+God bless you,
 
 Hải tuổi 24./
