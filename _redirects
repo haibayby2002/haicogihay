@@ -2,3 +2,5 @@
 /pdf2mcqs/* https://pdf2mcqs-iota.vercel.app/:splat 301
 /re-use-me https://re-use-me.vercel.app 301
 /re-use-me/* https://re-use-me.vercel.app/:splat 301
+/lean2pitch https://lean2pitch.vercel.app 301
+/lean2pitch/* https://lean2pitch.vercel.app/:splat 301
