@@ -6,9 +6,9 @@ status: in-draft
 
 # Kinh nghiệm build SaaS
 
-## Xác định chi phí
+- [ ] Xác định chi phí
 
-## Quan sát trải nghiệm người dùng
+- [ ] Quan sát trải nghiệm người dùng
 
-## Bạn muốn giỏi cái gì thì phải nói và thảo luận nhiều về cái đó
+- [ ] Bạn muốn giỏi cái gì thì phải nói và thảo luận nhiều về cái đó
 

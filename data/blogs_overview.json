@@ -10,6 +10,16 @@
         "tags": [],
         "related_posts": [
             {
+                "title": "Bộ khung Canvas tinh gọn",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
+            },
+            {
                 "title": "Giáp kèo môi giới",
                 "author": "Quý Hải Ng",
                 "status": "done",
@@ -28,15 +38,47 @@
                 "updated_time": "05-08-2026",
                 "excerpt": "Winners & Losers là chủ đề muôn thuở, không bao giờ có thể khai thác hết và luôn nhận được sự chú ý từ nhiều người. Vì thời nào ai cũng so sánh, ai cũng hiếu kỳ và ai cũng thích sự thành công. Làm sao để thành công, làm gì để đừng thất bại?...",
                 "tags": []
+            }
+        ]
+    },
+    {
+        "title": "Bộ khung Canvas tinh gọn",
+        "author": "Quý Hải Ng",
+        "status": "done",
+        "slug": "bo-khung-canvas-tinh-gon",
+        "created_time": "17-09-2026",
+        "updated_time": "22-09-2026",
+        "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+        "tags": [],
+        "related_posts": [
+            {
+                "title": "3 ngộ nhận về giàu nghèo",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "3-ngo-nhan-ve-giau-ngheo",
+                "created_time": "22-06-2026",
+                "updated_time": "24-06-2026",
+                "excerpt": "Vì sao lại có sự giàu nghèo? Vì sao người này giàu? Vì sao người kia nghèo? Đó luôn là những câu hỏi gây tò mò và cũng là chủ đề tranh luận của nhiều người trong nhiều thế kỷ. Có người nói khác biệt giàu nghèo đến từ sự chăm chỉ. Cũng có ng...",
+                "tags": []
             },
             {
-                "title": "Gửi Hải tuổi 35",
-                "status": "done",
+                "title": "Giáp kèo môi giới",
                 "author": "Quý Hải Ng",
-                "slug": "gui-hai-tuoi-35",
-                "created_time": "06-09-2026",
-                "updated_time": "15-09-2026",
-                "excerpt": "MrBeast có \"Hi Me In 10 Years\", IShowSpeed có \"Hi Me In 3 Years\", Miêu Công Tử có \"999 lá thư gửi bản thân\". Và Hải nghĩ rằng không có một lý do gì để một người nào đó không có điều gì muốn gửi tới chính mình nhiều năm sau. Và Hải cũng khôn...",
+                "status": "done",
+                "slug": "giap-keo-moi-gioi",
+                "created_time": "10-07-2026",
+                "updated_time": "15-07-2026",
+                "excerpt": "Khi nhắc tới 2 chữ môi giới, một vài người sẽ có suy nghĩ không mấy tích cực về công việc này. Đặc biệt là môi giới bất động sản khi mà có hẳn 1 thuật ngữ dành riêng cho nghề này - cò đất. Nhưng trên thực tế, nghề môi giới cũng như những ng...",
+                "tags": []
+            },
+            {
+                "title": "Góc nhìn về thành công và thất bại từ cao thủ TFT 3 mùa",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "goc-nhin-ve-thanh-cong-va-that-bai-tu-cao-thu-tft-3-mua",
+                "created_time": "28-07-2026",
+                "updated_time": "05-08-2026",
+                "excerpt": "Winners & Losers là chủ đề muôn thuở, không bao giờ có thể khai thác hết và luôn nhận được sự chú ý từ nhiều người. Vì thời nào ai cũng so sánh, ai cũng hiếu kỳ và ai cũng thích sự thành công. Làm sao để thành công, làm gì để đừng thất bại?...",
                 "tags": []
             }
         ]
@@ -127,19 +169,14 @@
                 "tags": []
             },
             {
-                "title": "Content Engine - Vì sao các cá nhân và doanh nghiệp nên quan tâm?",
-                "category": "Công nghệ",
+                "title": "Bộ khung Canvas tinh gọn",
                 "author": "Quý Hải Ng",
-                "tags": [
-                    "content engine",
-                    "content seeding",
-                    "content generation"
-                ],
                 "status": "done",
-                "slug": "content-engine---vi-sao-cac-ca-nhan-va-doanh-nghiep-nen-quan-tam",
-                "created_time": "05-07-2026",
-                "updated_time": "09-07-2026",
-                "excerpt": "Trong nền kinh tế của sự chú ý - nơi mà các doanh nghiệp tận dụng mọi nền tảng để giành giật sự chú ý của khách hàng, sự chú ý của mọi người chỉ được tính bằng giây trước khi chuyển sang nội dung khác. Có thể nói trong thời kỳ này, thông ti..."
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
             }
         ]
     },
@@ -164,6 +201,16 @@
                 "tags": []
             },
             {
+                "title": "Bộ khung Canvas tinh gọn",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
+            },
+            {
                 "title": "Góc nhìn về thành công và thất bại từ cao thủ TFT 3 mùa",
                 "author": "Quý Hải Ng",
                 "status": "done",
@@ -171,16 +218,6 @@
                 "created_time": "28-07-2026",
                 "updated_time": "05-08-2026",
                 "excerpt": "Winners & Losers là chủ đề muôn thuở, không bao giờ có thể khai thác hết và luôn nhận được sự chú ý từ nhiều người. Vì thời nào ai cũng so sánh, ai cũng hiếu kỳ và ai cũng thích sự thành công. Làm sao để thành công, làm gì để đừng thất bại?...",
-                "tags": []
-            },
-            {
-                "title": "Gửi Hải tuổi 35",
-                "status": "done",
-                "author": "Quý Hải Ng",
-                "slug": "gui-hai-tuoi-35",
-                "created_time": "06-09-2026",
-                "updated_time": "15-09-2026",
-                "excerpt": "MrBeast có \"Hi Me In 10 Years\", IShowSpeed có \"Hi Me In 3 Years\", Miêu Công Tử có \"999 lá thư gửi bản thân\". Và Hải nghĩ rằng không có một lý do gì để một người nào đó không có điều gì muốn gửi tới chính mình nhiều năm sau. Và Hải cũng khôn...",
                 "tags": []
             }
         ]
@@ -206,6 +243,16 @@
                 "tags": []
             },
             {
+                "title": "Bộ khung Canvas tinh gọn",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
+            },
+            {
                 "title": "Giáp kèo môi giới",
                 "author": "Quý Hải Ng",
                 "status": "done",
@@ -213,16 +260,6 @@
                 "created_time": "10-07-2026",
                 "updated_time": "15-07-2026",
                 "excerpt": "Khi nhắc tới 2 chữ môi giới, một vài người sẽ có suy nghĩ không mấy tích cực về công việc này. Đặc biệt là môi giới bất động sản khi mà có hẳn 1 thuật ngữ dành riêng cho nghề này - cò đất. Nhưng trên thực tế, nghề môi giới cũng như những ng...",
-                "tags": []
-            },
-            {
-                "title": "Gửi Hải tuổi 35",
-                "status": "done",
-                "author": "Quý Hải Ng",
-                "slug": "gui-hai-tuoi-35",
-                "created_time": "06-09-2026",
-                "updated_time": "15-09-2026",
-                "excerpt": "MrBeast có \"Hi Me In 10 Years\", IShowSpeed có \"Hi Me In 3 Years\", Miêu Công Tử có \"999 lá thư gửi bản thân\". Và Hải nghĩ rằng không có một lý do gì để một người nào đó không có điều gì muốn gửi tới chính mình nhiều năm sau. Và Hải cũng khôn...",
                 "tags": []
             }
         ]
@@ -248,6 +285,16 @@
                 "tags": []
             },
             {
+                "title": "Bộ khung Canvas tinh gọn",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
+            },
+            {
                 "title": "Giáp kèo môi giới",
                 "author": "Quý Hải Ng",
                 "status": "done",
@@ -255,16 +302,6 @@
                 "created_time": "10-07-2026",
                 "updated_time": "15-07-2026",
                 "excerpt": "Khi nhắc tới 2 chữ môi giới, một vài người sẽ có suy nghĩ không mấy tích cực về công việc này. Đặc biệt là môi giới bất động sản khi mà có hẳn 1 thuật ngữ dành riêng cho nghề này - cò đất. Nhưng trên thực tế, nghề môi giới cũng như những ng...",
-                "tags": []
-            },
-            {
-                "title": "Góc nhìn về thành công và thất bại từ cao thủ TFT 3 mùa",
-                "author": "Quý Hải Ng",
-                "status": "done",
-                "slug": "goc-nhin-ve-thanh-cong-va-that-bai-tu-cao-thu-tft-3-mua",
-                "created_time": "28-07-2026",
-                "updated_time": "05-08-2026",
-                "excerpt": "Winners & Losers là chủ đề muôn thuở, không bao giờ có thể khai thác hết và luôn nhận được sự chú ý từ nhiều người. Vì thời nào ai cũng so sánh, ai cũng hiếu kỳ và ai cũng thích sự thành công. Làm sao để thành công, làm gì để đừng thất bại?...",
                 "tags": []
             }
         ]
@@ -290,6 +327,16 @@
                 "tags": []
             },
             {
+                "title": "Bộ khung Canvas tinh gọn",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
+            },
+            {
                 "title": "Giáp kèo môi giới",
                 "author": "Quý Hải Ng",
                 "status": "done",
@@ -297,16 +344,6 @@
                 "created_time": "10-07-2026",
                 "updated_time": "15-07-2026",
                 "excerpt": "Khi nhắc tới 2 chữ môi giới, một vài người sẽ có suy nghĩ không mấy tích cực về công việc này. Đặc biệt là môi giới bất động sản khi mà có hẳn 1 thuật ngữ dành riêng cho nghề này - cò đất. Nhưng trên thực tế, nghề môi giới cũng như những ng...",
-                "tags": []
-            },
-            {
-                "title": "Góc nhìn về thành công và thất bại từ cao thủ TFT 3 mùa",
-                "author": "Quý Hải Ng",
-                "status": "done",
-                "slug": "goc-nhin-ve-thanh-cong-va-that-bai-tu-cao-thu-tft-3-mua",
-                "created_time": "28-07-2026",
-                "updated_time": "05-08-2026",
-                "excerpt": "Winners & Losers là chủ đề muôn thuở, không bao giờ có thể khai thác hết và luôn nhận được sự chú ý từ nhiều người. Vì thời nào ai cũng so sánh, ai cũng hiếu kỳ và ai cũng thích sự thành công. Làm sao để thành công, làm gì để đừng thất bại?...",
                 "tags": []
             }
         ]
@@ -389,6 +426,16 @@
                 "tags": []
             },
             {
+                "title": "Bộ khung Canvas tinh gọn",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
+            },
+            {
                 "title": "Giáp kèo môi giới",
                 "author": "Quý Hải Ng",
                 "status": "done",
@@ -396,16 +443,6 @@
                 "created_time": "10-07-2026",
                 "updated_time": "15-07-2026",
                 "excerpt": "Khi nhắc tới 2 chữ môi giới, một vài người sẽ có suy nghĩ không mấy tích cực về công việc này. Đặc biệt là môi giới bất động sản khi mà có hẳn 1 thuật ngữ dành riêng cho nghề này - cò đất. Nhưng trên thực tế, nghề môi giới cũng như những ng...",
-                "tags": []
-            },
-            {
-                "title": "Góc nhìn về thành công và thất bại từ cao thủ TFT 3 mùa",
-                "author": "Quý Hải Ng",
-                "status": "done",
-                "slug": "goc-nhin-ve-thanh-cong-va-that-bai-tu-cao-thu-tft-3-mua",
-                "created_time": "28-07-2026",
-                "updated_time": "05-08-2026",
-                "excerpt": "Winners & Losers là chủ đề muôn thuở, không bao giờ có thể khai thác hết và luôn nhận được sự chú ý từ nhiều người. Vì thời nào ai cũng so sánh, ai cũng hiếu kỳ và ai cũng thích sự thành công. Làm sao để thành công, làm gì để đừng thất bại?...",
                 "tags": []
             }
         ]
@@ -446,19 +483,14 @@
                 "tags": []
             },
             {
-                "title": "Content Engine - Vì sao các cá nhân và doanh nghiệp nên quan tâm?",
-                "category": "Công nghệ",
+                "title": "Bộ khung Canvas tinh gọn",
                 "author": "Quý Hải Ng",
-                "tags": [
-                    "content engine",
-                    "content seeding",
-                    "content generation"
-                ],
                 "status": "done",
-                "slug": "content-engine---vi-sao-cac-ca-nhan-va-doanh-nghiep-nen-quan-tam",
-                "created_time": "05-07-2026",
-                "updated_time": "09-07-2026",
-                "excerpt": "Trong nền kinh tế của sự chú ý - nơi mà các doanh nghiệp tận dụng mọi nền tảng để giành giật sự chú ý của khách hàng, sự chú ý của mọi người chỉ được tính bằng giây trước khi chuyển sang nội dung khác. Có thể nói trong thời kỳ này, thông ti..."
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
             }
         ]
     },
@@ -865,19 +897,14 @@
                 "tags": []
             },
             {
-                "title": "Content Engine - Vì sao các cá nhân và doanh nghiệp nên quan tâm?",
-                "category": "Công nghệ",
+                "title": "Bộ khung Canvas tinh gọn",
                 "author": "Quý Hải Ng",
-                "tags": [
-                    "content engine",
-                    "content seeding",
-                    "content generation"
-                ],
                 "status": "done",
-                "slug": "content-engine---vi-sao-cac-ca-nhan-va-doanh-nghiep-nen-quan-tam",
-                "created_time": "05-07-2026",
-                "updated_time": "09-07-2026",
-                "excerpt": "Trong nền kinh tế của sự chú ý - nơi mà các doanh nghiệp tận dụng mọi nền tảng để giành giật sự chú ý của khách hàng, sự chú ý của mọi người chỉ được tính bằng giây trước khi chuyển sang nội dung khác. Có thể nói trong thời kỳ này, thông ti..."
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
             }
         ]
     },
@@ -956,6 +983,16 @@
                 "tags": []
             },
             {
+                "title": "Bộ khung Canvas tinh gọn",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
+            },
+            {
                 "title": "Giáp kèo môi giới",
                 "author": "Quý Hải Ng",
                 "status": "done",
@@ -963,16 +1000,6 @@
                 "created_time": "10-07-2026",
                 "updated_time": "15-07-2026",
                 "excerpt": "Khi nhắc tới 2 chữ môi giới, một vài người sẽ có suy nghĩ không mấy tích cực về công việc này. Đặc biệt là môi giới bất động sản khi mà có hẳn 1 thuật ngữ dành riêng cho nghề này - cò đất. Nhưng trên thực tế, nghề môi giới cũng như những ng...",
-                "tags": []
-            },
-            {
-                "title": "Góc nhìn về thành công và thất bại từ cao thủ TFT 3 mùa",
-                "author": "Quý Hải Ng",
-                "status": "done",
-                "slug": "goc-nhin-ve-thanh-cong-va-that-bai-tu-cao-thu-tft-3-mua",
-                "created_time": "28-07-2026",
-                "updated_time": "05-08-2026",
-                "excerpt": "Winners & Losers là chủ đề muôn thuở, không bao giờ có thể khai thác hết và luôn nhận được sự chú ý từ nhiều người. Vì thời nào ai cũng so sánh, ai cũng hiếu kỳ và ai cũng thích sự thành công. Làm sao để thành công, làm gì để đừng thất bại?...",
                 "tags": []
             }
         ]
@@ -998,6 +1025,16 @@
                 "tags": []
             },
             {
+                "title": "Bộ khung Canvas tinh gọn",
+                "author": "Quý Hải Ng",
+                "status": "done",
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
+            },
+            {
                 "title": "Giáp kèo môi giới",
                 "author": "Quý Hải Ng",
                 "status": "done",
@@ -1005,16 +1042,6 @@
                 "created_time": "10-07-2026",
                 "updated_time": "15-07-2026",
                 "excerpt": "Khi nhắc tới 2 chữ môi giới, một vài người sẽ có suy nghĩ không mấy tích cực về công việc này. Đặc biệt là môi giới bất động sản khi mà có hẳn 1 thuật ngữ dành riêng cho nghề này - cò đất. Nhưng trên thực tế, nghề môi giới cũng như những ng...",
-                "tags": []
-            },
-            {
-                "title": "Góc nhìn về thành công và thất bại từ cao thủ TFT 3 mùa",
-                "author": "Quý Hải Ng",
-                "status": "done",
-                "slug": "goc-nhin-ve-thanh-cong-va-that-bai-tu-cao-thu-tft-3-mua",
-                "created_time": "28-07-2026",
-                "updated_time": "05-08-2026",
-                "excerpt": "Winners & Losers là chủ đề muôn thuở, không bao giờ có thể khai thác hết và luôn nhận được sự chú ý từ nhiều người. Vì thời nào ai cũng so sánh, ai cũng hiếu kỳ và ai cũng thích sự thành công. Làm sao để thành công, làm gì để đừng thất bại?...",
                 "tags": []
             }
         ]
@@ -1051,19 +1078,14 @@
                 "tags": []
             },
             {
-                "title": "Content Engine - Vì sao các cá nhân và doanh nghiệp nên quan tâm?",
-                "category": "Công nghệ",
+                "title": "Bộ khung Canvas tinh gọn",
                 "author": "Quý Hải Ng",
-                "tags": [
-                    "content engine",
-                    "content seeding",
-                    "content generation"
-                ],
                 "status": "done",
-                "slug": "content-engine---vi-sao-cac-ca-nhan-va-doanh-nghiep-nen-quan-tam",
-                "created_time": "05-07-2026",
-                "updated_time": "09-07-2026",
-                "excerpt": "Trong nền kinh tế của sự chú ý - nơi mà các doanh nghiệp tận dụng mọi nền tảng để giành giật sự chú ý của khách hàng, sự chú ý của mọi người chỉ được tính bằng giây trước khi chuyển sang nội dung khác. Có thể nói trong thời kỳ này, thông ti..."
+                "slug": "bo-khung-canvas-tinh-gon",
+                "created_time": "17-09-2026",
+                "updated_time": "22-09-2026",
+                "excerpt": "Nếu anh em đã từng rơi vào cảm giác thấy nội dung toàn chữ là chữ, thấy bài viết hoặc báo cáo dài lê thê và anh em quyết định tắt hoặc gập chúng lại thì anh em không phải là người duy nhất. Thực tế, nếu anh em chọn tiếp tục đọc tiếp thì đôi...",
+                "tags": []
             }
         ]
     }

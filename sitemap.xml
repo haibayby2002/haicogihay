@@ -6,12 +6,12 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://haicogihay.com/</loc>
-  <lastmod>2026-09-15</lastmod>
+  <lastmod>2026-09-22</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://haicogihay.com/blog/</loc>
-  <lastmod>2026-09-15</lastmod>
+  <lastmod>2026-09-22</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
@@ -27,6 +27,11 @@
 <url>
   <loc>https://haicogihay.com/blog/3-ngo-nhan-ve-giau-ngheo.html</loc>
   <lastmod>2026-06-24</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://haicogihay.com/blog/bo-khung-canvas-tinh-gon.html</loc>
+  <lastmod>2026-09-22</lastmod>
   <priority>0.60</priority>
 </url>
 <url>
