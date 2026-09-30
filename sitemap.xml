@@ -6,12 +6,12 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://haicogihay.com/</loc>
-  <lastmod>2026-09-22</lastmod>
+  <lastmod>2026-09-30</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://haicogihay.com/blog/</loc>
-  <lastmod>2026-09-22</lastmod>
+  <lastmod>2026-09-30</lastmod>
   <priority>0.90</priority>
 </url>
 <url>
@@ -57,6 +57,11 @@
 <url>
   <loc>https://haicogihay.com/blog/gui-hai-tuoi-35.html</loc>
   <lastmod>2026-09-15</lastmod>
+  <priority>0.60</priority>
+</url>
+<url>
+  <loc>https://haicogihay.com/blog/kinh-nghiem-build-saas.html</loc>
+  <lastmod>2026-09-30</lastmod>
   <priority>0.60</priority>
 </url>
 <url>
