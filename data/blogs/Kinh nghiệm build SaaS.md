@@ -14,7 +14,7 @@ Nếu phải nói rằng ngành công nghiệp nào phát triển mạnh mẽ nh
 
 Xu hướng chung về số lượng phần mềm dịch vụ ra đời cũng như lượng người dùng phần lớn là tăng trưởng. Nhờ vào việc SaaS được triển khai trên Cloud, các cá nhân hoặc doanh nghiệp làm SaaS có thể nhanh chóng thực hiện chỉnh sửa để thích nghi với sự thay đổi của người dùng. 
 
-Thống kê từ Exploding Topics [^1] cuối 2026 chỉ ra trung bình mỗi người dành 4 giờ 37 phút mỗi ngày để dùng điện thoại. Mỗi ngày, mỗi người dùng mở điện thoại khoảng 58 lần: 3 lần để sử dụng trên 10 phút, 40 lần để kiểm tra thông báo nhanh dưới 2 phút. 52% khoảng thời gian check điện thoại mỗi tháng diễn ra trong giờ làm việc. 
+Thống kê từ Exploding Topics cuối 2026 [^1] chỉ ra trung bình mỗi người dành 4 giờ 37 phút mỗi ngày để dùng điện thoại. Mỗi ngày, mỗi người dùng mở điện thoại khoảng 58 lần: 3 lần để sử dụng trên 10 phút, 40 lần để kiểm tra thông báo nhanh dưới 2 phút. 52% khoảng thời gian check điện thoại mỗi tháng diễn ra trong giờ làm việc. 
 
 Nhiều thống kê khác nhau tại Việt Nam cũng chỉ ra thời lượng sử dụng điện thoại trung bình của người Việt là từ 6-8 tiếng mỗi ngày, thậm chí có bài báo giật tít tiêu đề từ 9-13 tiếng. Nói như vậy để hiểu nhu cầu thực cho ngành phần mềm và Internet nói chung vẫn là **rất lớn**.
 
@@ -39,7 +39,7 @@ Hầu hết mọi người đều học code từ những khung đen Console - H
 
 Thời điểm đó, việc cân nhắc lựa chọn thuê cloud hay host cho rẻ và có nên cúng tiền cho domain hay không cũng đã là vấn đề lớn với Hải. Có quá nhiều ngôn ngữ, framework cho tới công ty cung cấp giải pháp điện toán và offer nhiều mức giá khác nhau. Không trả lời được câu hỏi này thì mã nguồn chỉ có thể chạy local và đưa lên Github. Còn nếu tự build server? - Tiền điện 24/7 và tiền mua hardware có khi còn mắc hơn!
 
-Theo trải nghiệm của Hải, vấn đề tích hợp từ giải pháp từ bên ngoài cũng là trở ngại. Nhẹ nhất là kết nối .NET với máy in qua thư viện để xuất báo cáo, máy scan để đọc barcode. Nặng hơn là làm sao để liên hệ với hàng loạt ngân hàng hoặc khác nhau để gom chung về 1 cổng thanh toán?
+Theo trải nghiệm của Hải, vấn đề tích hợp giải pháp từ bên ngoài cũng là trở ngại. Nhẹ nhất là kết nối .NET với máy in qua thư viện để xuất báo cáo, máy scan để đọc barcode. Nặng hơn là làm sao để liên hệ với hàng loạt ngân hàng khác nhau để gom chung về 1 cổng thanh toán?
 
 ### Thay đổi từ "công nhân viết code" sang "kỹ sư phần mềm"
 
@@ -67,7 +67,7 @@ Nhớ nhé, cái gì bạn không tự làm được mà phải nhờ đến ng�
 - SEO, quảng cáo để tiếp cận người dùng
 - Hỗ trợ người dùng và phí thanh toán nếu áp dụng gói trả phí
 
-Còn về doanh thu, khả năng cao chúng sẽ đến từ quảng cáo, các offer trả phí khác nhau. Vì thế, nếu không có inverstors, rất có thể anh em sẽ đói trong giai đoạn đầu làm SaaS đấy!
+Còn về doanh thu, khả năng cao chúng sẽ đến từ quảng cáo, các offer trả phí khác nhau. Vì thế, nếu không có investors, rất có thể anh em sẽ đói trong giai đoạn đầu làm SaaS đấy!
 
 **Không tham vọng lớn khi nguồn lực nhỏ!**
 
@@ -78,12 +78,12 @@ Có thể bạn không tin nhưng hồi còn là sinh viên năm 2, Hải đã t
 
 ## Tập trung cho ý tưởng và trải nghiệm người dùng
 
-SaaS ngày nay đã build dễ hơn 5-10 năm trước rất nhiều rồi. Vì thế, hãy cố gắng khai thác nhu cầu, vấn dề, sự bất tiện, sự khó chịu của người khác. Chúng xuất hiện ở khắp mọi nơi từ ngoài đời đến Internet. Chúng mới là động lực để bạn làm SaaS. Hãy cố gắng đưa ra lời đề nghị người khác dùng SaaS của bạn và ngày càng nhiều hơn. Quan sát xem khi họ dùng SaaS, mắt họ tập trung vào đâu, tay họ thao tác như thế nào, họ tương tác và phản hồi ra làm sao. Những thứ đó sẽ khiến cho SaaS của bạn ngày càng phát triển và trở nên cạnh tranh hơn.
+SaaS ngày nay đã dễ build hơn 5-10 năm trước rất nhiều rồi. Vì thế, hãy cố gắng khai thác nhu cầu, vấn đề, sự bất tiện, sự khó chịu của người khác. Chúng xuất hiện ở khắp mọi nơi từ ngoài đời đến Internet. Chúng mới là động lực để bạn làm SaaS. Hãy cố gắng đưa ra lời đề nghị người khác dùng thử SaaS của bạn - và ngày càng nhiều hơn. Quan sát xem khi họ dùng SaaS, mắt họ tập trung vào đâu, tay họ thao tác như thế nào, họ tương tác và phản hồi ra làm sao. Những thứ đó sẽ khiến cho SaaS của bạn ngày càng phát triển và trở nên cạnh tranh hơn.
 
 
 ## Muốn giỏi cái gì thì hãy nói nhiều về nó
 
-Cách hiệu quả nhất để giỏi lên - bất kể thứ đó là gì - chính là trao đổi nhiều về nó. Đó là lắng nghe và ghi nhận nhiều luồng ý kiến của nhiều người khác nhau, trao đổi và tương tác với họ. Hỏi họ và xem họ đáp gì và khuyến khích họ làm điều ngược lại. Dù cho bạn đang ở bất kỳ giai đoạn nào của quá trình làm SaaS (học công nghệ - tìm kiếm vấn đề và giải pháp - phát triển sản phẩm - thử nghiệm sản phẩm). Bạn nên - kể cả người bạn đối thoại có là học sinh / sinh viên, người lao động, nhân viên văn phòng - miễn là họ đã có nhiều trải nghiệm ứng dụng và có khả năng thụ hưởng giá trị từ SaaS mới!
+Cách hiệu quả nhất để giỏi lên - bất kể thứ đó là gì - chính là trao đổi nhiều về nó. Đó là lắng nghe và ghi nhận nhiều luồng ý kiến của nhiều người khác nhau, trao đổi và tương tác với họ. Hỏi họ và xem họ đáp gì và khuyến khích họ làm điều ngược lại với bạn. Dù cho bạn đang ở bất kỳ giai đoạn nào của quá trình làm SaaS (học công nghệ - tìm kiếm vấn đề và giải pháp - phát triển sản phẩm - thử nghiệm sản phẩm). Bạn nên - kể cả người bạn đối thoại có là học sinh / sinh viên, người lao động, nhân viên văn phòng hay bảo vệ trông xe - miễn là họ đã có nhiều trải nghiệm ứng dụng và có khả năng thụ hưởng giá trị từ SaaS mới!
 
 Không nhất thiết phải là kỹ sư phần mềm hạng ưu thì mới có đặc quyền được nói về SaaS - hoàn toàn không! Bạn xuất hiện với tư cách là người dùng, như thế đã là quá đủ. Bản thân SaaS không phải là thứ bị cô lập bởi đội ngũ phát triển. SaaS trở nên hữu ích và có giá trị là bởi vì được sử dụng để giải quyết vấn đề và được quan tâm bởi nhiều người - từ đó mang lại doanh thu cho đội ngũ phát triển.
 
