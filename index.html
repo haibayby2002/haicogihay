@@ -124,9 +124,44 @@
     .nav-brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; }
     .nav-brand img { width: 34px; height: 34px; object-fit: contain; }
     .nav-right { display: flex; align-items: center; gap: 22px; }
-    .nav-links { display: flex; gap: 22px; list-style: none; }
-    .nav-links a { text-decoration: none; color: var(--muted); font-size: .95rem; font-weight: 500; }
-    .nav-links a:hover { color: var(--text); }
+    .nav-links { display: flex; gap: 6px; list-style: none; }
+    .nav-links > li { position: relative; }
+    .nav-links a, .nav-group-btn {
+      text-decoration: none; color: var(--muted); font: inherit;
+      font-size: .95rem; font-weight: 500;
+    }
+    .nav-links > li > a, .nav-group-btn {
+      display: flex; align-items: center; gap: 6px;
+      padding: 8px 12px; border-radius: 10px;
+      background: none; border: 0; cursor: pointer;
+    }
+    .nav-links > li > a:hover, .nav-group-btn:hover,
+    .nav-group.open .nav-group-btn { color: var(--text); background: var(--accent-soft); }
+    .nav-group-btn i { font-size: .7rem; transition: transform .16s ease; }
+    .nav-group.open .nav-group-btn i { transform: rotate(180deg); }
+    .nav-menu {
+      position: absolute; top: calc(100% + 6px); left: 0; min-width: 220px;
+      list-style: none; padding: 6px;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 12px; box-shadow: var(--shadow);
+      opacity: 0; visibility: hidden; transform: translateY(-4px);
+      transition: opacity .14s ease, transform .14s ease, visibility .14s;
+    }
+    /* invisible bridge so the menu doesn't close while the pointer crosses the gap */
+    .nav-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -8px; height: 8px; }
+    .nav-group.open .nav-menu {
+      opacity: 1; visibility: visible; transform: none;
+    }
+    @media (hover: hover) {
+      .nav-group:hover .nav-menu { opacity: 1; visibility: visible; transform: none; }
+      .nav-group:hover .nav-group-btn { color: var(--text); background: var(--accent-soft); }
+    }
+    .nav-menu a {
+      display: flex; align-items: center; gap: 10px;
+      padding: 8px 10px; border-radius: 8px; color: var(--text);
+    }
+    .nav-menu a i { width: 18px; text-align: center; color: var(--icon); }
+    .nav-menu a:hover { background: var(--accent-soft); }
     .theme-toggle {
       border: 1px solid var(--border); background: var(--surface); color: var(--text);
       width: 38px; height: 38px; border-radius: 50%; cursor: pointer;
@@ -266,14 +301,30 @@
       </a>
       <div class="nav-right">
         <ul class="nav-links">
-          <li><a href="https://haicogihay.com/blog" data-i18n="nav.blog">Blog</a></li>
-          <li><a href="https://haicogihay.com/blog_llm" data-i18n="nav.blogllm">Blog LLM</a></li>
-          <li><a href="https://haicogihay.com/pdf2mcqs" data-i18n="nav.pdf">PDF → Trắc nghiệm</a></li>
-          <li><a href="https://haicogihay.com/re-use-me" data-i18n="nav.reuseme">re-use-me</a></li>
-          <li><a href="https://haicogihay.com/lean2pitch" data-i18n="nav.lean2pitch">Lean2Pitch</a></li>
-          <li><a href="https://haicogihay.com/memew" data-i18n="nav.memew">memew</a></li>
-          <li><a href="https://haicogihay.com/brand" data-i18n="nav.brand">Branding</a></li>
-          <li><a href="https://haicogihay.com/store.html" data-i18n="nav.store">Sản phẩm</a></li>
+          <li class="nav-group">
+            <button class="nav-group-btn" type="button" aria-expanded="false"><span data-i18n="nav.g.read">Blog</span> <i class="fa-solid fa-chevron-down"></i></button>
+            <ul class="nav-menu">
+              <li><a href="https://haicogihay.com/blog"><i class="fa-solid fa-pen-nib"></i><span data-i18n="nav.blog">Blog</span></a></li>
+              <li><a href="https://haicogihay.com/blog_llm"><i class="fa-solid fa-robot"></i><span data-i18n="nav.blogllm">Chat</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-group">
+            <button class="nav-group-btn" type="button" aria-expanded="false"><span data-i18n="nav.g.tools">SaaS</span> <i class="fa-solid fa-chevron-down"></i></button>
+            <ul class="nav-menu">
+              <li><a href="https://haicogihay.com/pdf2mcqs"><i class="fa-solid fa-list-check"></i><span data-i18n="nav.pdf">pdf2mcqs</span></a></li>
+              <li><a href="https://haicogihay.com/re-use-me"><i class="fa-solid fa-user-tie"></i><span data-i18n="nav.reuseme">re-use-me</span></a></li>
+              <li><a href="https://haicogihay.com/lean2pitch"><i class="fa-solid fa-table-cells-large"></i><span data-i18n="nav.lean2pitch">Lean2Pitch</span></a></li>
+              <li><a href="https://haicogihay.com/memew"><i class="fa-solid fa-face-laugh-squint"></i><span data-i18n="nav.memew">memew</span></a></li>
+              <li><a href="https://tour-op.com"><i class="fa-solid fa-map-location-dot"></i><span data-i18n="nav.tourop">Tour-op</span></a></li>
+            </ul>
+          </li>
+          <li class="nav-group">
+            <button class="nav-group-btn" type="button" aria-expanded="false"><span data-i18n="nav.g.services">Dịch vụ</span> <i class="fa-solid fa-chevron-down"></i></button>
+            <ul class="nav-menu">
+              <li><a href="https://haicogihay.com/brand"><i class="fa-solid fa-bullhorn"></i><span data-i18n="nav.brand">Branding</span></a></li>
+              <li><a href="https://haicogihay.com/store.html"><i class="fa-solid fa-bag-shopping"></i><span data-i18n="nav.store">Sản phẩm</span></a></li>
+            </ul>
+          </li>
           <li><a href="#contact" data-i18n="nav.contact">Liên hệ</a></li>
         </ul>
         <button class="lang-toggle" id="langToggle" type="button" aria-label="Language / Ngôn ngữ">
@@ -301,7 +352,7 @@
   </header>
 
   <main class="container">
-    <section>
+    <section id="read">
       <div class="section-label" data-i18n="sec.read">Blog &amp; Góc nhìn</div>
       <div class="grid">
         <a class="card" href="https://haicogihay.com/blog">
@@ -322,8 +373,8 @@
       </div>
     </section>
 
-    <section>
-      <div class="section-label" data-i18n="sec.tools">Công cụ &amp; Dịch vụ</div>
+    <section id="tools">
+      <div class="section-label" data-i18n="sec.tools">SaaS</div>
       <div class="grid">
         <a class="card" href="https://haicogihay.com/pdf2mcqs">
           <div class="icon"><i class="fa-solid fa-list-check"></i></div>
@@ -357,6 +408,19 @@
           <span class="more"><span data-i18n="card.memew.more">Dùng thử</span> <i class="fa-solid fa-arrow-right"></i></span>
         </a>
 
+        <a class="card" href="https://tour-op.com">
+          <div class="icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <h3 data-i18n="card.tourop.title">Tour-op</h3>
+          <div class="url">tour-op.com</div>
+          <p data-i18n="card.tourop.desc">Công cụ hỗ trợ kết nối du khách và người địa phương.</p>
+          <span class="more"><span data-i18n="card.tourop.more">Dùng thử</span> <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-label" data-i18n="sec.services">Dịch vụ &amp; Cửa hàng</div>
+      <div class="grid">
         <a class="card" href="https://haicogihay.com/brand">
           <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
           <h3 data-i18n="card.brand.title">Hải làm branding</h3>
@@ -417,6 +481,10 @@
       var I18N = {
         vi: {
           "meta.desc": "Trang tổng hợp mọi thứ Hải đang làm: blog, tools, LLM, dịch vụ branding và hơn thế nữa.",
+          "nav.g.read": "Blog",
+          "nav.g.tools": "SaaS",
+          "nav.g.services": "Dịch vụ",
+          "nav.tourop": "Tour-op",
           "nav.blog": "Blog",
           "nav.blogllm": "Chat",
           "nav.pdf": "pdf2mcqs",
@@ -428,7 +496,8 @@
           "nav.contact": "Liên hệ",
           "hero.desc": "Đây là trang tổng hợp mọi thứ Hải đang làm: blog, tools, LLM, dịch vụ branding và hơn thế nữa. Kéo xuống để khám phá!",
           "sec.read": "Blog",
-          "sec.tools": "Công cụ & Dịch vụ",
+          "sec.tools": "SaaS",
+          "sec.services": "Dịch vụ & Cửa hàng",
           "card.blog.title": "Blog",
           "card.blog.desc": "Viết về nhiều chủ đề khác nhau từ công nghệ, tâm lý, kinh tế, khởi nghiệp đến các góc nhìn đời sống.",
           "card.blog.more": "Đọc blog",
@@ -447,6 +516,9 @@
           "card.memew.title": "memew",
           "card.memew.desc": "Tạo meme nhanh từ template, chèn chữ, icon, ảnh và tải xuống ngay. Không cần Photoshop hay Canva.",
           "card.memew.more": "Dùng thử",
+          "card.tourop.title": "Tour-op",
+          "card.tourop.desc": "Công cụ hỗ trợ đơn vị lữ hành quản lý và vận hành tour.",
+          "card.tourop.more": "Dùng thử",
           "card.brand.title": "Hải làm branding",
           "card.brand.desc": "Làm marketing & branding theo mô hình Pay-as-You-Go: nói ngân sách của bạn, nhận và điều chỉnh đề xuất một gói cụ thể.",
           "card.brand.more": "Xem dịch vụ",
@@ -463,6 +535,10 @@
         },
         en: {
           "meta.desc": "A hub for everything I'm working on: blog, tools, LLM, branding services and more.",
+          "nav.g.read": "Blog",
+          "nav.g.tools": "SaaS",
+          "nav.g.services": "Services",
+          "nav.tourop": "Tour-op",
           "nav.blog": "Blog",
           "nav.blogllm": "Chat",
           "nav.pdf": "pdf2mcqs",
@@ -474,7 +550,8 @@
           "nav.contact": "Contact",
           "hero.desc": "This is the hub for everything I'm working on — writing and perspectives, learning tools, branding services, and a curated product store. Pick something below to get started.",
           "sec.read": "Blog",
-          "sec.tools": "Tools & Services",
+          "sec.tools": "SaaS",
+          "sec.services": "Services & Store",
           "card.blog.title": "Blog",
           "card.blog.desc": "Posts on various topics including technology, psychology, economics, startups and everyday perspectives.",
           "card.blog.more": "Read the blog",
@@ -493,6 +570,9 @@
           "card.memew.title": "memew",
           "card.memew.desc": "Make memes in seconds from templates — add text, icons and images, then download instantly. No Photoshop or Canva needed.",
           "card.memew.more": "Try it",
+          "card.tourop.title": "Tour-op",
+          "card.tourop.desc": "A tool that helps tour operators manage and run their tours.",
+          "card.tourop.more": "Try it",
           "card.brand.title": "Branding by Hải",
           "card.brand.desc": "Pay-as-you-go marketing & branding: tell us your budget and get a concrete package proposal right away.",
           "card.brand.more": "See services",
@@ -538,6 +618,30 @@
       btn.addEventListener('click', function () {
         apply(document.documentElement.lang === 'vi' ? 'en' : 'vi');
       });
+    })();
+
+    // ---------- Nav dropdowns (click/tap; hover handled in CSS) ----------
+    (function () {
+      var groups = document.querySelectorAll('.nav-group');
+      function closeAll(except) {
+        groups.forEach(function (g) {
+          if (g === except) return;
+          g.classList.remove('open');
+          g.querySelector('.nav-group-btn').setAttribute('aria-expanded', 'false');
+        });
+      }
+      groups.forEach(function (g) {
+        var b = g.querySelector('.nav-group-btn');
+        b.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var open = !g.classList.contains('open');
+          closeAll(g);
+          g.classList.toggle('open', open);
+          b.setAttribute('aria-expanded', String(open));
+        });
+      });
+      document.addEventListener('click', function () { closeAll(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
     })();
 
     // ---------- Light / dark toggle ----------
