@@ -12,4 +12,12 @@ Có quá nhiều thứ để nói về SaasS ngày nay - đó là lý do chúng 
 
 ## Còn lại gì cho kỹ sư phần mềm, lập trình viên, sinh viên nhóm ngành IT? 
 
+- Data, cloud, infra
+- Test, QA, QC
+
 ## Bạn có dám mạnh dạn để mang giá trị tới người khác hay không?
+- Gọi điện
+- SEO
+
+
+## 
