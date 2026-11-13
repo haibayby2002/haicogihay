@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinh nghiệm Build SaaS phần 2 — Hải có gì hay?</title>
+  <meta name="description" content="Chi phí để làm phần mềm ngày nay đã rẻ không khác gì mớ rau mua ngoài chợ. Nhờ có Claude mà ai cũng có thể trở thành nhà sáng lập, nhà khởi nghiệp. Có lẽ tới năm 2030 sẽ phấn đấu mỗi gia đình có ít nhất 1-2 người làm startup và founder sẽ t..." />
+  <link rel="canonical" href="https://haicogihay.com/blog/kinh-nghiem-build-saas-phan-2.html" />
+  <meta property="og:title" content="Kinh nghiệm Build SaaS phần 2" />
+  <meta property="og:description" content="Chi phí để làm phần mềm ngày nay đã rẻ không khác gì mớ rau mua ngoài chợ. Nhờ có Claude mà ai cũng có thể trở thành nhà sáng lập, nhà khởi nghiệp. Có lẽ tới năm 2030 sẽ phấn đấu mỗi gia đình có ít nhất 1-2 người làm startup và founder sẽ t..." />
+  <meta property="og:url" content="https://haicogihay.com/blog/kinh-nghiem-build-saas-phan-2.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://haicogihay.com/assets/store_image/logo_hai_co_gi_hay_removed_background.png" />
+  <meta property="article:published_time" content="2026-11-13" />
+  <meta property="article:modified_time" content="2026-11-13" />
+  <meta property="article:author" content="Quý Hải Ng" />
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Kinh nghiệm Build SaaS phần 2", "description": "Chi phí để làm phần mềm ngày nay đã rẻ không khác gì mớ rau mua ngoài chợ. Nhờ có Claude mà ai cũng có thể trở thành nhà sáng lập, nhà khởi nghiệp. Có lẽ tới năm 2030 sẽ phấn đấu mỗi gia đình có ít nhất 1-2 người làm startup và founder sẽ t...", "url": "https://haicogihay.com/blog/kinh-nghiem-build-saas-phan-2.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://haicogihay.com/blog/kinh-nghiem-build-saas-phan-2.html"}, "datePublished": "2026-11-13", "dateModified": "2026-11-13", "author": {"@type": "Person", "name": "Quý Hải Ng"}, "publisher": {"@type": "Organization", "name": "Hải có gì hay", "logo": {"@type": "ImageObject", "url": "https://haicogihay.com/assets/store_image/logo_hai_co_gi_hay_removed_background.png"}}, "image": "https://haicogihay.com/assets/store_image/logo_hai_co_gi_hay_removed_background.png", "inLanguage": "vi"}</script>
+  <link rel="icon" href="../assets/store_image/logo_hai_co_gi_hay_removed_background.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    /* ================= Dark mode (layered on top of style.css) ================= */
+    :root {
+      --bg: #ffffff;
+      --surface: #ffffff;
+      --surface-soft: #f5f9fd;
+      --surface-accent: #eef4fb;
+      --border: #e7edf5;
+      --input-border: #cccccc;
+      --text: #14253a;
+      --text-body: #3c4a5b;
+      --muted: #5c6472;
+      --accent: #1b6f9d;
+      --accent-strong: #00a8ff;
+      --accent-strong-hover: #0086cc;
+      --btn-text: #ffffff;
+      --nav-pill-bg: rgba(255, 255, 255, .95);
+      --nav-pill-text: #111111;
+      --shadow: 0 10px 24px rgba(15, 23, 42, .08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0b0f1a;
+        --surface: #121826;
+        --surface-soft: #182234;
+        --surface-accent: rgba(56, 189, 248, .12);
+        --border: #232d40;
+        --input-border: #2c3750;
+        --text: #e7ecf5;
+        --text-body: #c3ccdb;
+        --muted: #8b95a8;
+        --accent: #5ec2f0;
+        --accent-strong: #38bdf8;
+        --accent-strong-hover: #7dd3fc;
+        --btn-text: #072433;
+        --nav-pill-bg: #121826;
+        --nav-pill-text: #e7ecf5;
+        --shadow: 0 10px 28px rgba(0, 0, 0, .5);
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0b0f1a;
+      --surface: #121826;
+      --surface-soft: #182234;
+      --surface-accent: rgba(56, 189, 248, .12);
+      --border: #232d40;
+      --input-border: #2c3750;
+      --text: #e7ecf5;
+      --text-body: #c3ccdb;
+      --muted: #8b95a8;
+      --accent: #5ec2f0;
+      --accent-strong: #38bdf8;
+      --accent-strong-hover: #7dd3fc;
+      --btn-text: #072433;
+      --nav-pill-bg: #121826;
+      --nav-pill-text: #e7ecf5;
+      --shadow: 0 10px 28px rgba(0, 0, 0, .5);
+    }
+
+    body { background: var(--bg); color: var(--text-body); transition: background .2s ease, color .2s ease; }
+
+    .site-nav { border-bottom-color: var(--border); gap: 16px; }
+    .site-nav a { background: var(--nav-pill-bg); color: var(--nav-pill-text); border-color: var(--border); }
+    .site-nav a:hover { background: var(--surface-soft); }
+
+    .theme-toggle {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      width: 40px; height: 40px; border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 1rem; flex-shrink: 0;
+    }
+    .theme-toggle:hover { border-color: var(--accent-strong); color: var(--accent-strong); }
+
+    .toc { background: var(--surface); border-color: var(--border); }
+    .toc h2 { color: var(--accent); }
+    .toc ul { color: var(--muted); }
+    .toc a { color: var(--text); }
+    .toc a:hover { color: var(--accent); }
+
+    .blog-post { background: var(--surface); border-color: var(--border); }
+    .blog-post h1, .blog-post h2, .blog-post h3 { color: var(--text); }
+    .blog-post p, .blog-post li { color: var(--text-body); }
+    .blog-post code { background: var(--surface-accent); color: var(--accent); }
+    .blog-post table { border-color: var(--border); }
+    .blog-post th, .blog-post td { border-bottom-color: var(--border); }
+    .blog-post th { background: var(--surface-soft); color: var(--accent); }
+    .blog-post blockquote { background: var(--surface-soft); border-left-color: var(--accent); color: var(--text-body); }
+    .blog-post .footnote { color: var(--muted); }
+    .blog-post .footnote a { color: var(--accent); }
+
+    .share-cite { background: var(--surface); border-color: var(--border); }
+    .share-cite-block h2 { color: var(--text); }
+    .share-btn { background: var(--surface-accent); color: var(--accent); }
+    .share-btn:hover { background: var(--accent); color: var(--btn-text); }
+    .share-feedback, .cite-feedback { color: var(--accent); }
+    .cite-tab { background: var(--surface-soft); border-color: var(--border); color: var(--muted); }
+    .cite-tab:hover { border-color: var(--accent); color: var(--accent); }
+    .cite-tab.is-active { background: var(--accent); border-color: var(--accent); color: var(--btn-text); }
+    .cite-output { background: var(--surface-soft); border-color: var(--border); color: var(--text); }
+    .copy-btn { background: var(--accent-strong); color: var(--btn-text); }
+    .copy-btn:hover { background: var(--accent-strong-hover); }
+
+    .related-section h2 { color: var(--text); }
+    .related-card { background: var(--surface); border-color: var(--border); }
+    .related-card span { color: var(--accent); }
+    .related-card strong { color: var(--text); }
+    .related-card p { color: var(--muted); }
+
+    .cta-button { background: var(--accent-strong); color: var(--btn-text); }
+    .cta-button:hover { background: var(--accent-strong-hover); }
+    .social-icon:hover { color: var(--accent-strong); }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+  <nav class="site-nav">
+    <button class="burger-menu" id="burger-btn" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="../index.html">Trang chủ</a></li>
+      <li><a href="../index.html#products">Sản phẩm</a></li>
+      <li><a href="./index.html#blogs">Blog</a></li>
+      <li><a href="index.html#faqs">Câu hỏi thường gặp</a></li>
+      <li><a href="index.html#footer">Liên hệ</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển giao diện sáng/tối">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </nav>
+
+  <main class="container blog-page">
+    <section class="blog-hero">
+      <span class="blog-hero-badge">Bài viết mới</span>
+      <h1>Kinh nghiệm Build SaaS phần 2</h1>
+      <p>Chi phí để làm phần mềm ngày nay đã rẻ không khác gì mớ rau mua ngoài chợ. Nhờ có Claude mà ai cũng có thể trở thành nhà sáng lập, nhà khởi nghiệp. Có lẽ tới năm 2030 sẽ phấn đấu mỗi gia đình có ít nhất 1-2 người làm startup và founder sẽ t...</p>
+      <div class="blog-meta">
+        <span><i class="fa-regular fa-calendar"></i> 13-11-2026</span>
+        <span><i class="fa-regular fa-edit"></i> 13-11-2026</span>
+        <span><i class="fa-regular fa-user"></i> Quý Hải Ng</span>
+        <span><i class="fa-solid fa-tag"></i> Công nghệ</span>
+      </div>
+    </section>
+
+    <section class="blog-shell">
+      <aside class="blog-sidebar">
+        <div class="toc">
+          <h2>Mục lục</h2>
+          <div class="toc">
+<ul>
+<li><a href="#kinh-nghiem-build-saas-2">Kinh nghiệm build SaaS #2</a><ul>
+<li><a href="#thu-ma-sieu-tri-tue-chua-the-lam-uoc">Thứ mà siêu trí tuệ chưa thể làm được</a></li>
+<li><a href="#chi-phi-nao-chua-co-dau-hieu-giam">Chi phí nào chưa có dấu hiệu giảm?</a></li>
+<li><a href="#la-1-founder-ban-co-dam-tien-them-1-buoc-nua-e-mang-lai-gia-tri-cho-nguoi-khac-hay-khong">Là 1 founder, bạn có dám tiến thêm 1 bước nữa để mang lại giá trị cho người khác hay không?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+
+        </div>
+      </aside>
+
+      <article class="blog-post">
+        <h1 id="kinh-nghiem-build-saas-2">Kinh nghiệm build SaaS #2</h1>
+<p>Chi phí để làm phần mềm ngày nay đã rẻ không khác gì mớ rau mua ngoài chợ. Nhờ có Claude mà ai cũng có thể trở thành nhà sáng lập, nhà khởi nghiệp. Có lẽ tới năm 2030 sẽ phấn đấu mỗi gia đình có ít nhất 1-2 người làm startup và founder sẽ trở thành vua của mọi nghề.</p>
+<p>Nhưng khi ai cũng có thể gia nhập ngành này, miếng bánh sẽ được chia như thế nào, ai sẽ là người cắt miếng bánh? Khi một người ngày nay có thể làm công việc của 10 người trước đây, 9 người còn lại sẽ đi đâu và làm gì? Và khi giá cả rẻ như vậy, đâu sẽ là yếu tố cạnh tranh giúp kiếm nhiều tiền, giúp sống lâu và sống khỏe từ ngành này?</p>
+<h2 id="thu-ma-sieu-tri-tue-chua-the-lam-uoc">Thứ mà siêu trí tuệ chưa thể làm được</h2>
+<p>Đó chính là đảm bảo phần mềm sẽ không có vấn đề gì trong quá trình sử dụng và vận hành. Trước đây, ngay cả việc làm MVP cũng sẽ lấy đi 1-2 tuần của 1 đội nhóm. Nhưng ngày nay, chỉ cần 1-2 prompt là có thể dựng lên cả phiên bản sẵn sàng triển khai lên server. Khi bạn tự viết code từ đầu, xây dựng từng chức năng, viết từng hàm, bạn biết rõ luồng và logic của phần mềm so với yêu cầu đặt ra. Nhưng khi bạn sử dụng agents để viết, bạn có thể sẽ không biết chắc chắn rằng phần mềm liệu có khả năng gặp các lỗi nói chung so với yêu cầu hay không. Và rộng hơn là làm sao để có thể tối ưu phần mềm trên nhiều thiết bị khác nhau, làm sao giảm thiểu rủi ro bị xâm nhập hệ thống từ bên ngoài hay các giải pháp ghi nhận, cảnh báo đến nhà phát triển, admin nếu ghi nhận lỗi hoặc bị tấn công.</p>
+<p>Sự cạnh tranh trong ngành phần mềm đơn thuần ngày nay không phải đến từ việc tạo ra nhiều phần mềm hơn, mà đến từ việc đảm bảo và kiểm soát chất lượng, đảm bảo phần mềm đáp ứng các yêu cầu đặt ra. Nếu nói về phí làm SaaS, ai cũng có thể làm với agent có giá rất rẻ. Nhưng để đảm bảo phần mềm của bạn chạy tốt, bạn phải tạo từng tài khoản, thử từng case, đặt ra rất nhiều câu hỏi giả định bắt đầu bằng chữ nếu. Và người có tiền sẽ đè bẹp người không có tiền bằng việc mua 200 agents khác nhau từ rẻ đến mắc và và ra lệnh cho chúng mở phần mềm lên tạo nhiều user, nghĩ đủ thứ cases và test chéo lẫn nhau theo thời gian thực. Sau đó, họ sẽ bắt chúng làm báo cáo để bổ sung vào context rồi bắt con agent mắc tiền sửa lỗi và test lại. Và có thể bổ sung thêm các tiêu chí họ muốn từ tiêu chuẩn ISO cho tới tài thiệu các threat thường gặp để các agents scan qua và tiếp tục làm việc cho họ.</p>
+<p>Nhưng có bao nhiêu agents vẫn sẽ không bao giờ thay thế hoàn toàn con người trong công việc này. Cách duy nhất để phần mềm không có vấn đề là cả 8 tỷ người trên thế giới này sẽ không thể làm cho phần mềm có vấn đề mà không được sự cho phép theo bất kỳ cách nào. Không phải là phần mềm viết cho nội bộ thì chỉ cần nội bộ nói ổn là đủ. Nếu phần mềm đó cho phép kết nối Internet thì người ngoài vẫn có khả năng xâm nhập lấy dữ liệu hoặc xóa dữ liệu khi không được phép - và đó sẽ là thảm họa nếu xảy ra. Hãy tưởng tượng một người có thể tắt tủ đông hải sản, tắt thiết bị bảo quản sản phẩm y tế như dược phẩm hay huyết tương từ xa chỉ cần bằng Internet mà không cần cấp quyền - điều đó có thể gây thiệt hại bao nhiêu? Hãy thử tưởng tượng các camera và cửa cuốn điều khiển từ xa có thể bị kẻ xấu chiếm quyền điều khiển để tắt cam và mở cửa lấy trộm đồ khi chủ không có ở đó, người ta có thể mất bao nhiêu đồ đạc? Hãy tưởng tượng thông tin và tài sản người dùng bị đánh cắp và bị kẻ xấu chiếm quyền điều khiển để chuyển loạn xạ nhằm che giấu dòng tiền lấy được chỉ bằng Internet, công ty đó sẽ chịu ảnh hưởng nặng nề đến mức nào?</p>
+<p>Đó là lý do mà các vị trí tester, QA/QC, log analytics hay security - về mặt lý thuyết sẽ không bao giờ có khái niệm tuyển đủ người dù trên thực tế các công ty có thể viện hàng loạt lý do để lay-off. Vì vậy, nếu như trước đây 1 team cần 5 dev - 5 test, cùng ngân sách đó có thể dùng cho 1 dev - 9 test. Chỉ có cách gọi càng nhiều người và thử càng nhiều khả năng khác nhau với phần mềm để phát hiện những gì chưa ổn rồi vá lại mới giảm thiểu tối đa rủi ro bị lỗi hoặc bị tấn công.</p>
+<p>Chính những công việc nhàm chán, lặp đi lặp lại mới chính là thứ nuôi sống bạn - với tư cách là một người đi làm nhận lương đều đặn hàng tháng. Nó chính là 99% các công việc vận hành thường ngày - công việc sẽ có tính chất lặp đi lặp lại, lặp đi lặp lại và cái gì quan trọng nhắc lại 3 lần: lặp đi lặp lại. Bất kể đó là đánh máy, viết báo cáo theo mẫu, thao tác bằng chuột và bàn phím, nhập số liệu cho tới ngồi im hàng tiếng đồng hồ chỉ để nghe những lời khó nghe trong phòng họp. Và không riêng ngành phần mềm, hầu hết những thứ mang lại dòng tiền đều đặn, ổn định hầu hết sẽ đến từ các công việc nhàm chán lặp đi lặp lại.</p>
+<h2 id="chi-phi-nao-chua-co-dau-hieu-giam">Chi phí nào chưa có dấu hiệu giảm?</h2>
+<p>Đó là chi phí cho dữ liệu và hạ tầng phần cứng nói chung. Cho tới tận bây giờ, những thứ trên đang có dấu hiệu tăng về nhu cầu và về giá. Kể cả khi bạn chưa xác định được chúng sẽ được dùng cho mục đích gì, một khi người ta đã nói về trung tâm dữ liệu, về công nghiệp bán dẫn, về ngành năng lượng, chúng ta sẽ đều hình dung rằng nó sẽ cần ngốn rất nhiều tiền.</p>
+<p>Bạn đang trong vai trò là 1 nhà phát triển, 1 founder, 1 startup - bạn sẽ thấy những thứ đó đang cắn rất nhiều tiền của bạn. Drive, hosting, cloud, CPU, GPU, RAM, Cache và ti tỉ thứ dịch vụ liên quan khác chính là chi phí của bạn và sẽ ngày càng phình to ra khi bạn càng có nhiều người dùng và phải xử lý ngày càng nhiều lưu lượng truy cập hơn.</p>
+<p>Vì vậy, nếu bạn đang trong vai trò là người đang tìm việc hay chương trình đào tạo, bạn có thể cân nhắc lĩnh vực điện, năng lượng, vật liệu và bán dẫn. Chúng là vật lý, là hữu hình và phục vụ cho nhiều lĩnh vực khác nhau không riêng gì phần mềm. Cũng như thị trường hiện tại và tiềm năng phát triển của những ngành nghề này trong tương lai còn rất lớn.</p>
+<h2 id="la-1-founder-ban-co-dam-tien-them-1-buoc-nua-e-mang-lai-gia-tri-cho-nguoi-khac-hay-khong">Là 1 founder, bạn có dám tiến thêm 1 bước nữa để mang lại giá trị cho người khác hay không?</h2>
+<p>Vì tiền để làm SaaS đã rẻ như mớ rau ngoài chợ, bạn đã có thể làm rất nhiều SaaS mỗi tuần. Nhưng liệu người ta có cần đến chúng hay sẵn sàng mua chúng không? Rõ ràng, việc viết thêm nhiều phần mềm trùng lặp chẳng giải quyết được vấn đề. Cái bạn cần tìm là giải pháp cho vấn đề mà người khác gặp phải. Chỉ khi bạn giải quyết được vấn đề mà người khác gặp phải, bạn mới có khả năng kiếm tiền từ họ. Chỉ cần thấy người ta đánh giá 1 sao về SaaS họ đang sử dụng và để lại than phiền về lỗi hay tính năng - thứ mà bạn có thể giải quyết và cung cấp tốt hơn là đủ để bạn alo cho người ta rồi.</p>
+<p>Suy cho cùng, phải có người dùng, phải có người thụ hưởng giá trị, phải có người sẵn sàng trả tiền thì SaaS của bạn mới có giá trị. Giá trị của bạn không nằm ở việc bạn sản xuất được bao nhiêu SaaS, mà nằm ở việc người ta sử dụng SaaS của bạn nhiều như nào và cho mục đích gì? Vì vậy, sẽ thật vô nghĩa nếu bạn chỉ build SaaS rồi vứt đó. Nó chả khác gì bạn mua mớ rau ngoài chợ không ăn rồi để hư héo. Cho nên, bạn cần phải tìm kiếm người dùng và khách hàng.</p>
+<p>Câu chuyện của bạn sẽ quay lại với việc bán hàng và thuyết phục người khác. Bạn có sẵn sàng chấp nhận rủi ro bị từ chối để làm phiền người khác trải nghiệm SaaS của bạn, để đưa ra offer bán hàng hay để kêu gọi đầu tư hay không? Bạn đã sẵn sàng tận dụng toàn bộ nền tảng bạn đang nắm giữ để đăng tin, để dựng nội dung xoay quanh SaaS của bạn? Bạn đã lên kế hoạch SEO organic và chiến dịch xuống tiền chạy quảng cáo để tiếp cận với nhiều người hơn hay chưa? Vì nếu không có những thứ này, không cần biết bạn đầu tư bao nhiêu thời gian và tiền bạc, SaaS vẫn không thể nuôi ngược lại bạn và giải quyết các nhu cầu vật chất đời thường cho bạn.</p>
+      </article>
+    </section>
+
+    <section class="share-cite">
+      <div class="share-cite-block">
+        <h2>Chia sẻ bài viết</h2>
+        <div class="share-buttons" role="group" aria-label="Chia sẻ bài viết">
+          <a class="share-btn" data-share="facebook" href="#" target="_blank" rel="noreferrer noopener" aria-label="Chia sẻ lên Facebook">Facebook</a>
+          <a class="share-btn" data-share="x" href="#" target="_blank" rel="noreferrer noopener" aria-label="Chia sẻ lên X">X</a>
+          <a class="share-btn" data-share="zalo" href="#" target="_blank" rel="noreferrer noopener" aria-label="Chia sẻ qua Zalo">Zalo</a>
+          <a class="share-btn" data-share="linkedin" href="#" target="_blank" rel="noreferrer noopener" aria-label="Chia sẻ lên LinkedIn">LinkedIn</a>
+          <button type="button" class="share-btn" data-share="copy" aria-label="Sao chép liên kết bài viết">Copy link</button>
+        </div>
+        <span class="share-feedback" data-role="share-feedback" aria-live="polite"></span>
+      </div>
+
+      <div class="share-cite-block">
+        <h2>Trích dẫn bài viết</h2>
+        <div class="cite-tabs" role="tablist" aria-label="Kiểu trích dẫn">
+          <button type="button" class="cite-tab is-active" data-style="bibtex" role="tab" aria-selected="true">BibTeX</button>
+          <button type="button" class="cite-tab" data-style="plain" role="tab" aria-selected="false">Plain text</button>
+          <button type="button" class="cite-tab" data-style="ieee" role="tab" aria-selected="false">IEEE</button>
+        </div>
+        <textarea class="cite-output" data-role="cite-output" readonly rows="4" aria-label="Nội dung trích dẫn"></textarea>
+        <div class="cite-actions">
+          <button type="button" class="copy-btn" data-role="copy-citation">Copy citation</button>
+          <span class="cite-feedback" data-role="cite-feedback" aria-live="polite"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-section">
+      <h2>Bài viết bạn có thể quan tâm</h2>
+      <div class="related-grid">
+        <a class="related-card" href="#">
+          <span>Khám phá thêm</span>
+          <strong>5 cách tránh rơi vào vòng lặp phụ thuộc</strong>
+          <p>Giải pháp từ nhận diện sớm, thay thế dopamine lành mạnh và hỗ trợ cộng đồng.</p>
+        </a>
+        <a class="related-card" href="#">
+          <span>Đọc tiếp</span>
+          <strong>Những thói quen giúp tinh thần ổn định hơn</strong>
+          <p>Hướng dẫn thực tế để xây dựng nhịp sống cân bằng, ít căng thẳng và ít phụ thuộc vào cảm giác tức thì.</p>
+        </a>
+        <a class="related-card" href="#">
+          <span>Gợi ý</span>
+          <strong>Khám phá sản phẩm giúp hỗ trợ nếp sống lành mạnh</strong>
+          <p>Danh sách sản phẩm tiện ích, dễ dùng và phù hợp cho không gian làm việc và thư giãn.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h2>Thông tin liên hệ</h2>
+        <p>Email: <a href="mailto:nguyenquyhai2002@gmail.com">nguyenquyhai2002@gmail.com</a></p>
+        <p>Phone: <a href="tel:+84703017645">+84 703 017 645</a></p>
+        <p>Zalo: <a href="https://zalo.me/0703017645" target="_blank" rel="noreferrer noopener">https://zalo.me/0703017645</a></p>
+        <div class="footer-socials"></div>
+      </div>
+      <div class="footer-cta"></div>
+    </div>
+  </footer>
+
+  <a class="zalo-button" href="mailto:nguyenquyhai2002@gmail.com" target="_blank" rel="noreferrer noopener" aria-label="Liên hệ qua Email">
+    <img src="../assets/blog_image/ChatGPT Image Jun 5, 2026, 10_27_52 AM.png" alt="Email" width="64" height="64" />
+  </a>
+  <div class="zalo-bubble">Anh em muốn góp ý hoặc trao đổi thêm về bài viết, liên hệ qua nguyenquyhai2002@gmail.com</div>
+
+  <script src="../assets/js/share-cite.js"></script>
+  <script>
+    const articleMeta = {"title": "Kinh nghiệm Build SaaS phần 2", "excerpt": "Chi phí để làm phần mềm ngày nay đã rẻ không khác gì mớ rau mua ngoài chợ. Nhờ có Claude mà ai cũng có thể trở thành nhà sáng lập, nhà khởi nghiệp. Có lẽ tới năm 2030 sẽ phấn đấu mỗi gia đình có ít nhất 1-2 người làm startup và founder sẽ t...", "url": "https://haicogihay.com/blog/kinh-nghiem-build-saas-phan-2.html", "publisher": "Hải có gì hay", "published": "2026-11-13", "updated": "", "author": {"display": "Quý Hải Ng", "family": "Ng", "given": "Quý Hải"}, "category": "Công nghệ"};
+    initShareCite(document.querySelector('.share-cite'), articleMeta);
+
+    // const storeData = {"name": "Blog Hải có gì hay?", "homepage": "http://haicogihay.com/", "description": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay không phải là nơi để chia sẻ những kiến thức chuyên sâu, mà là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về các chủ đề khác nhau, với mong muốn mang đến những điều thú vị và hữu ích cho độc giả.", "brand": {"name": "Hải có gì hay?", "logo": "assets/store_image/logo_hai_co_gi_hay_removed_background.png", "background": "assets/store_image/hai_co_gi_hay_removed_bg.png"}, "contact": {"email": "nguyenquyhai2002@gmail.com", "phone": "+84 703 016 645", "zalo": "https://zalo.me/0703017645", "facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay"}, "social_links": {"facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay", "youtube": "https://www.youtube.com/@haicogihay"}, "dear_readers": "Tri thức không chỉ phát triển nhờ sự đồng thuận tuyệt đối, mà nhờ những cuộc đối thoại tử tế. Vì vậy, mong anh em đọc bài viết như một góc nhìn để suy ngẫm, thay vì một kết luận cuối cùng. Mọi quan điểm ít nhiều đều mang dấu vết của trải nghiệm cá nhân. Mục đích của mỗi bài viết không phải là để ai đúng tuyệt đối, mà là liệu chúng ta có thể cùng nhau suy nghĩ sâu hơn sau mỗi bài viết hay không? Vì vậy, hãy đọc với tinh thần cởi mở và phản biện hoặc góp ý khi anh em có suy nghĩ khác nha! 🌿", "cta": {"subscribe": {"call": "Nếu anh em muốn nhanh chóng cập nhật bài viết mới từ blog Hải có gì hay, hãy đăng ký nhận thông báo để không bỏ lỡ những bài viết của Hải trong tương lai!", "action": "Đăng ký nhận thông báo", "link": "https://forms.gle/c8bUfvF6evuVDU2L8"}, "collaborate": {"call": "Anh em cũng có thể hợp tác với Hải để quảng bá doanh nghiệp. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo hoặc gmail để trao đổi kỹ hơn.", "action": "Liên hệ hợp tác", "link": "https://zalo.me/0703017645"}, "buy": {"call": "Anh em muốn góp ý, phản hồi bài viết? Liên hệ với Hải qua Gmail! nguyenquyhai2002@gmail.com", "action": "Phản hồi bài viết", "link": "mailto:nguyenquyhai2002@gmail.com"}}, "faqs": [{"id": 1, "question": "Blog Hải có gì hay?", "answer": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về nhiều chủ đề khác nhau, với mong muốn mang đến góc nhìn mới và hi vọng hữu ích cho độc giả."}, {"id": 2, "question": "Tôi có chủ đề nào đó muốn Hải viết bài về nó, tôi có thể đề xuất được không?", "answer": "Có, anh em hoàn toàn có thể đề xuất chủ đề mà anh em muốn Hải viết bài về nó. Nếu anh em có chủ đề nào đó mà anh em nghĩ sẽ có ích cho độc giả, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}, {"id": 3, "question": "Làm thế nào để nhận thông báo bài viết mới?", "answer": "Anh em có thể nhận thông báo bài viết mới bằng cách đăng ký nhận thông báo qua link: https://forms.gle/c8bUfvF6evuVDU2L8. Hải sẽ gửi thông báo đến anh em mỗi khi có bài viết mới được đăng trên blog."}, {"id": 4, "question": "Tôi có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay không?", "answer": "Có, anh em hoàn toàn có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}]}; {
+    //   brand: { name: 'Hải có gì hay?', logo: '../assets/store_image/logo_hai_co_gi_hay_removed_background.png' },
+    //   social_links: { facebook: 'https://www.facebook.com/profile.php?id=61590145161911', tiktok: 'https://www.tiktok.com/@haicogihay', youtube: 'https://www.youtube.com/@haicogihay' },
+    //   cta: {
+    //     subscribe: { call: 'Nếu anh em muốn nhanh chóng cập nhật sản phẩm mới từ cửa hàng Hải có gì hay, hãy đăng ký nhận tin để không bỏ lỡ những món đồ thú vị và tiện ích trong tương lai!', action: 'Đăng ký nhận tin', link: 'https://forms.gle/c8bUfvF6evuVDU2L8' },
+    //     collaborate: { call: 'Anh em cũng có thể hợp tác với Hải để niêm yết sản phẩm nếu anh em có sản phẩm hay muốn bán.', action: 'Liên hệ hợp tác', link: 'https://zalo.me/0703017645' }
+    //   },
+    //   buy: { call: 'Anh em muốn đặt hàng? Liên hệ với Hải qua Zalo! 0703.017.645', link: 'https://zalo.me/0703017645' }
+    // };
+    const storeData = {"name": "Blog Hải có gì hay?", "homepage": "http://haicogihay.com/", "description": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay không phải là nơi để chia sẻ những kiến thức chuyên sâu, mà là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về các chủ đề khác nhau, với mong muốn mang đến những điều thú vị và hữu ích cho độc giả.", "brand": {"name": "Hải có gì hay?", "logo": "assets/store_image/logo_hai_co_gi_hay_removed_background.png", "background": "assets/store_image/hai_co_gi_hay_removed_bg.png"}, "contact": {"email": "nguyenquyhai2002@gmail.com", "phone": "+84 703 016 645", "zalo": "https://zalo.me/0703017645", "facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay"}, "social_links": {"facebook": "https://www.facebook.com/profile.php?id=61590145161911", "tiktok": "https://www.tiktok.com/@haicogihay", "youtube": "https://www.youtube.com/@haicogihay"}, "dear_readers": "Tri thức không chỉ phát triển nhờ sự đồng thuận tuyệt đối, mà nhờ những cuộc đối thoại tử tế. Vì vậy, mong anh em đọc bài viết như một góc nhìn để suy ngẫm, thay vì một kết luận cuối cùng. Mọi quan điểm ít nhiều đều mang dấu vết của trải nghiệm cá nhân. Mục đích của mỗi bài viết không phải là để ai đúng tuyệt đối, mà là liệu chúng ta có thể cùng nhau suy nghĩ sâu hơn sau mỗi bài viết hay không? Vì vậy, hãy đọc với tinh thần cởi mở và phản biện hoặc góp ý khi anh em có suy nghĩ khác nha! 🌿", "cta": {"subscribe": {"call": "Nếu anh em muốn nhanh chóng cập nhật bài viết mới từ blog Hải có gì hay, hãy đăng ký nhận thông báo để không bỏ lỡ những bài viết của Hải trong tương lai!", "action": "Đăng ký nhận thông báo", "link": "https://forms.gle/c8bUfvF6evuVDU2L8"}, "collaborate": {"call": "Anh em cũng có thể hợp tác với Hải để quảng bá doanh nghiệp. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo hoặc gmail để trao đổi kỹ hơn.", "action": "Liên hệ hợp tác", "link": "https://zalo.me/0703017645"}, "buy": {"call": "Anh em muốn góp ý, phản hồi bài viết? Liên hệ với Hải qua Gmail! nguyenquyhai2002@gmail.com", "action": "Phản hồi bài viết", "link": "mailto:nguyenquyhai2002@gmail.com"}}, "faqs": [{"id": 1, "question": "Blog Hải có gì hay?", "answer": "Blog Hải có gì hay là nơi chia sẻ những góc nhìn về khắp các chủ đề từ tin học, tâm lý học, kinh tế học, triết học, tán gái học, vũ trụ học. Mỗi bài viết đều được dựa trên góc nhìn của bản thân, viết với mục đích chia sẻ những điều mới, thú vị, có giá trị mà bản thân đã trải nghiệm, học hỏi được. Blog Hải có gì hay là nơi để chia sẻ những góc nhìn, những trải nghiệm cá nhân về nhiều chủ đề khác nhau, với mong muốn mang đến góc nhìn mới và hi vọng hữu ích cho độc giả."}, {"id": 2, "question": "Tôi có chủ đề nào đó muốn Hải viết bài về nó, tôi có thể đề xuất được không?", "answer": "Có, anh em hoàn toàn có thể đề xuất chủ đề mà anh em muốn Hải viết bài về nó. Nếu anh em có chủ đề nào đó mà anh em nghĩ sẽ có ích cho độc giả, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}, {"id": 3, "question": "Làm thế nào để nhận thông báo bài viết mới?", "answer": "Anh em có thể nhận thông báo bài viết mới bằng cách đăng ký nhận thông báo qua link: https://forms.gle/c8bUfvF6evuVDU2L8. Hải sẽ gửi thông báo đến anh em mỗi khi có bài viết mới được đăng trên blog."}, {"id": 4, "question": "Tôi có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay không?", "answer": "Có, anh em hoàn toàn có thể hợp tác quảng bá doanh nghiệp với blog Hải có gì hay. Nếu anh em có sản phẩm hoặc dịch vụ muốn tiếp cận với độc giả của Hải, cứ liên hệ với Hải qua Zalo (https://zalo.me/0703017645) hoặc Gmail (nguyenquyhai2002@gmail.com) để trao đổi kỹ hơn."}]};
+    function renderSocialLinks() {
+      const footerSocials = document.querySelector('.footer-socials');
+      if (!footerSocials) return;
+      const icons = { facebook: 'fab fa-facebook-f', tiktok: 'fab fa-tiktok', youtube: 'fab fa-youtube' };
+      footerSocials.innerHTML = Object.entries(storeData.social_links || {}).map(([platform, url]) => `
+        <a href="${url}" class="social-icon ${icons[platform] || ''}" target="_blank" rel="noreferrer noopener" aria-label="${platform.charAt(0).toUpperCase() + platform.slice(1)}"></a>
+      `).join('');
+    }
+
+    const relatedPostsData = [{"title": "Content Engine - Vì sao các cá nhân và doanh nghiệp nên quan tâm?", "category": "Công nghệ", "author": "Quý Hải Ng", "tags": ["content engine", "content seeding", "content generation"], "status": "done", "slug": "content-engine---vi-sao-cac-ca-nhan-va-doanh-nghiep-nen-quan-tam", "created_time": "05-07-2026", "updated_time": "09-07-2026", "excerpt": "Trong nền kinh tế của sự chú ý - nơi mà các doanh nghiệp tận dụng mọi nền tảng để giành giật sự chú ý của khách hàng, sự chú ý của mọi người chỉ được tính bằng giây trước khi chuyển sang nội dung khác. Có thể nói trong thời kỳ này, thông ti..."}, {"title": "Ghi gì vào Context?", "author": "Quý Hải Ng", "category": "Công nghệ", "status": "done", "slug": "ghi-gi-vao-context", "created_time": "12-10-2026", "updated_time": "21-10-2026", "excerpt": "Bạn muốn 1 Prompt của bạn khi được gửi cho agents có thể giải quyết toàn bộ vấn đề không cần biết vấn đề dù khó hay phức tạp đến mức nào? Và để làm được điều đó, context chắc chắn đã phải được chuẩn bị từ trước. Lúc này anh em sẽ quan tâm t...", "tags": []}, {"title": "Kinh nghiệm build SaaS", "author": "Quý Hải Ng", "category": "Công nghệ", "status": "done", "slug": "kinh-nghiem-build-saas", "created_time": "17-09-2026", "updated_time": "01-10-2026", "excerpt": "Nếu phải nói rằng ngành công nghiệp nào phát triển mạnh mẽ nhất và thay đổi nhiều nhất trong vòng 10 năm trở lại đây, Hải nghĩ đó là ngành công nghiệp phần mềm dịch vụ hay còn được biết đến với tên gọi SaaS (Software-as-a-Service). Cổ phiếu...", "tags": []}];
+
+    function renderFooterCTA() {
+      const footerCTA = document.querySelector('.footer-cta');
+      if (!footerCTA) return;
+      footerCTA.innerHTML = `
+        <h2>Quan tâm Blog</h2>
+        <p>${storeData.cta.subscribe.call}</p>
+        <p style="margin-top: 16px;">${storeData.cta.collaborate.call}</p>
+        <ul class="footer-cta-list" style="margin-top: 16px; list-style: none; padding: 0;">
+          <li><a class="cta-button" href="${storeData.cta.subscribe.link}" target="_blank" rel="noreferrer noopener">${storeData.cta.subscribe.action}</a></li>
+          <li><a class="cta-button" href="${storeData.cta.collaborate.link}" target="_blank" rel="noreferrer noopener">${storeData.cta.collaborate.action}</a></li>
+        </ul>
+      `;
+    }
+
+    function renderZaloBuy() {
+      const zaloButton = document.querySelector('.zalo-button');
+      const bubble = document.querySelector('.zalo-bubble');
+      if (zaloButton && storeData.buy?.link) zaloButton.href = storeData.buy.link;
+      if (bubble && storeData.buy?.call) bubble.textContent = storeData.buy.call;
+    }
+
+    const typeOfRelatedMess = [
+      "Khám phá thêm",
+      "Đọc tiếp",
+      "Gợi ý"
+    ];
+
+    function renderRelatedPosts() {
+      const relatedSection = document.querySelector('.related-section .related-grid');
+      if (!relatedSection || !relatedPostsData.length) return;
+      relatedSection.innerHTML = relatedPostsData.map(post => `
+        <a class="related-card" href="${post.slug}.html">
+          <span>${typeOfRelatedMess[Math.floor(Math.random() * typeOfRelatedMess.length)]}</span>
+          <strong>${post.title}</strong>
+          <p>${post.excerpt}</p>
+        </a>
+      `).join('');
+    }
+
+    const burgerBtn = document.getElementById('burger-btn');
+    const navLinks = document.getElementById('nav-links');
+    burgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    renderSocialLinks();
+    renderFooterCTA();
+    renderZaloBuy();
+    renderRelatedPosts();
+
+    // ---------- Light / dark toggle ----------
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('themeToggle');
+      var icon = btn.querySelector('i');
+
+      function systemPrefersDark() {
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      }
+      function apply(theme) {
+        root.setAttribute('data-theme', theme);
+        icon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+      }
+      function currentTheme() {
+        return root.getAttribute('data-theme') || (systemPrefersDark() ? 'dark' : 'light');
+      }
+
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'dark' || saved === 'light') apply(saved);
+        else icon.className = systemPrefersDark() ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+      } catch (e) {}
+
+      btn.addEventListener('click', function () {
+        var next = currentTheme() === 'dark' ? 'light' : 'dark';
+        apply(next);
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>
